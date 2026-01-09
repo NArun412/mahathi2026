@@ -22,6 +22,7 @@ import { DigitalAiEnablementComponent } from './pages/healthcare/digital-ai-enab
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { LocationComponent } from './pages/location/location.component';
 import { WorkersCompensiationComponent } from './pages/workers-compensiation/workers-compensiation.component';
+import { MainTemplateComponent } from './sharedComponents/main-template/main-template.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { WorkersCompensiationComponent } from './pages/workers-compensiation/wor
     LandingPageComponent,
     LocationComponent,
     DigitalAiEnablementComponent,
-    WorkersCompensiationComponent
+    WorkersCompensiationComponent,
+    MainTemplateComponent
   ],
   imports: [
     BrowserModule,
