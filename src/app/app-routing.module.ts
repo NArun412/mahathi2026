@@ -20,6 +20,7 @@ import { NewsComponent } from './pages/news/news.component';
 import { MainTemplateComponent } from './sharedComponents/main-template/main-template.component';
 
 import { WorkersCompensiationComponent } from './pages/workers-compensiation/workers-compensiation.component';
+import { AienablementComponent } from './aienablement/aienablement/aienablement.component';
 import { AboutusComponent } from './pages/aboutus/aboutus.component';
 
 const routes: Routes = [
@@ -41,6 +42,8 @@ const routes: Routes = [
   { path: 'healthcare/coming-soon', component: LandingPageComponent },
     { path: 'healthcare/location', component: LocationComponent },
   {path :"healthcare/digital-ai-enablement", component:DigitalAiEnablementComponent},
+  {path: 'workerscompensiation', component: WorkersCompensiationComponent},
+  {path: 'aienablement',component: AienablementComponent}
     {path: 'aboutus', component: AboutusComponent},
   {path: 'workerscompensiation', component: WorkersCompensiationComponent},
   {path: 'workerscompensiation', component: WorkersCompensiationComponent},
