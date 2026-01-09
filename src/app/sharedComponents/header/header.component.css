@@ -1,3 +1,4 @@
+
 /* Header text (16px) */
 .ct-mega-menu .col-lg-4 h4,
 .ct-mega-menu .col-lg-4 h4 b {
@@ -49,8 +50,106 @@
 }
 
 .head{
+  background-color: #6D9C72;
 background-color: #76A379;
 }
+
+/* MOBILE/TABLET HEADER TOP BAR */
+.mobile-header-top {
+  background-color: #6D9C72;
+  display: flex;
+  align-items: center;
+}
+
+/* HAMBURGER MENU ICON */
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  gap: 6px;
+}
+
+.hamburger-icon {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  display: block;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger-menu:hover .hamburger-icon {
+  background-color: #f0f0f0;
+}
+
+/* MOBILE/TABLET MENU STYLING (0px - 991px) */
+@media (max-width: 991.98px) {
+  /* Show mobile header top bar */
+  .mobile-header-top {
+    display: flex !important;
+  }
+
+  /* Hide desktop navigation completely */
+  #page-header-nav1 {
+    display: none !important;
+  }
+
+  /* Show mobile menu */
+  .page-header-nav-mobile {
+    display: block !important;
+    background-color: #6D9C72;
+  }
+
+  /* Mobile menu hidden by default */
+  #navbarNavDropdown {
+    display: none !important;
+  }
+
+  /* Mobile menu shown when toggled */
+  #navbarNavDropdown.show {
+    display: block !important;
+  }
+
+  /* Mobile nav link styling */
+  .page-header-nav-mobile .nav-link {
+    color: white !important;
+    padding: 12px 15px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: block;
+    font-size: 0.95rem;
+  }
+
+  .page-header-nav-mobile .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* DESKTOP (992px and above) - NO CHANGES */
+@media (min-width: 992px) {
+  /* Hide mobile header */
+  .mobile-header-top {
+    display: none !important;
+  }
+
+  /* Hide hamburger */
+  .hamburger-menu {
+    display: none !important;
+  }
+
+  /* Show desktop navigation as normal */
+  #page-header-nav1 {
+    display: flex !important;
+  }
+
+  /* Hide mobile nav on desktop */
+  .page-header-nav-mobile {
+    display: none !important;
+  }
+}
+
 /* ===== Main Box ===== */
 .our_solution_box {
     position: relative; /* required for absolute positioning of child grids */
@@ -143,6 +242,11 @@ background-color: #76A379;
 .details-container .editor-text,
 .top-grid-container .editor-text {
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+.force-hide {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
 }
 /* Target the top-level menu titles */
 #page-header-nav .navbar-nav .nav-item .nav-link p {

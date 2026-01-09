@@ -1,3 +1,5 @@
+.intro-test-right {
+  border-radius: 12px 0px 0px 12px;
 
 /* OUTER GRAY */
 .impact-outer {
@@ -20,29 +22,122 @@
 .intro-test-right{
     border-radius: 12px 0px 0px 12px;
 }
+
 .davies-service-grid .intro-test-right .test-overlay-content .test-overlay-div {
-    height: 4.5rem;
+  height: 4.5rem;
 }
+
+.sec-1 {
+  padding-bottom: 0px !important;
 .sec-1{
     padding-bottom: 0px !important;
     /* background-color: #76A379; */
 }
+
 .intro-test-right {
   display: flex;
-  align-items: center;       /* vertical centering */
-  justify-content: center;   /* horizontal centering */
-  height: 100%;              /* must fill section */
+  align-items: center;
+  /* vertical centering */
+  justify-content: center;
+  /* horizontal centering */
+  height: 100%;
+  /* must fill section */
 }
+
 .dg-home-intro,
 #home-intro {
   min-height: 100vh;
 }
+
 .intro-test-right {
   min-height: 100vh;
 }
+
 .test-overlay-content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  /* center items vertically inside */
+  gap: 16px;
+  /* spacing between items */
+}
+
+.dashboard-grid-layout .solution-grid-cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 18px;
+  max-width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .dashboard-grid-layout .solution-grid-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .dashboard-grid-layout .solution-grid-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .dashboard-grid-layout .solution-grid-cards {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+}
+
+.dashboard-tab-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.arrow-button {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #537450;
+  /* brand green */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 12px;
+}
+
+.arrow-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.solution-grid-container {
+  width: 100%;
+  max-width: 1440px;
+  /* static cap for large screens */
+  margin: 0 auto;
+  padding: 0 24px;
+  /* horizontal breathing room */
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .solution-grid-container {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .solution-grid-container {
+    padding: 0 12px;
+  }
+}
+
+.dashboard-grid-layout {
+  background-color: #B2C7B3;
+}
   justify-content: center;   /* center items vertically inside */
   gap: 16px;                 /* spacing between items */
 }
