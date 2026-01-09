@@ -144,8 +144,18 @@
                 </div>
             </section>
 
+ <section class="dg-home-intro dashboard-grid-layout" id="home-intro">
+                <div class="dashboard-tab-wrapper">
+                    <button class="arrow-button" (click)="goToPreviousTab()">←</button>
 
-                    <section class="dg-home-intro" id="home-intro">
+                    <app-solution-grid [options]="dashboardTabs" [heading]="dashboardHeading"
+                        [gridItems]="dashboardGridItems" (optionSelected)="onTabChange($event)">
+                    </app-solution-grid>
+
+                    <button class="arrow-button" (click)="goToNextTab()">→</button>
+                </div>
+            </section>
+                    <section class="dg-home-intro d-none" id="home-intro">
                         <h2 class="service-promotion-title service-title text-begonia" style="color: #76A379 !important">
                             OUR SOLUTIONS</h2>
  
