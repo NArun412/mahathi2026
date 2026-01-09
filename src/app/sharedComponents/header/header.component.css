@@ -1,6 +1,104 @@
+
 .head{
-background-color: #6D9C72;
+  background-color: #6D9C72;
 }
+
+/* MOBILE/TABLET HEADER TOP BAR */
+.mobile-header-top {
+  background-color: #6D9C72;
+  display: flex;
+  align-items: center;
+}
+
+/* HAMBURGER MENU ICON */
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  gap: 6px;
+}
+
+.hamburger-icon {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  display: block;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger-menu:hover .hamburger-icon {
+  background-color: #f0f0f0;
+}
+
+/* MOBILE/TABLET MENU STYLING (0px - 991px) */
+@media (max-width: 991.98px) {
+  /* Show mobile header top bar */
+  .mobile-header-top {
+    display: flex !important;
+  }
+
+  /* Hide desktop navigation completely */
+  #page-header-nav1 {
+    display: none !important;
+  }
+
+  /* Show mobile menu */
+  .page-header-nav-mobile {
+    display: block !important;
+    background-color: #6D9C72;
+  }
+
+  /* Mobile menu hidden by default */
+  #navbarNavDropdown {
+    display: none !important;
+  }
+
+  /* Mobile menu shown when toggled */
+  #navbarNavDropdown.show {
+    display: block !important;
+  }
+
+  /* Mobile nav link styling */
+  .page-header-nav-mobile .nav-link {
+    color: white !important;
+    padding: 12px 15px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: block;
+    font-size: 0.95rem;
+  }
+
+  .page-header-nav-mobile .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* DESKTOP (992px and above) - NO CHANGES */
+@media (min-width: 992px) {
+  /* Hide mobile header */
+  .mobile-header-top {
+    display: none !important;
+  }
+
+  /* Hide hamburger */
+  .hamburger-menu {
+    display: none !important;
+  }
+
+  /* Show desktop navigation as normal */
+  #page-header-nav1 {
+    display: flex !important;
+  }
+
+  /* Hide mobile nav on desktop */
+  .page-header-nav-mobile {
+    display: none !important;
+  }
+}
+
 /* ===== Main Box ===== */
 .our_solution_box {
     position: relative; /* required for absolute positioning of child grids */
@@ -94,197 +192,8 @@ background-color: #6D9C72;
 .top-grid-container .editor-text {
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
-/* Target the top-level menu titles */
-#page-header-nav .navbar-nav .nav-item .nav-link p {
-    font-size: 18px;              
-    transition: all 0.3s ease;   
-    margin-bottom: 0;            
-    display: inline-block;       
-    font-weight: 700;            
-}
-
-/* Hover state: Increase by an extra 4 pixels */
-#page-header-nav .navbar-nav .nav-item:hover .nav-link p {
-    font-size: 22px;              
-    color: #6d9b73;               
-
-}
-
-
-.item-details-container-title{
- margin-top: auto;
-    margin-bottom:auto;
-}
-  
-/* 3. Style the headers to look clean when centered */
-.item-details-container-title h2 {
-    font-size: 1.1rem;
-   
-}
-
-.item-details-container-title p {
-    font-size: 0.9rem;
-    line-height: 1.4;
-    margin-bottom: 15px;
-}
-/* 1. Target the Mega Menu container */
-.ct-mega-menu {
-    /* Stop JavaScript from forcing a long height */
-    min-height: auto !important; 
-    height: auto !important;
-    
-    /* Reduce the vertical "length" (the green/white area) */
-    padding-top: 30px !important;
-    padding-bottom: 30px !important;
-    
-    
-}
-
-/* 2. Remove extra bottom margins inside the menu */
-.ct-mega-menu .container {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-}
-
-/* 3. Center all text inside the mega menu columns */
-.ct-mega-menu h2, 
-.ct-mega-menu p {
-    text-align: center;
-}
-
-/* 4. Fix vertical border height so they don't look too long */
-.border-right {
-    border-right: 1px solid #dee2e6 !important;
-}
-/* Specific targeting for the location icon to force red color */
-.ct-mega-menu i.fas.fa-map-marker-alt,
-.location i.fas.fa-map-marker-alt,
-#megaMenuToggler i.fas.fa-map-marker-alt {
-    color: #FF0000 !important;
-    display: inline-block !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-}
-.item-details-container-title h2 a {
-    color: #333333 !important;    /* Change this to your preferred dark color */
-    text-decoration: none !important; /* Removes the underline */
-  
-}
-
-/* 2. Optional: Change color when hovering over the H2 link */
-.item-details-container-title h2 a:hover {
-    color: #008111 !important;    /* Changes to brand green on hover */
-}
-/* Card Container Styling */
-.custom-award-card {
-    background: #ffffff;
-    border: 1px solid #eef0f2;
-    border-radius: 12px;
-    padding: 25px 20px;
-    text-align: center;
-    transition: all 0.3s ease;
-    height: 100%; /* Ensures all cards in the row are same height */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
- 
-.custom-award-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
-    border-color: #6d9b73; /* Changes border to your brand green on hover */
-}
-
-/* Title Styling inside Card */
-.award-title {
-    font-size: 1.2rem !important;
-    font-weight: 800 !important;
-    margin-bottom: 10px !important;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-/* Small divider line under title */
-.award-divider {
-    width: 40px;
-    height: 3px;
-    background-color: #6d9b73;
-    margin: 0 auto 15px;
-    border-radius: 2px;
-}
-
-/* Description Text inside Card */
-.award-desc {
-    font-size: 1.2rem !important;
-    color: #555 !important;
-    line-height: 1.5 !important;
-    margin-bottom: 8px !important;
-}
-
-/* Override the Mega Menu vertical height issues */
-.ct-mega-menu {
-    min-height: auto !important;
-    height: auto !important;
-    padding-bottom: 20px !important;
-}
-
-/* Remove vertical borders from columns since we use cards now */
-.col-lg-4.border-right {
-    border-right: none !important;
-}
- 
-/* Ensure Card text is visible and clickable */
-.custom-award-card.text-left {
-    text-align: left !important;
-}
-
-/* Fix the white text issue on H2 links */
-.location-link {
-    color: #333333 !important; /* Dark color for the titles */
-    text-decoration: none !important;
-    transition: color 0.3s ease;
-}
-
-.location-link:hover {
-    color: #6d9b73 !important; /* Green on hover */
-}
-
-/* THE RED LOCATION ICON FIX */
-.address-text i.fas.fa-map-marker-alt {
-    color: #FF0000 !important; /* Force RED */
-    margin-right: 10px;
-    font-size: 1rem;
-    margin-top: 4px;
-}
-
-/* Ensure consistent card height for symmetry */
-.custom-award-card {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    background: #fff;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    border: 1px solid #eee;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Hover effect */
-.custom-award-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-}
-
-/* Alignment Indent for address under title */
-.address-text {
-    display: flex !important;
-    align-items: flex-start;
-    margin-left: 0;
-    font-size: 0.85rem !important;
-    color: #555 !important;
-    margin-bottom: 0 !important;
-}
-.award-desc span {
-    font-weight: 800 !important;
-    color: #333; /* Optional: makes the year slightly darker for better contrast */
+.force-hide {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
 }
