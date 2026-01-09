@@ -49,7 +49,7 @@ import { NewsComponent } from './pages/news/news.component';
     WorkersCompensiationComponent,
     SolutionGridComponent,
     WorkersCompensiationComponent,
-    AboutusComponent
+    AboutusComponent,
     WorkersCompensiationComponent,
     NewsComponent
   ],
