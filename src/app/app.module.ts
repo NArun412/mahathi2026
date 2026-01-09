@@ -52,7 +52,7 @@ import { MainTemplateComponent } from './sharedComponents/main-template/main-tem
     WorkersCompensiationComponent,
     AboutusComponent,
     WorkersCompensiationComponent,
-    NewsComponent
+    NewsComponent,
     WorkersCompensiationComponent,
     MainTemplateComponent
   ],
