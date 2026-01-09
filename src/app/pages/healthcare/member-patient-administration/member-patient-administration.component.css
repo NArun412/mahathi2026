@@ -25,8 +25,8 @@
 
 /* Outcome Box Styling */
 .outcomes-box {
-    background-color: #ffffff;
-    border-left: 5px solid #537450;
+    background-color: #F4F4F2;
+    border-left: 5px solid #76A379;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
@@ -46,7 +46,7 @@
     content: "✓";
     position: absolute;
     left: 0;
-    color: #537450;
+    color: #76A379;
     font-weight: bold;
 }
 
@@ -55,7 +55,7 @@
     display: inline-flex;
     align-items: center;
     gap: 15px;
-    background-color: #537450;
+    background-color: #76A379;
     color: white !important;
     padding: 18px 40px;
     border-radius: 50px;

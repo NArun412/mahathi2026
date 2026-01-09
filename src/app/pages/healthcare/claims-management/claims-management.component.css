@@ -10,7 +10,7 @@
 
 /* Outcome Cards */
 .outcome-card {
-    background: #ffffff;
+    background: #F4F4F2;
     border-radius: 15px;
     border: 1px solid #edf0f2;
     transition: all 0.3s ease;
@@ -19,7 +19,7 @@
 .outcome-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    border-color: #537450;
+    border-color: #76A379;
 }
 
 .outcome-icon {
@@ -28,7 +28,7 @@
 
 /* Analytics Highlight Box */
 .analytics-highlight {
-    border-left-color: #537450 !important;
+    border-left-color: #76A379 !important;
 }
 
 /* The Call to Action Button */
@@ -36,7 +36,7 @@
     display: inline-flex;
     align-items: center;
     gap: 15px;
-    background-color: #537450;
+    background-color: #76A379;
     color: white !important;
     padding: 18px 40px;
     border-radius: 50px;

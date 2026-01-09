@@ -79,14 +79,14 @@
   border-color: #CAC300; }
 
 .bg-ctDarkBlue {
-  background-color: #6D9C72; }
+  background-color: #76A379; }
 
 .text-ctDarkBlue,
 .text-ctDarkBlue * {
-  color: #6D9C72; }
+  color: #76A379; }
 
 .border-ctDarkBlue {
-  border-color: #6D9C72; }
+  border-color: #76A379; }
 
 .bg-ctMedBlue {
   background-color: #525061; }
@@ -181,8 +181,8 @@
 #page-block-footer {
   color: #444;
   min-height: 15.625rem;
-  /* background-color: #6D9C72; */
-  background-color: #F4F4F2​;
+  /* background-color: #76A379; */
+  background-color: #F4F4F2;
   border-top:1px solid #ddd;
  }
   #page-block-footer .footer-page-links {

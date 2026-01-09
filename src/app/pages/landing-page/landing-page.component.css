@@ -14,7 +14,7 @@
   width: 60px;
   height: 60px;
   border: 6px solid #F4F4F2;
-  border-top: 6px solid #6D9C72;
+  border-top: 6px solid #76A379;
   border-radius: 50%;
   animation: spin 1s linear infinite;
   margin-bottom: 30px;
@@ -44,5 +44,5 @@ h1 {
 .coming-text {
   font-size: 22px;
   font-weight: 600;
-  color: #6D9C72;
+  color: #76A379;
 }

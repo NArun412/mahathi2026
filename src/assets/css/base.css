@@ -175,14 +175,14 @@ fieldset:disabled a.btn {
 
 .btn-success:hover {
     color: #fff;
-    background-color: #6D9C72;
+    background-color: #76A379;
     border-color: #1e7e34
 }
 
 .btn-success.focus,
 .btn-success:focus {
     color: #fff;
-    background-color: #6D9C72;
+    background-color: #76A379;
     border-color: #1e7e34;
     box-shadow: 0 0 0 .2rem rgba(72, 180, 97, .5)
 }

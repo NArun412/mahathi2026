@@ -1,0 +1,216 @@
+
+:root {
+  --primary-green: #76A379;
+  --secondary-green: #76A379;
+  --light-green: #B2C7B3;
+  --muted-rose: #B88794;
+  --soft-peach: #E9BCB6;
+  --pale-blue: #AECFDD;
+  --cool-gray: #BFBFBF;
+  --off-white: #F9FAFB;
+  --navy-dark: #111827; 
+  --body-text: #4B5563;
+  --white: #F4F4F2;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  color: var(--body-text);
+  line-height: 1.6;
+  margin: 0;
+  background-color: var(--white);
+  text-align: center;
+}
+
+/* --- Layout Containers --- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.flex-row { display: flex; gap: 24px; align-items: center; }
+.space-between { justify-content: space-between; }
+
+/* --- Typography --- */
+h1, h2, h3 {
+  color: var(--navy-dark);
+  font-weight: 800;
+  margin-top: 0;
+}
+
+.section-title { font-size: 2.5rem; margin-bottom: 1rem; }
+.section-description { max-width: 750px; margin: 0 auto 3rem; font-size: 1.1rem; }
+.highlight-text { color: var(--primary-green); }
+
+/* --- Buttons --- */
+.btn {
+  padding: 14px 28px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+}
+.btn-primary { background: var(--primary-green); color: white; }
+.btn-outline { border: 2px solid var(--primary-green); color: var(--primary-green); background: transparent; }
+.btn-white { background: white; color: var(--primary-green); }
+
+/* --- MICRO-ICON LOGIC (5px x 5px) --- */
+/* Target all requested icon classes and their child SVGs */
+.icon-large-white,
+.icon-small,
+.check-icon svg,
+.card-icon svg {
+  width: 5px !important;
+  height: 5px !important;
+  min-width: 5px !important;
+  min-height: 5px !important;
+  stroke-width: 4px; /* Thickened stroke to maintain visibility at 5px */
+}
+
+/* Container Adjustments for Micro-icons */
+.check-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.icon-box {
+  width: 15px; /* Scaled down container */
+  height: 15px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.card-icon {
+  width: 15px;
+  height: 15px;
+  background: rgba(109, 156, 114, 0.1);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+  color: var(--primary-green);
+}
+
+/* --- Hero Section --- */
+.hero-section { background: var(--off-white); text-align: left; padding: 100px 0; }
+.hero-container { display: flex; gap: 40px; }
+.hero-content { flex: 1; }
+.hero-visual { flex: 1; position: relative; }
+
+.glass-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+  max-width: 320px;
+  margin-left: auto;
+}
+
+.card-gradient-header {
+  height: 40px; /* Reduced height for tiny icon */
+  background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+/* --- Grids & Sections --- */
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+
+.billing-card, .feature-card {
+  background: white;
+  border: 1px solid rgba(0,0,0,0.05);
+  border-radius: 16px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+}
+
+.content-card.flex-row {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: left;
+}
+
+.subsection-title.border-primary {
+  border-left: 4px solid var(--primary-green);
+  padding-left: 15px;
+  text-align: left;
+}
+
+.footer-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 60px 0;
+  border-top: 1px solid #eee;
+}
+
+.stat-number { color: var(--secondary-green); font-size: 2.5rem; font-weight: 800; }
+.stat-label { font-weight: 700; color: var(--navy-dark); }
+.section-cta { background: var(--primary-green); color: white; padding: 80px 0; }
+
+@media (max-width: 992px) {
+  .grid-4, .features-grid, .footer-stats { grid-template-columns: repeat(2, 1fr); }
+  .hero-container { flex-direction: column; }
+}
+/* Remove default body spacing */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Ensure the header and hero use the full width correctly */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* Align Logo and CTA Button in the header */
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px; /* Adjust based on your logo size */
+}
+
+/* Remove vertical gap between header and hero */
+.hero-section {
+    padding: 60px 0; /* Adjust padding to control the "airiness" without gaps */
+    background-color: #F9FAFB; /* Match the subtle off-white in the images */
+    margin-top: 0; 
+}
+
+/* Flexbox layout for the Hero Section to match image_66b907.jpg */
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+    text-align: left; /* Aligns text to the left like the Innovation image */
+}
+
+.hero-visual {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}

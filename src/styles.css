@@ -7,17 +7,21 @@ body {
 }
 
 h1 {
-  font-size: 1.5rem; /* ~28px */
+  font-size: 28px; /* ~28px */
   font-weight: 700;
 }
 
 h2 {
-  font-size: 1.3rem; /* ~22px */
+  font-size: 22px; /* ~22px */
   font-weight: 600;
+}
+h3 {
+  font-size: 20px; /* ~28px */
+  font-weight: 700;
 }
 
 p {
-  font-size: 0.875rem; /* ~14px */
+  font-size: 10px; /* ~14px */
   font-weight: 400;
 }
 
