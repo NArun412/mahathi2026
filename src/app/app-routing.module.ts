@@ -43,7 +43,7 @@ const routes: Routes = [
     { path: 'healthcare/location', component: LocationComponent },
   {path :"healthcare/digital-ai-enablement", component:DigitalAiEnablementComponent},
   {path: 'workerscompensiation', component: WorkersCompensiationComponent},
-  {path: 'aienablement',component: AienablementComponent}
+  {path: 'aienablement',component: AienablementComponent},
     {path: 'aboutus', component: AboutusComponent},
   {path: 'workerscompensiation', component: WorkersCompensiationComponent},
   {path: 'workerscompensiation', component: WorkersCompensiationComponent},

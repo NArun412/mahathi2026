@@ -49,7 +49,7 @@ import { MainTemplateComponent } from './sharedComponents/main-template/main-tem
     LocationComponent,
     DigitalAiEnablementComponent,
     WorkersCompensiationComponent,
-    AienablementComponent
+    AienablementComponent,
     WorkersCompensiationComponent,
     SolutionGridComponent,
     WorkersCompensiationComponent,
