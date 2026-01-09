@@ -16,7 +16,7 @@ import { ValueBasedCareAnalyticsComponent } from './pages/healthcare/value-based
 import { DigitalAiEnablementComponent } from './pages/healthcare/digital-ai-enablement/digital-ai-enablement.component';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { LocationComponent } from './pages/location/location.component';
-
+import { NewsComponent } from './pages/news/news.component';
 import { WorkersCompensiationComponent } from './pages/workers-compensiation/workers-compensiation.component';
 import { AboutusComponent } from './pages/aboutus/aboutus.component';
 
@@ -40,7 +40,9 @@ const routes: Routes = [
     { path: 'healthcare/location', component: LocationComponent },
   {path :"healthcare/digital-ai-enablement", component:DigitalAiEnablementComponent},
     {path: 'aboutus', component: AboutusComponent},
-  {path: 'workerscompensiation', component: WorkersCompensiationComponent}
+  {path: 'workerscompensiation', component: WorkersCompensiationComponent},
+  {path: 'workerscompensiation', component: WorkersCompensiationComponent},
+  {path: 'NewsComponent', component: NewsComponent}
 ];
 
 @NgModule({

@@ -1,0 +1,182 @@
+<section class="blog-hero">
+    <div class="hero-overlay">
+        <h1>Mahathi Achivements</h1>
+        <p>MILESTONES THAT DEFINE OUR GROWTH</p>
+    </div>
+</section>
+
+<section class="blog-container">
+    <div class="blog-grid">
+
+        <div class="blog-card">
+            <div class="blog-image-slider">
+                <button class="nav prev" (click)="prev('slider1')">&#10094;</button>
+
+                <div class="slider-track"
+                    [style.transform]="'translateX(-' + sliders.slider1.currentIndex * imageWidth + 'px)'">
+                    <img *ngFor="let img of sliders.slider1.images" [src]="img" />
+                </div>
+
+                <button class="nav next" (click)="next('slider1')">&#10095;</button>
+            </div>
+
+            <div class="blog-content">
+                <h3>A Perfect Day Supporting a Powerful Mission</h3>
+                <p class="blog-subtitle">
+                    Marathi's leadership team had the privilege of attending and sponsoring the Kids'​
+                    chance of Texas Annual Golf Fundraiser Tournament — an inspiring event that brought
+                    together industry peers, clients, and community leaders,
+                    all rallying behind a shared purpose: creating more money for more kids.
+                </p>
+                <p class="blog-text">
+                    We were honored to meet Annie White, a @Kids’ Chance scholarship recipient and ambassador,
+                    whose story reminded us why this mission matters so deeply. Her strength and optimism embody
+                    the very impact Kids’ Chance strives to make — helping children of injured workers pursue
+                    their dreams through education.
+                </p>
+                <p class="blog-text">
+                    At Mahathi, we’re proud to stand alongside Kids'​ Chance of Texas and Kids'​
+                    Chance of America in their mission to open doors to education and opportunity.
+                </p>
+                <p class="read-more">
+                    <a [href]="linkedinUrl_moremoneyformorekids" target="_blank" rel="noopener noreferrer">
+                        Read more →
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <div class="blog-content">
+                <h3>A Milestone Worth Celebrating: Mahathi Ranks #13 on the Philadelphia100®</h3>
+                <p class="blog-subtitle">
+                    We’re proud to share that Mahathi has been named one of the Philadelphia100®
+                    fastest-growing companies, ranking #13 overall.
+                </p>
+                <p class="blog-text">
+                    Mahathi has been named one of the Philadelphia100® fastest-growing companies,
+                    ranking #13 overall. The Philadelphia100® Award recognizes organizations that demonstrate
+                    sustained growth, operational excellence, and long-term impact across the region.
+                </p>
+                <p class="blog-text">
+                    This achievement reflects the trust our clients place in us, the dedication and expertise
+                    of our employees, and the strength of our strategic partnerships. We appreciate the recognition
+                    from the Philadelphia100® organization and remain committed to delivering measurable value
+                    through innovation, execution, and customer-focused solutions.
+                </p>
+                <p class="read-more">
+                    <a [href]="linkedinUrl_philadelphia100" target="_blank" rel="noopener noreferrer">
+                        Read more →
+                    </a>
+                </p>
+            </div>
+            <img src="assets/images/blog 2.1.jpg">
+        </div>
+
+        <div class="blog-card">
+            <div class="blog-image-slider">
+                <button class="nav prev" (click)="prev('slider3')">&#10094;</button>
+
+                <div class="slider-track"
+                    [style.transform]="'translateX(-' + sliders.slider3.currentIndex * imageWidth + 'px)'">
+                    <img *ngFor="let img of sliders.slider3.images" [src]="img" />
+                </div>
+
+                <button class="nav next" (click)="next('slider3')">&#10095;</button>
+            </div>
+
+            <div class="blog-content">
+                <h3>Mahathi Infotech Named a 2025 Fast 50 Honoree</h3>
+                <p class="blog-subtitle">
+                    Mahathi Infotech is proud to share that we have been selected as a 2025
+                    Fast 50 Honoree by the Philadelphia Business Journal, ranking #8 overall
+                    among the fastest-growing companies in the Greater Philadelphia region.
+                </p>
+                <p class="blog-text">
+                    This recognition reflects the trust our clients place in Mahathi to lead their
+                    technology delivery and long-term roadmaps, as well as the dedication of our team,
+                    whose consistent focus on client success drives our growth.
+                </p>
+                <p class="blog-text">
+                    We extend our sincere thanks to the Philadelphia Business Journal for this honor and
+                    to everyone who has been part of our journey. We remain grateful for the opportunity to
+                    serve, grow, and create meaningful impact together.
+                </p>
+                <p class="read-more">
+                    <a [href]="linkedinUrl_fast50" target="_blank" rel="noopener noreferrer">
+                        Read more →
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <div class="blog-content">
+                <h3>Mahathi Recognized on the Inc. 5000 for the Third Consecutive Year</h3>
+                <p class="blog-subtitle">
+                    Mahathi Infotech has been recognized on the Inc. 5000 list of America’s Fastest-Growing
+                    Private Companies for the third year in a row—a milestone that underscores sustained growth
+                    and execution.
+                </p>
+                <p class="blog-text">
+                    This continued recognition reflects the trust our clients place in Mahathi to deliver and
+                    guide their technology roadmaps across the P&C Insurance, Legal, and Manufacturing & Logistics
+                    verticals. Earning this distinction three consecutive times is not a coincidence—it is the
+                    result of consistent performance, accountability, and long-term partnerships.
+                </p>
+                <p class="blog-text">
+                    We are grateful to our clients for the opportunity to grow alongside you and for the confidence
+                    you place in our teams. We also thank our employees for their dedication, discipline, and
+                    commitment to delivering excellence in every engagement.
+                </p>
+                <p>
+                    We’re proud of this achievement and focused on what comes next.
+                </p>
+                <p class="read-more">
+                    <a [href]="linkedinUrl_inc5000" target="_blank" rel="noopener noreferrer">
+                        Read more →
+                    </a>
+                </p>
+            </div>
+            <img src="assets/images/blog 4.1.png">
+        </div>
+
+        <div class="blog-card">
+            <div class="blog-image-slider">
+                <button class="nav prev" (click)="prev('slider5')">&#10094;</button>
+
+                <div class="slider-track"
+                    [style.transform]="'translateX(-' + sliders.slider5.currentIndex * imageWidth + 'px)'">
+                    <img *ngFor="let img of sliders.slider5.images" [src]="img" />
+                </div>
+
+                <button class="nav next" (click)="next('slider5')">&#10095;</button>
+            </div>
+
+            <div class="blog-content">
+                <h3>Highlights from the PA Workers’ Compensation Conference</h3>
+                <p class="blog-subtitle">
+                    We had a productive and insightful experience at this year’s PA Workers’
+                    Compensation Conference in Hershey, joining 1,000+ attendees from across
+                    the workers’ compensation ecosystem.
+                </p>
+                <p class="blog-text">
+                    The event featured strong discussions around AI adoption, return-to-work strategies,
+                    and regulatory updates, along with valuable sessions such as Navigating the 4P’s of
+                    Workers’ Compensation. Our team also enjoyed connecting with industry leaders and P&C
+                    experts driving innovation across claims, care management, and operations.
+                </p>
+                <p class="blog-text">
+                    We’re proud to be part of a community where focused expertise and agility
+                    drive real impact—and we look forward to continuing the conversations ahead.
+                </p>
+                <p class="read-more">
+                    <a [href]="linkedinUrl_workerscomp" target="_blank" rel="noopener noreferrer">
+                        Read more →
+                    </a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
