@@ -25,6 +25,7 @@ import { WorkersCompensiationComponent } from './pages/workers-compensiation/wor
 import { SolutionGridComponent } from './sharedComponents/solution-grid/solution-grid.component';
 import { AboutusComponent } from './pages/aboutus/aboutus.component';
 import { NewsComponent } from './pages/news/news.component';
+import { MainTemplateComponent } from './sharedComponents/main-template/main-template.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,9 @@ import { NewsComponent } from './pages/news/news.component';
     WorkersCompensiationComponent,
     AboutusComponent,
     WorkersCompensiationComponent,
-    NewsComponent
+    NewsComponent,
+    WorkersCompensiationComponent,
+    MainTemplateComponent
   ],
   imports: [
     BrowserModule,

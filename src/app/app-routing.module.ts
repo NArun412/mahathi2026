@@ -17,6 +17,8 @@ import { DigitalAiEnablementComponent } from './pages/healthcare/digital-ai-enab
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { LocationComponent } from './pages/location/location.component';
 import { NewsComponent } from './pages/news/news.component';
+import { MainTemplateComponent } from './sharedComponents/main-template/main-template.component';
+
 import { WorkersCompensiationComponent } from './pages/workers-compensiation/workers-compensiation.component';
 import { AboutusComponent } from './pages/aboutus/aboutus.component';
 
@@ -42,7 +44,9 @@ const routes: Routes = [
     {path: 'aboutus', component: AboutusComponent},
   {path: 'workerscompensiation', component: WorkersCompensiationComponent},
   {path: 'workerscompensiation', component: WorkersCompensiationComponent},
-  {path: 'NewsComponent', component: NewsComponent}
+  {path: 'NewsComponent', component: NewsComponent},
+  {path: 'workerscompensiation', component: WorkersCompensiationComponent},
+  {path: 'maintemp', component: MainTemplateComponent}
 ];
 
 @NgModule({
