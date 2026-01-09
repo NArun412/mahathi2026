@@ -23,6 +23,7 @@ import { LandingPageComponent } from './pages/landing-page/landing-page.componen
 import { LocationComponent } from './pages/location/location.component';
 import { WorkersCompensiationComponent } from './pages/workers-compensiation/workers-compensiation.component';
 import { SolutionGridComponent } from './sharedComponents/solution-grid/solution-grid.component';
+import { AboutusComponent } from './pages/aboutus/aboutus.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,9 @@ import { SolutionGridComponent } from './sharedComponents/solution-grid/solution
     LocationComponent,
     DigitalAiEnablementComponent,
     WorkersCompensiationComponent,
-    SolutionGridComponent
+    SolutionGridComponent,
+    WorkersCompensiationComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,
