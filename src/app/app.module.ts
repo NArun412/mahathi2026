@@ -22,6 +22,9 @@ import { DigitalAiEnablementComponent } from './pages/healthcare/digital-ai-enab
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { LocationComponent } from './pages/location/location.component';
 import { WorkersCompensiationComponent } from './pages/workers-compensiation/workers-compensiation.component';
+import { SolutionGridComponent } from './sharedComponents/solution-grid/solution-grid.component';
+import { AboutusComponent } from './pages/aboutus/aboutus.component';
+import { NewsComponent } from './pages/news/news.component';
 import { MainTemplateComponent } from './sharedComponents/main-template/main-template.component';
 
 @NgModule({
@@ -44,6 +47,12 @@ import { MainTemplateComponent } from './sharedComponents/main-template/main-tem
     LandingPageComponent,
     LocationComponent,
     DigitalAiEnablementComponent,
+    WorkersCompensiationComponent,
+    SolutionGridComponent,
+    WorkersCompensiationComponent,
+    AboutusComponent,
+    WorkersCompensiationComponent,
+    NewsComponent
     WorkersCompensiationComponent,
     MainTemplateComponent
   ],
