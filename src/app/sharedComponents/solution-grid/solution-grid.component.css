@@ -1,0 +1,179 @@
+/* Container for the whole grid section */
+.solution-grid-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.solution-grid-tab {
+    background: #e0e0e0;
+    color: #333;
+    padding: 0.7rem 1.2rem;
+    border-radius: 6px 6px 0 0;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border: none;
+    outline: none;
+    transition: background 0.2s, color 0.2s;
+}
+
+.solution-grid-tab.active {
+    background: #6d9c72;
+    color: #fff;
+}
+
+.solution-grid-heading {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    margin-bottom: 1.5rem;
+}
+
+.solution-grid-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.solution-grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 10px;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.solution-grid-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 140px;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    color: #222;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: box-shadow 0.2s, transform 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.solution-grid-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+    transform: translateY(-2px) scale(1.02);
+}
+
+.solution-grid-card-label {
+    z-index: 2;
+    background: transparent;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: #222;
+}
+
+.solution-grid-image-cell {
+    min-height: 140px;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e0e0e0;
+}
+
+.solution-grid-card-cell {
+    min-height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1200px) {
+    .solution-grid-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .solution-grid-cards {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 12px;
+    }
+
+    .solution-grid-tab {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .solution-grid-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .solution-grid-tabs {
+        gap: 4px;
+    }
+
+    .solution-grid-heading {
+        font-size: 1.1rem;
+    }
+
+    .solution-grid-cards {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 8px;
+    }
+
+    .solution-grid-card {
+        min-height: 80px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .solution-grid-cards {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+}
+
+::ng-deep .dashboard-grid-layout .solution-grid-cards {
+    display: grid !important;
+    grid-template-columns: repeat(6, 1fr) !important;
+    gap: 5px !important;
+    max-width: 100% !important;
+}
+
+@media (max-width: 1200px) {
+    ::ng-deep .dashboard-grid-layout .solution-grid-cards {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+@media (max-width: 800px) {
+    ::ng-deep .dashboard-grid-layout .solution-grid-cards {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 10px !important;
+    }
+}
+
+@media (max-width: 500px) {
+    ::ng-deep .dashboard-grid-layout .solution-grid-cards {
+        grid-template-columns: 1fr !important;
+        gap: 6px !important;
+    }
+}

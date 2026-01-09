@@ -1,0 +1,29 @@
+<!-- Top horizontal options (tabs) -->
+<div class="solution-grid-tabs">
+    <div *ngFor="let opt of options; let i = index" class="solution-grid-tab" [class.active]="opt.active"
+        (click)="selectOption(i)" tabindex="0" (keydown.enter)="selectOption(i)" role="button">
+        {{ opt.label }}
+    </div>
+</div>
+
+<!-- Heading below the options -->
+<div class="solution-grid-heading" *ngIf="heading">
+    {{ heading }}
+</div>
+
+<!-- Responsive grid of cards with images -->
+<div class="solution-grid-main">
+    <div class="solution-grid-cards">
+        <ng-container *ngFor="let item of gridItems">
+            <!-- Render image cell -->
+            <div *ngIf="item.type === 'image'" class="solution-grid-card solution-grid-image-cell"
+                [ngStyle]="{'background-image': 'url(' + item.image + ')'}">
+            </div>
+            <!-- Render card cell -->
+            <a *ngIf="item.type === 'card'" class="solution-grid-card solution-grid-card-cell" [href]="item.link || '#'"
+                [ngStyle]="{'background-color': item.color || '#e0e0e0'}">
+                <span class="solution-grid-card-label">{{ item.label }}</span>
+            </a>
+        </ng-container>
+    </div>
+</div>
