@@ -23,7 +23,7 @@
 }
 
 .solution-grid-tab.active {
-    background: #6d9c72;
+    background: #CDB5C7;
     color: #fff;
 }
 
@@ -90,6 +90,7 @@
     background-position: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     border: 1px solid #e0e0e0;
+    filter: blur(2px);
 }
 
 .solution-grid-card-cell {
@@ -176,4 +177,9 @@
         grid-template-columns: 1fr !important;
         gap: 6px !important;
     }
+}
+
+.solution-grid-tab:hover {
+    background-color: #CDB5C7 !important;
+    color: #000 !important; /* Optional: adjust text color for contrast */
 }

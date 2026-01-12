@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 
 
@@ -9,11 +9,21 @@ import { AppRoutingModule } from './app-routing.module';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(public router: Router) {
-
+  headerClass: string = 'home';
+  constructor(private router: Router) {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        if (event.url === '/' || event.url === '/home') {
+          this.headerClass = 'home';
+        } else {
+          this.headerClass = 'inner';
+        }
+      }
+    });
   }
 
+
   title = 'Mahathi Infotech';
-  
-  
+
+
 }

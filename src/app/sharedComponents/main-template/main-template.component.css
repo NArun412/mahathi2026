@@ -249,4 +249,20 @@
   text-align: justify;
 }
 
+.underline_cls1 {
+  display: inline-block;
+  background-image: url('../../../assets/images/Underline_img.png');
+  background-repeat: repeat-x;
+  background-position: 0 1.1em;
+  background-size: auto 6px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid transparent;
+}
 
+.solution-card h5 {
+  color: #76A379;        /* brand green */
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  letter-spacing: -0.25px;
+}

@@ -97,20 +97,28 @@
 }
 
 .arrow-button {
-  font-size: 1.5rem;
-  padding: 0.5rem 1rem;
-  background-color: #537450;
-  /* brand green */
-  color: white;
+  background: transparent;   /* no solid background */
   border: none;
-  border-radius: 4px;
   cursor: pointer;
   margin: 0 12px;
+  padding: 0;                /* remove extra padding */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.arrow-button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
+.arrow-button svg {
+  width: 38px;
+  height: 38px;
+  transition: transform 0.2s ease;
+}
+
+.arrow-button:hover svg {
+  transform: scale(1.1);
+}
+
+.arrow-button:disabled svg path {
+  fill: #ccc; /* grey out when disabled */
 }
 
 .solution-grid-container {
@@ -287,23 +295,6 @@
   gap: 12px;
 }
 
-.arrow-button {
-  font-size: 1.5rem;
-  padding: 0.5rem 1rem;
-  background-color: #537450;
-  /* brand green */
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin: 0 12px;
-}
-
-.arrow-button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-}
-
 .solution-grid-container {
   width: 100%;
   max-width: 1440px;
@@ -327,5 +318,53 @@
 }
 
 .dashboard-grid-layout {
-  background-color: #B2C7B3;
+  background-color: #76A379;
+}
+
+.arrow-icon-wrapper {
+  background-color: #76A379; /* brand green */
+  border-radius: 50%;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0 12px;
+  padding: 0;
+}
+
+.arrow-icon-wrapper {
+  background-color: #76A379; /* default pink background */
+  border-radius: 50%;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow-button svg path {
+  fill: #CDB5C7; /* arrow stays pink */
+}
+
+.arrow-button:hover .arrow-icon-wrapper {
+  background-color: #fff; /* hover background white */
+}
+
+.arrow-button:hover svg path {
+  fill: #CDB5C7; /* keep arrow pink */
+}
+
+.underline_cls1 {
+  display: inline-block;
+  background-image: url('../../assets/images/Underline_img.png');
+  background-repeat: repeat-x;
+  background-position: 0 1.1em;
+  background-size: auto 6px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid transparent;
 }

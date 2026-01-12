@@ -214,3 +214,8 @@ body, html {
     display: flex;
     justify-content: flex-end;
 }
+
+:host {
+  display: block;
+  padding-top: 40px; /* Adjust as needed */
+}
