@@ -1,4 +1,5 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener, Input, OnInit } from '@angular/core';
+import { NavigationEnd, Route, Router } from '@angular/router';
 declare var $: any;
 @Component({
   selector: 'app-header',
@@ -6,12 +7,14 @@ declare var $: any;
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  @Input() headerClass: string = 'home';
   private mobileMenuOpen = false;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     this.initializeMenu();
+    this.router.events.subscribe(event => { if (event instanceof NavigationEnd) { const url = event.urlAfterRedirects || event.url; this.headerClass = url === '/' ? 'home' : 'inner'; } });
   }
 
   ngAfterViewInit(): void {

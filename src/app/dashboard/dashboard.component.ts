@@ -40,7 +40,7 @@ export class DashboardComponent implements AfterViewInit, OnDestroy {
   dashboardGridMap: Record<number, DashboardGridItem[]> = {
     0: [
       { type: 'image', image: 'assets/images/workers_comp_1.jpg' },
-      { type: 'card', label: 'Small Business, Mid-market & Large Commercial Enablement', link: '#', color: '#f5f5f5' },
+      { type: 'card', label: 'Carrier Enablement at Scale', link: '#', color: '#f5f5f5' },
       { type: 'image', image: 'assets/images/workers_comp_2.jpg' },
       { type: 'card', label: 'Policy Administration', link: '#', color: '#e8f0fe' },
       { type: 'image', image: 'assets/images/workers_comp_3.jpg' },
@@ -60,7 +60,7 @@ export class DashboardComponent implements AfterViewInit, OnDestroy {
     ],
     1: [
       { type: 'image', image: 'assets/images/workers_comp_1.jpg' },
-      { type: 'card', label: 'Small Business, Mid-market & Large Commercial Enablement', link: '#', color: '#f5f5f5' },
+      { type: 'card', label: 'Carrier Enablement at Scale', link: '#', color: '#f5f5f5' },
       { type: 'image', image: 'assets/images/workers_comp_2.jpg' },
       { type: 'card', label: 'Policy Administration', link: '#', color: '#e8f0fe' },
       { type: 'image', image: 'assets/images/workers_comp_3.jpg' },
@@ -80,7 +80,7 @@ export class DashboardComponent implements AfterViewInit, OnDestroy {
     ],
     2: [
       { type: 'image', image: 'assets/images/workers_comp_1.jpg' },
-      { type: 'card', label: 'Small Business, Mid-market & Large Commercial Enablement', link: '#', color: '#f5f5f5' },
+      { type: 'card', label: 'Carrier Enablement at Scale', link: '#', color: '#f5f5f5' },
       { type: 'image', image: 'assets/images/workers_comp_2.jpg' },
       { type: 'card', label: 'Policy Administration', link: '#', color: '#e8f0fe' },
       { type: 'image', image: 'assets/images/workers_comp_3.jpg' },
@@ -100,7 +100,7 @@ export class DashboardComponent implements AfterViewInit, OnDestroy {
     ],
     3: [
       { type: 'image', image: 'assets/images/workers_comp_1.jpg' },
-      { type: 'card', label: 'Small Business, Mid-market & Large Commercial Enablement', link: '#', color: '#f5f5f5' },
+      { type: 'card', label: 'Carrier Enablement at Scale', link: '#', color: '#f5f5f5' },
       { type: 'image', image: 'assets/images/workers_comp_2.jpg' },
       { type: 'card', label: 'Policy Administration', link: '#', color: '#e8f0fe' },
       { type: 'image', image: 'assets/images/workers_comp_3.jpg' },
@@ -120,7 +120,7 @@ export class DashboardComponent implements AfterViewInit, OnDestroy {
     ],
     4: [
       { type: 'image', image: 'assets/images/workers_comp_1.jpg' },
-      { type: 'card', label: 'Small Business, Mid-market & Large Commercial Enablement', link: '#', color: '#f5f5f5' },
+      { type: 'card', label: 'Carrier Enablement at Scale', link: '#', color: '#f5f5f5' },
       { type: 'image', image: 'assets/images/workers_comp_2.jpg' },
       { type: 'card', label: 'Policy Administration', link: '#', color: '#e8f0fe' },
       { type: 'image', image: 'assets/images/workers_comp_3.jpg' },
@@ -140,7 +140,7 @@ export class DashboardComponent implements AfterViewInit, OnDestroy {
     ],
     5: [
       { type: 'image', image: 'assets/images/workers_comp_1.jpg' },
-      { type: 'card', label: 'Small Business, Mid-market & Large Commercial Enablement', link: '#', color: '#f5f5f5' },
+      { type: 'card', label: 'Carrier Enablement at Scale', link: '#', color: '#f5f5f5' },
       { type: 'image', image: 'assets/images/workers_comp_2.jpg' },
       { type: 'card', label: 'Policy Administration', link: '#', color: '#e8f0fe' },
       { type: 'image', image: 'assets/images/workers_comp_3.jpg' },

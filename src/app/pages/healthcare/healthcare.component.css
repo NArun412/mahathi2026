@@ -20,7 +20,7 @@
     z-index: 2;
     position: relative;
 }
- 
+
 .accent-box {
     position: absolute;
     width: 100px;
@@ -179,7 +179,51 @@
 }
 
 .dg-home-intro {
-    background-color: #B2C7B3;
+    background-color: #76A379;
+}
+
+
+.arrow-icon-wrapper {
+    background-color: #76A379;
+    /* brand green */
+    border-radius: 50%;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0 12px;
+    padding: 0;
+}
+
+.arrow-icon-wrapper {
+    background-color: #76A379;
+    /* default pink background */
+    border-radius: 50%;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-button svg path {
+    fill: #CDB5C7;
+    /* arrow stays pink */
+}
+
+.arrow-button:hover .arrow-icon-wrapper {
+    background-color: #fff;
+    /* hover background white */
+}
+
+.arrow-button:hover svg path {
+    fill: #CDB5C7;
+    /* keep arrow pink */
 }
 
 #healthcare-capabilities-header .col-lg-8 {

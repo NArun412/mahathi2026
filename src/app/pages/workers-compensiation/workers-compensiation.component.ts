@@ -14,18 +14,19 @@ workersCompensiationData: MainTemplateData = {
       "Our workers' compensation solutions offer end-to-end capabilities for today’s complex regulatory environment. Partnering with carriers, TPAs, MGAs, and self-insureds, we streamline operations, ensure compliance, and enhance outcomes across the policy and claims lifecycle. Built on industry expertise and modern technology, our integrated platform reduces operational friction while providing the flexibility to scale and adapt to evolving market needs.",
 
     heroImage: 'assets/images/enhanced_customer_experience.png',
-    solutionsHeading: "Workers' Compensation Excellence",
+    solutionsHeading: "Streamline operations, Ensure compliance, and Enhance outcomes",
     rightHeroImage:'assets/images/happy_people3.png',
     features: [
+      { label: 'Property & Casualty Solutions', icon: 'bi bi-tv' },
       { label: 'Policy Administration', icon: 'bi bi-tv' },
       { label: 'Billing Solutions', icon: 'bi bi-bank' },
-      { label: 'Claims Management', icon: 'bi bi-building' },
-      { label: 'Medical Management', icon: 'bi bi-heart-pulse' },
-      { label: 'Litigation Services', icon: 'bi bi-shield-check' },
-      { label: 'Investigative Services', icon: 'bi bi-bag' },
-      { label: 'Pharmacy Management', icon: 'bi bi-broadcast' },
-      { label: 'Medical Management', icon: 'bi bi-signpost-split' },
-      { label: 'Property Solutions', icon: 'bi bi-lightning' }
+      { label: 'Claims & Medical Management', icon: 'bi bi-building' },
+      { label: 'Medical & Pharmacy Management', icon: 'bi bi-heart-pulse' },
+      { label: 'Litigation & Investigative Services', icon: 'bi bi-shield-check' },
+      { label: 'Regulatory Compliance & Technology', icon: 'bi bi-bag' },
+      { label: 'Claims Regulatory Reporting', icon: 'bi bi-broadcast' },
+      { label: 'Policy Regulatory Services', icon: 'bi bi-signpost-split' },
+      { label: 'Regulatory Filing & Audit Support', icon: 'bi bi-lightning' }
     ],
 
 
@@ -42,6 +43,13 @@ workersCompensiationData: MainTemplateData = {
     ],
 
    solutions : [
+    {
+      title: 'Property & Casualty Solutions',
+      description:
+        'Our Property & Casualty platform delivers comprehensive support across admitted package lines, excess & surplus, and specialty products for commercial lines business. With flexible rating engines, seamless policy administration integration, and advanced claims management, we address today’s complex risk landscape with scale and efficiency. Our E&S capabilities include a flexible rating accelerator and agency management system with automated taxes, surcharges, and surplus lines compliance across all states. Vertical-specific specialty solutions support industries such as healthcare, hospitality, technology, construction, cyber, and professional liability. A multi-state licensed service center, enhanced by digitized mailroom operations, supports both admitted and E&S lines across all 50 states and Washington, DC.',
+      cta: 'Discover our channel capabilities',
+      image: '../../../assets/images/C_Property_Cas.png'
+    },
     {
       title: 'Policy Administration',
       description:
@@ -104,13 +112,6 @@ workersCompensiationData: MainTemplateData = {
         'Our regulatory filing and audit support services streamline rate, rule, and form filings across all jurisdictions through coordinated submission strategies and dependency mapping that reduce regulatory delays. We work closely with SERFF, state-specific portals, advisory organizations, and filing vendors to manage submissions, track filings, handle agency correspondence, and monitor approvals end to end. During market conduct examinations and regulatory audits, our team provides expert support including data extraction, report generation, and documentation preparation. We deliver accurate, comprehensive responses to regulatory inquiries, helping you navigate examinations efficiently while minimizing operational disruption and ensuring compliance with documentation standards.',
       cta: 'Discover our channel capabilities',
       image: '../../../assets/images/C_Audit.png'
-    },
-     {
-      title: 'Property & Casualty Solutions',
-      description:
-        'Our Property & Casualty platform delivers comprehensive support across admitted package lines, excess & surplus, and specialty products for commercial lines business. With flexible rating engines, seamless policy administration integration, and advanced claims management, we address today’s complex risk landscape with scale and efficiency. Our E&S capabilities include a flexible rating accelerator and agency management system with automated taxes, surcharges, and surplus lines compliance across all states. Vertical-specific specialty solutions support industries such as healthcare, hospitality, technology, construction, cyber, and professional liability. A multi-state licensed service center, enhanced by digitized mailroom operations, supports both admitted and E&S lines across all 50 states and Washington, DC.',
-      cta: 'Discover our channel capabilities',
-      image: '../../../assets/images/C_Property_Cas.png'
     },
   ]
   };

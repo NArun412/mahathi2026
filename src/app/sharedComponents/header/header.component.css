@@ -45,7 +45,7 @@
 
 /* Solution description content */
 .our_solution_box p {
-    font-size: 12px !important;
+    font-size: 11px !important;
     line-height: 1.6;
 }
 
@@ -443,4 +443,22 @@ background-color: #76A379;
     font-weight: bold !important;
     font-size: 0.9rem;
     color: #333; /* Optional: makes the year slightly darker for better contrast */
+}
+
+
+/* Inner pages: apply scroll styles immediately */
+#page-block-header.inner .page-header-nav {
+  background-color: #fff !important;
+}
+
+#page-block-header.inner .header-logo.scrolled-logo {
+  display: block !important;
+}
+
+#page-block-header.inner .header-logo.normal-logo {
+  display: none !important;
+}
+
+#page-block-header.inner .navbar-nav > li > a.nav-link p {
+  color: #333 !important;
 }
