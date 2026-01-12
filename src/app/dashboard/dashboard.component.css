@@ -168,14 +168,14 @@
 /* Hover state for menu items only */
 .menu-item-hover:hover {
   background-color: rgba(118, 163, 121, 0.15);
-  color: #76A379;
+  color: #CDB5C7;
   font-weight: 500;
   transform: scale(1.05);
 }
 
 /* SVG hover effect */
 .menu-item-hover:hover svg path {
-  fill: #4a6d4f;
+  fill: #CDB5C7;
   filter: brightness(0.9);
 }
 
@@ -367,4 +367,19 @@
   background-size: auto 6px;
   padding-bottom: 6px;
   border-bottom: 2px solid transparent;
+}
+ 
+
+/* If you want the color to stay the same on hover, or change slightly */
+.menu-item-hover:hover {
+    color: #fff; /* Or keep your existing hover logic */
+     background-color: #cdb5c748!important;
+    opacity: 0.8;
+}
+.slick-slider__category-menu-container__category-menu-item__text-item:hover {
+  cursor: pointer;
+  color:  #ffffff!important;
+  border-top: 4px solid  #ffcbf2!important;
+  transition: 0.1s;
+
 }

@@ -462,3 +462,38 @@ background-color: #76A379;
 #page-block-header.inner .navbar-nav > li > a.nav-link p {
   color: #333 !important;
 }
+
+
+/* Ensure the first nav container is "higher" than the second one */
+.page-header-head {
+    position: relative; 
+    z-index: 1050; /* Higher than the main nav */
+}
+
+/* Ensure the main nav bar (the one with the logo) is at a lower layer */
+#page-header-nav {
+    position: relative;
+    z-index: 1000; /* Lower than 1050 */
+}
+
+/* Ensure the dropdown itself is remove from flow and forced to the front */
+#locationMenu.dropdown-menu {
+    position: absolute !important;
+    top: 100%; /* Sits exactly under the "Locations" text */
+    left: 0;
+    width: 100vw; /* Spans full screen width */
+    z-index: 9999 !important; /* Extremely high to cover everything */
+    background-color: #fff; /* Ensure it's not transparent */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    display: none;
+}
+
+/* When Bootstrap 'show' class is added via click */
+#locationMenu.show {
+    display: block !important;
+}
+
+/* Ensure the parent LI doesn't restrict the width of the menu */
+.location.nav-item.dropdown {
+    position: static !important;
+}
