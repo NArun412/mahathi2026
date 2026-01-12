@@ -1,0 +1,368 @@
+/* Custom boostrap scss overrides can go here! */
+.opacity-0 {
+  opacity: 0; }
+
+.opacity-1 {
+  opacity: 1; }
+
+.no-gutters-row {
+  margin-right: 0;
+  margin-left: 0; }
+
+.align-center {
+  display: block;
+  margin: 0 auto; }
+
+.h-200vh {
+  height: 200vh; }
+
+.bg-ctBlue {
+  background-color: #00a2ea; }
+
+.text-ctBlue,
+.text-ctBlue * {
+  color: #00a2ea; }
+
+.border-ctBlue {
+  border-color: #00a2ea; }
+
+.bg-ctDarkPurple {
+  background-color: #9D00FF; }
+
+.text-ctDarkPurple,
+.text-ctDarkPurple * {
+  color: #9D00FF; }
+
+.border-ctDarkPurple {
+  border-color: #9D00FF; }
+
+.bg-ctLightPurple {
+  background-color: #7E69FF; }
+
+.text-ctLightPurple,
+.text-ctLightPurple * {
+  color: #7E69FF; }
+
+.border-ctLightPurple {
+  border-color: #7E69FF; }
+
+.bg-ctOrange {
+  background-color: #ff5e01; }
+
+.text-ctOrange,
+.text-ctOrange * {
+  color: #ff5e01; }
+
+.border-ctOrange {
+  border-color: #ff5e01; }
+
+.bg-ctGreen {
+  background-color: #00d190; }
+
+.text-ctGreen,
+.text-ctGreen * {
+  color: #00d190; }
+
+.border-ctGreen {
+  border-color: #00d190; }
+
+.bg-ctLuminousGreen {
+  background-color: #CAC300; }
+
+.text-ctLuminousGreen,
+.text-ctLuminousGreen * {
+  color: #CAC300; }
+
+.border-ctLuminousGreen {
+  border-color: #CAC300; }
+
+.bg-ctDarkBlue {
+  background-color: #302D42; }
+
+.text-ctDarkBlue,
+.text-ctDarkBlue * {
+  color: #302D42; }
+
+.border-ctDarkBlue {
+  border-color: #302D42; }
+
+.bg-ctMedBlue {
+  background-color: #525061; }
+
+.text-ctMedBlue,
+.text-ctMedBlue * {
+  color: #525061; }
+
+.border-ctMedBlue {
+  border-color: #525061; }
+
+.bg-ctLightBlue {
+  background-color: #a3a2aa; }
+
+.text-ctLightBlue,
+.text-ctLightBlue * {
+  color: #a3a2aa; }
+
+.border-ctLightBlue {
+  border-color: #a3a2aa; }
+
+.bg-ctLightGrey {
+  background-color: #595959; }
+
+.text-ctLightGrey,
+.text-ctLightGrey * {
+  color: #595959; }
+
+.border-ctLightGrey {
+  border-color: #595959; }
+
+.bg-ctGrey {
+  background-color: #495057; }
+
+.text-ctGrey,
+.text-ctGrey * {
+  color: #495057; }
+
+.border-ctGrey {
+  border-color: #495057; }
+
+.bg-ctVeryLightGrey {
+  background-color: #ebecec; }
+
+.text-ctVeryLightGrey,
+.text-ctVeryLightGrey * {
+  color: #ebecec; }
+
+.border-ctVeryLightGrey {
+  border-color: #ebecec; }
+
+.bg-ctLightGreen {
+  background-color: #809086; }
+
+.text-ctLightGreen,
+.text-ctLightGreen * {
+  color: #809086; }
+
+.border-ctLightGreen {
+  border-color: #809086; }
+
+.bg-cegaRed {
+  background-color: #C00000; }
+
+.text-cegaRed,
+.text-cegaRed * {
+  color: #C00000; }
+
+.border-cegaRed {
+  border-color: #C00000; }
+
+.bg-ctOffWhite {
+  background-color: #D9D9D9; }
+
+.text-ctOffWhite,
+.text-ctOffWhite * {
+  color: #D9D9D9; }
+
+.border-ctOffWhite {
+  border-color: #D9D9D9; }
+
+.bg-white {
+  background-color: #fff; }
+
+.text-white,
+.text-white * {
+  color: #fff; }
+
+.border-white {
+  border-color: #fff; }
+
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .slick-list:focus {
+    outline: none; }
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  .slick-track:before, .slick-track:after {
+    content: "";
+    display: table; }
+  .slick-track:after {
+    clear: both; }
+  .slick-loading .slick-track {
+    visibility: hidden; }
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none; }
+  [dir="rtl"] .slick-slide {
+    float: right; }
+  .slick-slide img {
+    display: block; }
+  .slick-slide.slick-loading img {
+    display: none; }
+  .slick-slide.dragging img {
+    pointer-events: none; }
+  .slick-initialized .slick-slide {
+    display: block; }
+  .slick-loading .slick-slide {
+    visibility: hidden; }
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
+
+.font-color-light, #page-block-leadership .leadership .leadership-person-content.font-light p, #page-block-leadership .leadership .leadership-person-content.font-light .description a, #page-block-leadership .leadership .leadership-person-content.font-light .description a:hover {
+  color: #fff; }
+
+.font-color-dark, #page-block-leadership .leadership .leadership-person-content.font-dark p, #page-block-leadership .leadership .leadership-person-content.font-dark .description a, #page-block-leadership .leadership .leadership-person-content.font-dark .description a:hover {
+  color: #302D42; }
+
+#page-block-leadership .leadership .leadership-person {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  overflow: hidden;
+  position: relative;
+  padding-left: 7px;
+  padding-right: 7px; }
+  #page-block-leadership .leadership .leadership-person-outer {
+    height: 25rem; }
+  #page-block-leadership .leadership .leadership-person.spacing {
+    padding-top: 7px;
+    padding-bottom: 7px; }
+  #page-block-leadership .leadership .leadership-person .spacing-person-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top; }
+  #page-block-leadership .leadership .leadership-person-image img {
+    width: 100%; }
+  #page-block-leadership .leadership .leadership-person-content {
+    height: 96px;
+    transition: 0.5s all linear;
+    padding: 0.625rem 2rem 0.625rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    transition: 0.4s all linear;
+    overflow: hidden; }
+    @media (min-width: 816px) {
+      #page-block-leadership .leadership .leadership-person-content {
+        padding: 0.625rem 2rem 0;
+        height: 76px; } }
+    #page-block-leadership .leadership .leadership-person-content-expand {
+      content: url(../images/ct-button-arrow-down.svg);
+      width: 25px;
+      margin: 0 auto 10px;
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
+      transition: -webkit-transform 0.4s ease-in-out;
+      transition: transform 0.4s ease-in-out;
+      transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out; }
+      @media (min-width: 816px) {
+        #page-block-leadership .leadership .leadership-person-content-expand {
+          display: none; } }
+    #page-block-leadership .leadership .leadership-person-content-inner {
+      position: relative;
+      overflow: hidden; }
+      #page-block-leadership .leadership .leadership-person-content-inner .description {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-right: 0.5rem;
+        transition-delay: 0.4s;
+        transition-property: all;
+        transition-duration: 0.4s;
+        transition-timing-function: linear; }
+        @media (min-width: 816px) {
+          #page-block-leadership .leadership .leadership-person-content-inner .description {
+            position: absolute;
+            right: 0;
+            left: 0; } }
+    #page-block-leadership .leadership .leadership-person-content .name h3 {
+      margin-bottom: 0; }
+    #page-block-leadership .leadership .leadership-person-content .job-title p {
+      margin-bottom: 0; }
+    #page-block-leadership .leadership .leadership-person-content .description {
+      margin-top: 2rem;
+      line-height: 1.5; }
+      @media (max-width: 815.98px) {
+        #page-block-leadership .leadership .leadership-person-content .description {
+          padding-left: 2.5rem;
+          padding-right: 2.5rem; } }
+      #page-block-leadership .leadership .leadership-person-content .description p {
+        line-height: 1.5; }
+        #page-block-leadership .leadership .leadership-person-content .description p:last-of-type {
+          margin-bottom: 0; }
+      #page-block-leadership .leadership .leadership-person-content .description a {
+        font-weight: 700; }
+    #page-block-leadership .leadership .leadership-person-content.font-dark .leadership-person-content-expand {
+      -webkit-filter: brightness(0) saturate(100%) invert(15%) sepia(28%) saturate(717%) hue-rotate(209deg) brightness(90%) contrast(88%);
+              filter: brightness(0) saturate(100%) invert(15%) sepia(28%) saturate(717%) hue-rotate(209deg) brightness(90%) contrast(88%); }
+  #page-block-leadership .leadership .leadership-person.expanded .leadership-person-content {
+    padding-top: 2rem;
+    height: 100% !important; }
+    #page-block-leadership .leadership .leadership-person.expanded .leadership-person-content .job-title p {
+      margin-bottom: 0.75rem; }
+  @media (min-width: 816px) {
+    #page-block-leadership .leadership .leadership-person:hover .leadership-person-content, #page-block-leadership .leadership .leadership-person:active .leadership-person-content {
+      padding-top: 2rem;
+      height: 100% !important; }
+      #page-block-leadership .leadership .leadership-person:hover .leadership-person-content .job-title p, #page-block-leadership .leadership .leadership-person:active .leadership-person-content .job-title p {
+        margin-bottom: 0.75rem; } }
+  #page-block-leadership .leadership .leadership-person.expanded .leadership-person-content-expand {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }

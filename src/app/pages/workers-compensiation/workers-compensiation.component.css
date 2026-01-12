@@ -214,3 +214,7 @@ body, html {
     display: flex;
     justify-content: flex-end;
 }
+
+.align-items-stretch {
+  background-color: #ffffff !important;
+}
