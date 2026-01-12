@@ -26,21 +26,22 @@
                             <div class="d-md-none d-md-block h-100 w-100 ">
                                 <ul class="navbar-nav mr-auto w-100 h-100 d-flex align-items-stretch flex-column flex-md-row header-links"
                                     style="justify-content:end;">
-                                    <li class="location nav-item dropdown ct-mega-dropdown mob-none" id="megaMenuToggler">
-                                        <a class="nav-link location" href="#" data-title="Claims Solutions"
-                                            data-description="Loss adjusting, end-to-end claims programme management and related technical services that combine technical expertise and technology solutions."
-                                            data-image="assets/images/claims_solutions.jpg">
-                                            <p style="font-weight: 200;" >Locations</p>
+                                    
+                                    <li class="location nav-item   ct-mega-dropdown mob-none" id="megaMenuToggler"  data-toggle="collapse"
+                                                        data-target="#locationMenu" 
+                                                        >
+                                        <a class="nav-link location" href="#">
+                                            <p style="font-weight: 200; color: white !important;" >Locations</p>
                                         </a>
 
-                                        <div class="dropdown-menu ct-mega-menu px-0 py-4 py-lg-5">
+                                        <div class="dropdown-menu ct-mega-menu px-0 py-4 py-lg-5" id ="locationMenu">
                                             <div class="container align-items-stretch">
                                                 <div class="row">
                                                     <div class="col-lg-4 border-right">
                                                         <div class="item-details-container-title text-left">
                                                              
                                                             <div class="custom-award-card">
-                                                                <a href="LINK_HERE">
+                                                                <a href="#">
                                                             <h2>
                                                                  USA - HQ
                                                             </h2>
@@ -53,7 +54,7 @@
                                                              
                                                              <br>
                                                              <div class="custom-award-card ">
-                                                                <a href="LINK_HERE">
+                                                                <a href="#">
                                                             <h2>
                                                             USA – Technology Delivery Hub
                                                                
@@ -67,7 +68,7 @@
                                                     <div class="col-lg-4 border-right">
                                                         <div class="item-details-container-title text-left">
                                                             <div class="custom-award-card">
-                                                                <a href="LINK_HERE">
+                                                                <a href="#">
                                                             <h2>
                                                                 India – GDC One
                                                             </h2>
@@ -79,7 +80,7 @@
                                                             </div>
                                                             <br>
                                                             <div class="custom-award-card">
-                                                                <a href="LINK_HERE">
+                                                                <a href="#">
                                                             <h2>
                                                             India – GDC Managed Services Hub
                                                             </h2>
@@ -95,7 +96,7 @@
                                                     <div class="col-lg-4 border-right">
                                                         <div class="item-details-container-title text-left">
                                                             <div class="custom-award-card">
-                                                            <a href="LINK_HERE">
+                                                            <a href="#">
                                                             <h2>
                                                             UAE– Dubai Innovation Hub
                                                                
@@ -109,7 +110,7 @@
                                                             </div>
                                                             <br>
                                                             <div class="custom-award-card">
-                                                            <a href="LINK_HERE">
+                                                            <a href="#">
                                                             <h2>
                                                             Philippines – Automation Hub
                                                                
@@ -129,17 +130,17 @@
  
                                             </div>
                                         </div>
-
                                        
                                     </li>
 
 
-                                    <li class="location nav-item dropdown ct-mega-dropdown mob-none" id="megaMenuToggler">
-                                        <a class="nav-link" href="#"><p style="font-weight: 200;">Awards</p></a>
-
-                                        <div class="dropdown-menu ct-mega-menu px-0">
+                                    <li class="location nav-item  ct-mega-dropdown mob-none" id="megaMenuToggler" data-toggle="collapse"
+                                                        data-target="#awardsmenu" >
+                                        <a class="nav-link" href="#">
+                                            <p style="font-weight: 200;color: white !important;">Awards</p></a>
+                                        <div class="dropdown-menu ct-mega-menu px-0" id="awardsmenu">
                                             <div class="container py-4">
-                                                <div class="row justify-content-center">
+                                                <div class="row justify-content-center" style="margin-bottom: 30px;">
                                                     
                                                     <div class="col-lg-4 mb-3">
                                                         <div class="custom-award-card">
@@ -181,16 +182,15 @@
                                         </div>
                                     </li>
 
-                                    <li class="location nav-item dropdown ct-mega-dropdown mob-none" id="megaMenuToggler">
-                                        <a class="nav-link" href="#" data-title="InsureTech"
-                                            data-description="We specialise in providing software systems and services to large and complex insurers and brokers, tailored to enhance their GWP, CoR, and compliance."
-                                            data-image="https://charles-taylor-group.s3.amazonaws.com/production/filer_public/f0/b4/f0b4c572-89a5-4bbd-b227-1ec049e8e6ba/1.png">
-                                            <p style="font-weight: 200;">Certifications</p>
+                                    <li class="location nav-item  ct-mega-dropdown mob-none" id="megaMenuToggler" data-toggle="collapse"
+                                                        data-target="#certificationsmenu" >
+                                        <a class="nav-link" href="#">
+                                            <p style="font-weight: 200;color: white !important;">Certifications</p>
                                         </a>
 
-                                        <div class="dropdown-menu ct-mega-menu px-0 ">
+                                        <div class="dropdown-menu ct-mega-menu px-0 " id="certificationsmenu">
                                             <div class="container py-4">
-                                                <div class="row justify-content-center">
+                                                <div class="row justify-content-center" style="margin-bottom: 60px;">
                                                     <!-- <div class="col-lg-4 border-right">
                                                         <div class="item-details-container-title text-left  mb-3">
                                                             <div class="custom-award-card">  
@@ -242,7 +242,7 @@
 
                                     <li class="location nav-item mob-none">
                                         <a class="nav-link" routerLink="healthcare/coming-soon">
-                                            <p style="font-weight: 200;">Careers</p>
+                                            <p style="font-weight: 200;color: white !important;">Careers</p>
                                         </a>
                                     </li>
 
@@ -280,7 +280,10 @@
         </div>
     </div>
 
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------ -->
     <div id="page-header-search" class="page-header-search collapse">
         <div class="container px-6">
             <div class="row">
@@ -416,7 +419,7 @@
                                                     <div class="row">
                                                         <div class="col-lg-12 py-0">
                                                             <img src="assets/images/pic_2.png" class="mb-4"
-                                                                style="width: 100%; height: 150px;">
+                                                                style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
                                                             <h4 style="color: #76A379;"><b>Compliance-as-a-Service providing comprehensive
                                                                     Statutory Reporting and Regulartory Operations</b></h4>
                                                             <p class="text-left">WorkersComp and P&C compliance services covering FROI/SROI Employer Proof of Coverage,
@@ -2007,8 +2010,8 @@
                                                 <div class="col-md-4 col-lg-4 py-3 text-left">
                                                     <div class="row">
                                                         <div class="col-lg-12 py-0">
-                                                            <img src="assets/images/pic_2.png" class="mb-2"
-                                                                style="width: 100%; height: 150px;">
+                                                            <img src="assets\images\healthcare_Solution.png" class="mb-2"
+                                                                style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
                                                             <h4 style="color: #76A379;"><b>The trusted digital evolution and 
                                                                 interoperability partner for Health Systems, Payers, 
                                                                 and HealthTech Innovators</b></h4>
@@ -2021,7 +2024,7 @@
                                                                 href="#"
                                                                 style="background-color: #76A379; color:#F4F4F2;">
                                                                 <div class="flex items-center lg:text-20 ">
-                                                                    <span class="order-1">Read full report</span>
+                                                                    <span class="order-1">Learn more</span>
                                                                     <svg width="100%" viewBox="0 0 15 12" fill="none"
                                                                         xmlns="http://www.w3.org/2000/svg"
                                                                         class="w-15px order-2 ml-5px ml-3">
@@ -3828,8 +3831,8 @@
                                                 <div class="col-md-4 col-lg-4 py-3 text-left">
                                                     <div class="row">
                                                         <div class="col-lg-12 py-0">
-                                                            <img src="assets/images/pic_2.png" class="mb-4"
-                                                                style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+                                                            <img src="assets\images\Ai_Services.png" class="mb-4"
+                                                                style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
                                                             <h4 class="text-left" style="color: #76A379;"><b>Transform with Intelligent AI Solutions</b></h4>
                                                             <p class="text-left">From strategy to implementation, we provide end-to-end AI enablement that drives measurable business impact and operational efficiency.</p>
  
@@ -3837,7 +3840,7 @@
                                                                 routerLink="/ai-enablement"
                                                                 style="background-color: #6d9b73; color:#F4F4F2;">
                                                                 <div class="flex items-center lg:text-20">
-                                                                    <span class="order-1">Read full report</span>
+                                                                    <span class="order-1">Learn more</span>
                                                                     <svg width="100%" viewBox="0 0 15 12" fill="none"
                                                                         xmlns="http://www.w3.org/2000/svg"
                                                                         class="w-15px order-2 ml-5px ml-3">
