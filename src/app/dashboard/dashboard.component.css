@@ -1,3 +1,23 @@
+
+
+/* =========================
+   MENU TEXT CENTER ALIGN
+   ========================= */
+.slick-slider__category-menu-container__category-menu-item__text-item {
+  text-align: center;      /* centers multi-line text */
+  line-height: 1.3;        /* keeps existing visual balance */
+}
+.text-begonia{
+  font-size: 30px;
+}
+/* =========================
+   MENU SEPARATOR BOLD
+   ========================= */
+.slick-slider__category-menu-container__category-menu-item__menu_seperator {
+  font-weight: bolder;        /* makes | bold */
+  font-size: 29px;         /* slightly stronger without breaking design */
+}
+
 .intro-test-right {
   border-radius: 12px 0px 0px 12px;
 }
@@ -91,6 +111,7 @@
 
 .dashboard-tab-wrapper {
   display: flex;
+  padding: 13px;
   align-items: center;
   justify-content: center;
   gap: 12px;
@@ -175,7 +196,7 @@
 
 /* SVG hover effect */
 .menu-item-hover:hover svg path {
-  fill: #CDB5C7;
+  fill: #f1bae3;
   filter: brightness(0.9);
 }
 
@@ -183,7 +204,7 @@
 .menu-separator {
   cursor: default;
   padding: 0 8px;
-  color: #999;
+  color: #fff;
 }
 
 .menu-separator:hover {
@@ -290,6 +311,7 @@
 
 .dashboard-tab-wrapper {
   display: flex;
+  padding: 13px;
   align-items: center;
   justify-content: center;
   gap: 12px;
