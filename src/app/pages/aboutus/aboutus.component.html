@@ -1,135 +1,141 @@
-<main>
-  <section class="relative">
-    <div class="absolute w-full h-full z-0">
-      <video poster="assets/images/ind_bg.png"
-        class="absolute max-w-[2200px] w-full max-h-full top-1/2 translate-y-[-50%] left-1/2 translate-x-[-50%] hidden lg:block object-cover"
-        data-src="assets/images/ind_bg.png" muted="" playsinline="" preload="none" aria-label="Background Video"
-        style="opacity: 1; max-height:80%" src="assets/images/ind_bg.png">
-      </video>
-      <span class="absolute w-full h-full lazy-load-image-background opacity lazy-load-image-loaded"
-        style="display:inline-block">
-        <img class="lg:hidden w-full h-full object-contain" src="assets/images/ind_bg.png" alt="">
-      </span>
-    </div>
-    <div class="flex flex-wrap items-center relative min-h-[90vh] md:min-h-[800px] md:max-h-[1200px]"
-      style="min-height: 420px; margin-top:5%; padding-top:3%">
-      <div class="container my-60px pt-40px md:my-0 md:pt-0 max-w-screen">
-        <div class="grid grid-cols-6 md:grid-cols-12 sm:gap-5">
-          <div class="col-span-6 top_15 relative md:col-span-8 md:col-start-2 ">
-            <h1
-              class="w-full md:w-8/12 relative mb-40px font-serif text-40  antialiased md:w-full lg:text-80 mt-10">
-              <span>Our purpose has always been </span>
-              <span class="underline_cls1">client centricity.
-                <!-- <svg width="142" height="4" viewBox="0 0 142 4" fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="absolute origin-left bottom-0 lg:bottom-5px text-tomato mob_hidden"
-                                style="transform: scale(3.1676, 1);left: 40%;bottom: 0%;">
-                                <mask fill="white" id="0861665848">
-                                    <path
-                                        d="M7.22046 1.08L7.34046 1.17H7.16046L7.22046 1.04V1.08ZM38.4905 0C36.6253 0.39281 34.7264 0.603798 32.8205 0.63C31.612 0.643248 30.4064 0.508922 29.2305 0.23C29.2305 0.4 29.0805 0.43 28.9205 0.43H28.6305C28.5791 0.421871 28.5266 0.426768 28.4777 0.444241C28.4288 0.461715 28.385 0.491204 28.3505 0.53C27.3505 0.31 26.0305 0.41 25.3505 0.16C24.9305 0.35 24.5005 0.25 24.2205 0.83C23.3102 0.523444 22.3489 0.397754 21.3905 0.46L21.4705 0.54C21.2327 0.475017 20.9869 0.444705 20.7405 0.45C20.1524 0.476975 19.569 0.567502 19.0005 0.72C18.7082 0.518699 18.353 0.429903 18.0005 0.47C17.6305 0.47 17.2205 0.53 16.8405 0.53C16.5691 0.541271 16.2988 0.489946 16.0505 0.38C15.0505 0.38 13.7005 0.64 12.4905 0.68C12.5019 0.732765 12.5006 0.787496 12.4867 0.839665C12.4728 0.891833 12.4467 0.939939 12.4105 0.98C12.3437 0.891726 12.2551 0.822289 12.1534 0.778471C12.0518 0.734652 11.9405 0.717952 11.8305 0.73C11.5905 0.73 11.3405 0.78 11.1405 0.78C10.9405 0.78 10.8405 0.78 10.8005 0.59C10.7503 0.661699 10.6847 0.72133 10.6086 0.76457C10.5325 0.80781 10.4477 0.833576 10.3605 0.84C10.1305 0.84 9.95046 0.61 9.69046 0.61C9.53739 0.621992 9.39288 0.685434 9.28046 0.79C9.28046 0.79 9.33046 0.79 9.34046 0.86C8.73265 0.841118 8.14001 1.05175 7.68046 1.45C7.97046 1.05 7.13046 1.29 6.94046 1.09C6.25046 1.09 5.55046 1.09 4.87046 1.09C4.19046 1.09 3.61046 1.09 3.03046 1.02C3.08046 1.15 3.08046 1.19 3.03046 1.19C2.98046 1.19 2.74046 0.89 2.59046 0.89C2.44046 0.89 2.60046 1 2.58046 1L2.49046 1.15C2.33201 1.20577 2.16754 1.24269 2.00046 1.26C1.92547 1.2622 1.85089 1.24814 1.78184 1.21879C1.7128 1.18945 1.65092 1.14551 1.60046 1.09C1.60046 1.09 1.60046 1.09 1.60046 1.09C1.18046 1.26 1.11046 1.65 0.530457 1.7C0.530457 1.9 0.530457 1.77 0.370457 2.04L0.270457 1.77C-0.179543 2.07 0.120457 2.38 0.200457 2.77C0.280457 3.16 0.470457 3 0.740457 3C0.825923 3.0204 0.91499 3.0204 1.00046 3C0.460457 2.85 1.06046 2.52 0.830457 2.52C0.830457 2.2 1.00046 2.14 1.20046 2.14H1.57046C1.76046 2.14 1.91046 2.14 1.92046 1.82C1.95335 1.81232 1.98757 1.81232 2.02046 1.82C2.17046 1.82 2.14046 2.04 2.25046 2.05C2.56046 1.98 2.25046 1.77 2.55046 1.77H2.63046L2.70046 1.95C2.70046 1.88 2.77046 1.85 2.82046 1.85C3.03046 1.85 3.35046 2.41 3.62046 2.41C3.65112 2.40803 3.68107 2.39993 3.70855 2.38619C3.73603 2.37245 3.76048 2.35335 3.78046 2.33H3.71046C3.74594 2.25494 3.80288 2.19208 3.87407 2.14936C3.94527 2.10665 4.02753 2.08599 4.11046 2.09C4.44046 2.09 4.86046 2.37 5.26046 2.37C5.40814 2.37611 5.55327 2.33009 5.67046 2.24L5.61046 2.4H5.82046C7.36046 2.4 8.82046 1.74 10.2905 1.74C10.5834 1.73868 10.8755 1.77225 11.1605 1.84C12.5 1.57184 13.8645 1.4478 15.2305 1.47C16.7005 1.47 18.1805 1.56 19.6605 1.56C20.5522 1.56657 21.4436 1.52317 22.3305 1.43C24.6802 1.76215 27.0478 1.95249 29.4205 2C31.1054 2.01581 32.7855 1.81756 34.4205 1.41C34.8761 1.26543 35.3526 1.19783 35.8305 1.21C37.1105 1.21 38.5505 1.56 39.8305 1.56C40.314 1.56906 40.7961 1.50501 41.2605 1.37C41.9241 1.28937 42.592 1.2493 43.2605 1.25C45.5405 1.25 47.8705 1.64 50.1305 1.64C50.6505 1.64 51.1305 1.64 51.6805 1.57H52.6805C55.1505 1.57 57.5705 1.19 60.0405 1.19C60.5105 1.19 60.9905 1.19 61.4605 1.24V1.11C63.9505 1.19 66.5505 1.22 69.0705 1.22C70.7305 1.22 72.3605 1.22 73.9105 1.22C75.1351 1.4017 76.3726 1.48198 77.6105 1.46H80.4005C81.618 1.44065 82.8351 1.51756 84.0405 1.69V1.56C84.3505 1.56 84.6605 1.56 84.9705 1.56C85.6905 1.56 86.4105 1.51 87.1605 1.51H88.1005C87.9705 1.51 88.0105 1.45 88.0005 1.39C90.103 1.72994 92.2307 1.89052 94.3605 1.87C96.9905 1.87 99.6105 1.69 102.44 1.61C103.6 1.55 104.77 1.54 105.93 1.54H109.72C111.724 1.56189 113.728 1.46505 115.72 1.25L116.33 1.52C116.524 1.50978 116.717 1.50978 116.91 1.52C117.467 1.51874 118.021 1.58592 118.56 1.72C118.556 1.70892 118.553 1.69702 118.553 1.685C118.553 1.67298 118.556 1.66108 118.56 1.65C118.823 1.68155 119.086 1.69825 119.35 1.7C120.35 1.7 121.35 1.51 122.35 1.51C122.893 1.49111 123.434 1.58298 123.94 1.78C126.75 1.78 129.55 2.03 132.31 2.03C132.86 2.03 133.42 2.03 133.97 2.03C134.06 2.25 134.31 2.22 134.55 2.35C134.735 2.23366 134.953 2.18098 135.17 2.2H135.37C135.6 2.2 135.81 2.2 135.91 2.04C136.824 2.29747 137.773 2.40553 138.72 2.36C138.8 2.36 138.58 2.28 138.72 2.16C138.777 2.15165 138.834 2.15165 138.89 2.16C139.06 2.16 138.89 2.41 139.16 2.41H139.27L139.19 2.26C139.302 2.20494 139.426 2.17751 139.55 2.18C139.94 2.18 140.32 2.42 140.74 2.42C140.837 2.43409 140.934 2.43409 141.03 2.42C140.82 2.26 141.11 2.25 141.03 2.09C140.08 2.09 139.13 2.19 138.18 2.19C137.028 2.21892 135.878 2.07052 134.77 1.75C134.791 1.80191 134.791 1.85974 134.771 1.91174C134.75 1.96374 134.711 2.00602 134.66 2.03C132.28 1.72 129.77 1.62 127.43 1.51C127.53 1.39 127.43 1.24 127.27 1.2C127.172 1.25207 127.062 1.27628 126.95 1.27C126.58 1.27 126.03 1.11 125.56 1.11C125.373 1.10101 125.186 1.14245 125.02 1.23C125.02 1.23 125.16 1.3 125.12 1.35C124.97 1.35 124.82 1.22 124.68 1.15C124.68 1.15 124.75 1.24 124.79 1.26C122.03 1.09 119.45 0.74 116.69 0.74H116L116.08 0.82C115.836 0.783134 115.588 0.766412 115.34 0.77C114.82 0.77 114.34 0.82 113.79 0.82C113.354 0.830882 112.918 0.770076 112.5 0.64L112.56 0.86C111.38 0.86 110.25 0.62 109.04 0.62H108.95V0.8L108.47 0.63L108.52 0.75C108.281 0.734217 108.04 0.734217 107.8 0.75H106.6C106.234 0.767779 105.868 0.716904 105.52 0.6L105.69 0.86H105.62C104.62 0.86 103.62 0.59 102.56 0.59C102.093 0.580909 101.629 0.658906 101.19 0.82C101.3 0.82 101.28 0.89 101.33 0.91C101.226 0.95718 101.115 0.987554 101 1C100.696 0.991842 100.393 0.944795 100.1 0.86L100.21 1C99.9054 0.909896 99.5885 0.866075 99.2705 0.87C98.4605 0.87 97.7705 1.14 97.0705 1.14C96.6919 1.12898 96.3229 1.01862 96.0005 0.82L95.6305 1C95.6905 0.71 95.4905 0.68 95.2305 0.68H95.0005C94.9088 0.692716 94.8156 0.686875 94.7262 0.662824C94.6369 0.638773 94.5533 0.597004 94.4805 0.54L94.6205 0.76C94.1487 0.607784 93.6561 0.530182 93.1605 0.53C92.0405 0.53 90.9105 0.81 89.8105 0.81C89.3604 0.820484 88.9115 0.759734 88.4805 0.63V0.79C87.4805 0.79 86.7805 0.68 85.8905 0.68H84.6905C82.9905 0.68 81.2905 0.85 79.6105 0.85C78.7371 0.856465 77.8646 0.79629 77.0005 0.67V0.8C76.1861 0.623591 75.3534 0.546363 74.5205 0.57H73.4605C72.5194 0.609979 71.578 0.501998 70.6705 0.25C69.5005 0.32 68.3105 0.36 67.1305 0.36C65.9505 0.36 64.6505 0.31 63.4205 0.2C63.4507 0.23462 63.4674 0.279031 63.4674 0.325C63.4674 0.370969 63.4507 0.41538 63.4205 0.45C63.384 0.365892 63.3259 0.292919 63.2522 0.238479C63.1784 0.184038 63.0916 0.150064 63.0005 0.14C62.7505 0.14 62.4705 0.29 62.1205 0.29C61.9529 0.290893 61.7867 0.260366 61.6305 0.2C61.4705 0.27 61.6305 0.39 61.6305 0.46H61.3105C60.5705 0.46 59.7705 0.32 59.0005 0.32C58.6921 0.321828 58.3845 0.348581 58.0805 0.4C58.1067 0.411476 58.1297 0.429413 58.1472 0.452143C58.1647 0.474872 58.1761 0.501656 58.1805 0.53L57.2205 0.32L57.4005 0.44C56.8805 0.44 56.4005 0.44 55.8305 0.44C52.2105 0.46 48.5805 0.14 45.0005 0.14C44.3605 0.14 43.7305 0.14 43.1005 0.14C43.2205 0.14 43.2305 0.31 43.2405 0.41L42.8805 0.32V0.42C42.7496 0.356915 42.6056 0.326056 42.4605 0.33C42.1005 0.33 41.7705 0.49 41.4605 0.49C41.3845 0.505088 41.3064 0.505088 41.2305 0.49C41.3205 0.55 41.3205 0.55 41.3205 0.62H41.2005C40.7405 0.62 40.3105 0.9 39.8505 0.9H39.7605V0.99C39.3605 0.73 38.9105 0.27 38.5205 0.06L38.4905 0Z">
-                                    </path>
-                                </mask>
-                                <path
-                                    d="M7.22046 1.08L7.34046 1.17H7.16046L7.22046 1.04V1.08ZM38.4905 0C36.6253 0.39281 34.7264 0.603798 32.8205 0.63C31.612 0.643248 30.4064 0.508922 29.2305 0.23C29.2305 0.4 29.0805 0.43 28.9205 0.43H28.6305C28.5791 0.421871 28.5266 0.426768 28.4777 0.444241C28.4288 0.461715 28.385 0.491204 28.3505 0.53C27.3505 0.31 26.0305 0.41 25.3505 0.16C24.9305 0.35 24.5005 0.25 24.2205 0.83C23.3102 0.523444 22.3489 0.397754 21.3905 0.46L21.4705 0.54C21.2327 0.475017 20.9869 0.444705 20.7405 0.45C20.1524 0.476975 19.569 0.567502 19.0005 0.72C18.7082 0.518699 18.353 0.429903 18.0005 0.47C17.6305 0.47 17.2205 0.53 16.8405 0.53C16.5691 0.541271 16.2988 0.489946 16.0505 0.38C15.0505 0.38 13.7005 0.64 12.4905 0.68C12.5019 0.732765 12.5006 0.787496 12.4867 0.839665C12.4728 0.891833 12.4467 0.939939 12.4105 0.98C12.3437 0.891726 12.2551 0.822289 12.1534 0.778471C12.0518 0.734652 11.9405 0.717952 11.8305 0.73C11.5905 0.73 11.3405 0.78 11.1405 0.78C10.9405 0.78 10.8405 0.78 10.8005 0.59C10.7503 0.661699 10.6847 0.72133 10.6086 0.76457C10.5325 0.80781 10.4477 0.833576 10.3605 0.84C10.1305 0.84 9.95046 0.61 9.69046 0.61C9.53739 0.621992 9.39288 0.685434 9.28046 0.79C9.28046 0.79 9.33046 0.79 9.34046 0.86C8.73265 0.841118 8.14001 1.05175 7.68046 1.45C7.97046 1.05 7.13046 1.29 6.94046 1.09C6.25046 1.09 5.55046 1.09 4.87046 1.09C4.19046 1.09 3.61046 1.09 3.03046 1.02C3.08046 1.15 3.08046 1.19 3.03046 1.19C2.98046 1.19 2.74046 0.89 2.59046 0.89C2.44046 0.89 2.60046 1 2.58046 1L2.49046 1.15C2.33201 1.20577 2.16754 1.24269 2.00046 1.26C1.92547 1.2622 1.85089 1.24814 1.78184 1.21879C1.7128 1.18945 1.65092 1.14551 1.60046 1.09C1.60046 1.09 1.60046 1.09 1.60046 1.09C1.18046 1.26 1.11046 1.65 0.530457 1.7C0.530457 1.9 0.530457 1.77 0.370457 2.04L0.270457 1.77C-0.179543 2.07 0.120457 2.38 0.200457 2.77C0.280457 3.16 0.470457 3 0.740457 3C0.825923 3.0204 0.91499 3.0204 1.00046 3C0.460457 2.85 1.06046 2.52 0.830457 2.52C0.830457 2.2 1.00046 2.14 1.20046 2.14H1.57046C1.76046 2.14 1.91046 2.14 1.92046 1.82C1.95335 1.81232 1.98757 1.81232 2.02046 1.82C2.17046 1.82 2.14046 2.04 2.25046 2.05C2.56046 1.98 2.25046 1.77 2.55046 1.77H2.63046L2.70046 1.95C2.70046 1.88 2.77046 1.85 2.82046 1.85C3.03046 1.85 3.35046 2.41 3.62046 2.41C3.65112 2.40803 3.68107 2.39993 3.70855 2.38619C3.73603 2.37245 3.76048 2.35335 3.78046 2.33H3.71046C3.74594 2.25494 3.80288 2.19208 3.87407 2.14936C3.94527 2.10665 4.02753 2.08599 4.11046 2.09C4.44046 2.09 4.86046 2.37 5.26046 2.37C5.40814 2.37611 5.55327 2.33009 5.67046 2.24L5.61046 2.4H5.82046C7.36046 2.4 8.82046 1.74 10.2905 1.74C10.5834 1.73868 10.8755 1.77225 11.1605 1.84C12.5 1.57184 13.8645 1.4478 15.2305 1.47C16.7005 1.47 18.1805 1.56 19.6605 1.56C20.5522 1.56657 21.4436 1.52317 22.3305 1.43C24.6802 1.76215 27.0478 1.95249 29.4205 2C31.1054 2.01581 32.7855 1.81756 34.4205 1.41C34.8761 1.26543 35.3526 1.19783 35.8305 1.21C37.1105 1.21 38.5505 1.56 39.8305 1.56C40.314 1.56906 40.7961 1.50501 41.2605 1.37C41.9241 1.28937 42.592 1.2493 43.2605 1.25C45.5405 1.25 47.8705 1.64 50.1305 1.64C50.6505 1.64 51.1305 1.64 51.6805 1.57H52.6805C55.1505 1.57 57.5705 1.19 60.0405 1.19C60.5105 1.19 60.9905 1.19 61.4605 1.24V1.11C63.9505 1.19 66.5505 1.22 69.0705 1.22C70.7305 1.22 72.3605 1.22 73.9105 1.22C75.1351 1.4017 76.3726 1.48198 77.6105 1.46H80.4005C81.618 1.44065 82.8351 1.51756 84.0405 1.69V1.56C84.3505 1.56 84.6605 1.56 84.9705 1.56C85.6905 1.56 86.4105 1.51 87.1605 1.51H88.1005C87.9705 1.51 88.0105 1.45 88.0005 1.39C90.103 1.72994 92.2307 1.89052 94.3605 1.87C96.9905 1.87 99.6105 1.69 102.44 1.61C103.6 1.55 104.77 1.54 105.93 1.54H109.72C111.724 1.56189 113.728 1.46505 115.72 1.25L116.33 1.52C116.524 1.50978 116.717 1.50978 116.91 1.52C117.467 1.51874 118.021 1.58592 118.56 1.72C118.556 1.70892 118.553 1.69702 118.553 1.685C118.553 1.67298 118.556 1.66108 118.56 1.65C118.823 1.68155 119.086 1.69825 119.35 1.7C120.35 1.7 121.35 1.51 122.35 1.51C122.893 1.49111 123.434 1.58298 123.94 1.78C126.75 1.78 129.55 2.03 132.31 2.03C132.86 2.03 133.42 2.03 133.97 2.03C134.06 2.25 134.31 2.22 134.55 2.35C134.735 2.23366 134.953 2.18098 135.17 2.2H135.37C135.6 2.2 135.81 2.2 135.91 2.04C136.824 2.29747 137.773 2.40553 138.72 2.36C138.8 2.36 138.58 2.28 138.72 2.16C138.777 2.15165 138.834 2.15165 138.89 2.16C139.06 2.16 138.89 2.41 139.16 2.41H139.27L139.19 2.26C139.302 2.20494 139.426 2.17751 139.55 2.18C139.94 2.18 140.32 2.42 140.74 2.42C140.837 2.43409 140.934 2.43409 141.03 2.42C140.82 2.26 141.11 2.25 141.03 2.09C140.08 2.09 139.13 2.19 138.18 2.19C137.028 2.21892 135.878 2.07052 134.77 1.75C134.791 1.80191 134.791 1.85974 134.771 1.91174C134.75 1.96374 134.711 2.00602 134.66 2.03C132.28 1.72 129.77 1.62 127.43 1.51C127.53 1.39 127.43 1.24 127.27 1.2C127.172 1.25207 127.062 1.27628 126.95 1.27C126.58 1.27 126.03 1.11 125.56 1.11C125.373 1.10101 125.186 1.14245 125.02 1.23C125.02 1.23 125.16 1.3 125.12 1.35C124.97 1.35 124.82 1.22 124.68 1.15C124.68 1.15 124.75 1.24 124.79 1.26C122.03 1.09 119.45 0.74 116.69 0.74H116L116.08 0.82C115.836 0.783134 115.588 0.766412 115.34 0.77C114.82 0.77 114.34 0.82 113.79 0.82C113.354 0.830882 112.918 0.770076 112.5 0.64L112.56 0.86C111.38 0.86 110.25 0.62 109.04 0.62H108.95V0.8L108.47 0.63L108.52 0.75C108.281 0.734217 108.04 0.734217 107.8 0.75H106.6C106.234 0.767779 105.868 0.716904 105.52 0.6L105.69 0.86H105.62C104.62 0.86 103.62 0.59 102.56 0.59C102.093 0.580909 101.629 0.658906 101.19 0.82C101.3 0.82 101.28 0.89 101.33 0.91C101.226 0.95718 101.115 0.987554 101 1C100.696 0.991842 100.393 0.944795 100.1 0.86L100.21 1C99.9054 0.909896 99.5885 0.866075 99.2705 0.87C98.4605 0.87 97.7705 1.14 97.0705 1.14C96.6919 1.12898 96.3229 1.01862 96.0005 0.82L95.6305 1C95.6905 0.71 95.4905 0.68 95.2305 0.68H95.0005C94.9088 0.692716 94.8156 0.686875 94.7262 0.662824C94.6369 0.638773 94.5533 0.597004 94.4805 0.54L94.6205 0.76C94.1487 0.607784 93.6561 0.530182 93.1605 0.53C92.0405 0.53 90.9105 0.81 89.8105 0.81C89.3604 0.820484 88.9115 0.759734 88.4805 0.63V0.79C87.4805 0.79 86.7805 0.68 85.8905 0.68H84.6905C82.9905 0.68 81.2905 0.85 79.6105 0.85C78.7371 0.856465 77.8646 0.79629 77.0005 0.67V0.8C76.1861 0.623591 75.3534 0.546363 74.5205 0.57H73.4605C72.5194 0.609979 71.578 0.501998 70.6705 0.25C69.5005 0.32 68.3105 0.36 67.1305 0.36C65.9505 0.36 64.6505 0.31 63.4205 0.2C63.4507 0.23462 63.4674 0.279031 63.4674 0.325C63.4674 0.370969 63.4507 0.41538 63.4205 0.45C63.384 0.365892 63.3259 0.292919 63.2522 0.238479C63.1784 0.184038 63.0916 0.150064 63.0005 0.14C62.7505 0.14 62.4705 0.29 62.1205 0.29C61.9529 0.290893 61.7867 0.260366 61.6305 0.2C61.4705 0.27 61.6305 0.39 61.6305 0.46H61.3105C60.5705 0.46 59.7705 0.32 59.0005 0.32C58.6921 0.321828 58.3845 0.348581 58.0805 0.4C58.1067 0.411476 58.1297 0.429413 58.1472 0.452143C58.1647 0.474872 58.1761 0.501656 58.1805 0.53L57.2205 0.32L57.4005 0.44C56.8805 0.44 56.4005 0.44 55.8305 0.44C52.2105 0.46 48.5805 0.14 45.0005 0.14C44.3605 0.14 43.7305 0.14 43.1005 0.14C43.2205 0.14 43.2305 0.31 43.2405 0.41L42.8805 0.32V0.42C42.7496 0.356915 42.6056 0.326056 42.4605 0.33C42.1005 0.33 41.7705 0.49 41.4605 0.49C41.3845 0.505088 41.3064 0.505088 41.2305 0.49C41.3205 0.55 41.3205 0.55 41.3205 0.62H41.2005C40.7405 0.62 40.3105 0.9 39.8505 0.9H39.7605V0.99C39.3605 0.73 38.9105 0.27 38.5205 0.06L38.4905 0Z"
-                                    stroke="currentColor" stroke-width="2" mask="url(#0861665848)"></path>
-                            </svg>
-                            <div></div> -->
-              </span>
-            </h1>
-            <p class="mb-40px font-serif text-20 lg:text-25 font-light antialiased">
-              A lean & responsive management, a team that’s invested in client’s success, consultants consistently
-              developing subject matter expertise and a leadership that’s focused on quality & timely delivery than
-              selling new services
-            </p>
+<div class="row no-gutters">
+  <div class="col-12 py-0">
+    <div>
+      <section id="page-block-banner-carousel" class="page-block-section banner-carousel position-relative active">
+        <div class="banner-carousel-container w-100">
+          <div class="banner-carousel-item position-relative"
+            style="background-image: url(assets/images/abt_img_hg.png)">
+            <div class="banner-carousel-item-overlay" style="background-color: rgba(0,0,0,0);"></div>
+            <div class="container h-100">
+              <div class="row h-100">
+                <div class="col-12 col-md-6 py-0 h-100 mt-5">
+                  <div class="banner-carousel-item-inner d-flex align-items-center h-100">
+                    <div>
+                      <div class="banner-carousel-item-inner-title text-white">
+                        <h1>
+                          Our purpose has always been client centricity.
+                        </h1>
+                      </div>
+
+                      <div class="banner-carousel-item-inner-content text-white">
+                        <p><br>
+                          A lean & responsive management, a team that’s invested in client’s success, consultants
+                          consistently developing subject matter expertise and a leadership that’s focused on quality &
+                          timely delivery than selling new services
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 py-0 h-100">
+
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section class=" py-85px pt-20px">
-    <div class="container">
-
-      <div class="relative pb-10px md:mb-50px md:pb-120px">
-        <div class="focus w-20px h-full absolute -left-10px md:right-0 mx-auto">
-          <div
-            class="w-1px h-full border-l-[thin] lg:border-l-[1px] border-violet absolute left-1/2 lg:translate-x-[-50%]">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="dots w-100">
+                <div class="dots-inner"></div>
+              </div>
+              <div class="arrows w-100"></div>
+            </div>
           </div>
-          <div class="sticky top-1/2 bg-violet rounded-full mx-6px lg:mx-0 w-9px h-9px lg:w-20px lg:h-20px"></div>
         </div>
-        <ol class="counter-reset">
-          <li class="mb-70px grid grid-cols-6 gap-x-5 md:grid-cols-12 md:mb-120px last:mb-0">
-            <div
-              class="md:order-1 mb-25px md:mr-50px md:mb-0 md:col-start-auto col-span-5 col-start-2 text-center md:col-start-auto md:col-span-6 md:flex lg:block md:items-center">
-              <div class="w-full">
-                <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block;">
-                  <img src="assets/images/home_img.png" alt="Mahathi About ">
-                </span>
+      </section>
+
+
+
+      <section class=" py-85px pt-20px">
+        <div class="container">
+
+          <div class="relative pb-10px md:mb-50px md:pb-120px">
+            <div class="focus w-20px h-full absolute -left-10px md:right-0 mx-auto">
+              <div
+                class="w-1px h-full border-l-[thin] lg:border-l-[1px] border-violet absolute left-1/2 lg:translate-x-[-50%]">
               </div>
+              <div class="sticky top-1/2 bg-violet rounded-full mx-6px lg:mx-0 w-9px h-9px lg:w-20px lg:h-20px"></div>
             </div>
-            <div
-              class="md:ml-25px md:order-2 col-span-5 col-start-2 counter-increment before:counter-result md:col-start-auto">
-              <p class="mt-5px mb-15px text-20 font-serif antialiased tracking-tight lg:text-25 last:mb-0">
-                <span>Since our founding, our goals have always reflected our core values.</span>
-                <span
-                  style="float:left; margin:10px 0; width:100%; list-style: disc;display: list-item; margin-left:1em">Reachable
-                  - always available for our clients</span>
-                <span
-                  style="float:left; margin:10px 0; width:100%; list-style: disc;display: list-item; margin-left:1em">Responsible
-                  - ensuring appropriate solutions are provided every time</span>
-                <span
-                  style="float:left; margin:10px 0; width:100%; list-style: disc;display: list-item; margin-left:1em">Reliable
-                  - delivering results consistently</span>
-              </p>
-            </div>
-          </li>
-          <li class="mb-70px grid grid-cols-6 gap-x-5 md:grid-cols-12 md:mb-120px last:mb-0">
-            <div
-              class="md:order-2 mb-25px md:ml-30px md:mb-0 md:col-start-3 col-span-6 col-start-2 text-center md:col-start-8 md:col-span-10 md:flex lg:block md:items-center">
-              <div class="w-full">
-                <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block;">
-                  <img src="assets/images/aboutus41.png" alt="Mahathi About">
-                </span>
-              </div>
-            </div>
-            <div
-              class="md:mr-25px md:order-1 col-span-5 col-start-2 counter-increment before:counter-result md:col-start-auto">
-              <p class="mt-5px mb-15px text-20 font-serif antialiased tracking-tight lg:text-25 last:mb-0">
-                <span>
-                  To stay true to our core values, we unequivocally defined that our success will be measured only based
-                  on our client’s success.
-                </span>
-              </p>
-            </div>
-          </li>
-          <li class="mb-70px grid grid-cols-6 gap-x-5 md:grid-cols-12 md:mb-120px last:mb-0">
-            <div
-              class="md:order-1 mb-25px md:mr-50px md:mb-0 md:col-start-auto col-span-5 col-start-2 text-center md:col-start-auto md:col-span-6 md:flex lg:block md:items-center">
-              <div class="w-full">
-                <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block;">
-                  <img src="assets/images/aboutus51.png" alt="Mahathi About">
-                </span>
-              </div>
-            </div>
-            <div
-              class="md:ml-25px md:order-2 col-span-5 col-start-2 counter-increment before:counter-result md:col-start-auto">
-              <p class="mt-5px mb-15px text-20 font-serif antialiased tracking-tight lg:text-25 last:mb-0">
-                <span>We developed a culture of team-based approach, accountability, sense of purpose for the top talent
-                  we hired.</span>
-              </p>
-            </div>
-          </li>
-          <li class="mb-70px grid grid-cols-6 gap-x-5 md:grid-cols-12 md:mb-120px last:mb-0">
-            <div
-              class="md:order-2 mb-25px md:ml-30px md:mb-0 md:col-start-3 col-span-6 col-start-2 text-center md:col-start-8 md:col-span-10 md:flex lg:block md:items-center">
-              <div class="w-full">
-                <span class="lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block;">
-                  <img src="assets/images/aboutus61.png" alt="Mahathi About">
-                </span>
-              </div>
-            </div>
-            <!-- <div class="md:order-2 md:flex lg:block md:items-center  mx-20px min-w-[105px] w-1/4 md:w-1/3 lg:w-150px xl:w-200px flex-shrink-0">
+            <ol class="counter-reset">
+              <li class="mb-70px grid grid-cols-6 gap-x-5 md:grid-cols-12 md:mb-120px last:mb-0">
+                <div
+                  class="md:order-1 mb-25px md:mr-50px md:mb-0 md:col-start-auto col-span-5 col-start-2 text-center md:col-start-auto md:col-span-6 md:flex lg:block md:items-center">
+                  <div class="w-full">
+                    <span class=" lazy-load-image-background opacity lazy-load-image-loaded"
+                      style="display: inline-block;">
+                      <img src="assets/images/home_img.png" alt="Mahathi About ">
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="md:ml-25px md:order-2 col-span-5 col-start-2 counter-increment before:counter-result md:col-start-auto">
+                  <p class="mt-5px mb-15px text-20 font-serif antialiased tracking-tight lg:text-25 last:mb-0">
+                    <span>Since our founding, our goals have always reflected our core values.</span>
+                    <span
+                      style="float:left; margin:10px 0; width:100%; list-style: disc;display: list-item; margin-left:1em">Reachable
+                      - always available for our clients</span>
+                    <span
+                      style="float:left; margin:10px 0; width:100%; list-style: disc;display: list-item; margin-left:1em">Responsible
+                      - ensuring appropriate solutions are provided every time</span>
+                    <span
+                      style="float:left; margin:10px 0; width:100%; list-style: disc;display: list-item; margin-left:1em">Reliable
+                      - delivering results consistently</span>
+                  </p>
+                </div>
+              </li>
+              <li class="mb-70px grid grid-cols-6 gap-x-5 md:grid-cols-12 md:mb-120px last:mb-0">
+                <div
+                  class="md:order-2 mb-25px md:ml-30px md:mb-0 md:col-start-3 col-span-6 col-start-2 text-center md:col-start-8 md:col-span-10 md:flex lg:block md:items-center">
+                  <div class="w-full">
+                    <span class=" lazy-load-image-background opacity lazy-load-image-loaded"
+                      style="display: inline-block;">
+                      <img src="assets/images/aboutus41.png" alt="Mahathi About">
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="md:mr-25px md:order-1 col-span-5 col-start-2 counter-increment before:counter-result md:col-start-auto">
+                  <p class="mt-5px mb-15px text-20 font-serif antialiased tracking-tight lg:text-25 last:mb-0">
+                    <span>
+                      To stay true to our core values, we unequivocally defined that our success will be measured only
+                      based
+                      on our client’s success.
+                    </span>
+                  </p>
+                </div>
+              </li>
+              <li class="mb-70px grid grid-cols-6 gap-x-5 md:grid-cols-12 md:mb-120px last:mb-0">
+                <div
+                  class="md:order-1 mb-25px md:mr-50px md:mb-0 md:col-start-auto col-span-5 col-start-2 text-center md:col-start-auto md:col-span-6 md:flex lg:block md:items-center">
+                  <div class="w-full">
+                    <span class=" lazy-load-image-background opacity lazy-load-image-loaded"
+                      style="display: inline-block;">
+                      <img src="assets/images/abtus_bck_wht.png" alt="Mahathi About">
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="md:ml-25px md:order-2 col-span-5 col-start-2 counter-increment before:counter-result md:col-start-auto">
+                  <p class="mt-5px mb-15px text-20 font-serif antialiased tracking-tight lg:text-25 last:mb-0">
+                    <span>We developed a culture of team-based approach, accountability, sense of purpose for the top
+                      talent
+                      we hired.</span>
+                  </p>
+                </div>
+              </li>
+              <li class="mb-70px grid grid-cols-6 gap-x-5 md:grid-cols-12 md:mb-120px last:mb-0">
+                <div
+                  class="md:order-2 mb-25px md:ml-30px md:mb-0 md:col-start-3 col-span-6 col-start-2 text-center md:col-start-8 md:col-span-10 md:flex lg:block md:items-center">
+                  <div class="w-full">
+                    <span class="lazy-load-image-background opacity lazy-load-image-loaded"
+                      style="display: inline-block;">
+                      <img src="assets/images/aboutus61.png" alt="Mahathi About">
+                    </span>
+                  </div>
+                </div>
+                <!-- <div class="md:order-2 md:flex lg:block md:items-center  mx-20px min-w-[105px] w-1/4 md:w-1/3 lg:w-150px xl:w-200px flex-shrink-0">
                 <svg width="100%" viewBox="0 0 200 227" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <title>Mahathi How We Work </title>
                   <path d="M117.713 225.665C59.8337 232.065 2.71587 210.326 0.975139 143.234C-2.61513 77.5758 -0.439211 4.30363 82.3545 0C146.87 0 199.092 52.9678 199.092 118.405C205.729 172.697 175.701 225.334 117.713 225.665Z" fill="url(#3360491863)"></path>
@@ -140,674 +146,715 @@
                   </defs>
                 </svg>
               </div> -->
-            <div
-              class="md:mr-25px md:order-1 col-span-5 col-start-2 counter-increment before:counter-result md:col-start-auto">
-              <p class="mt-5px mb-15px text-20 font-serif antialiased tracking-tight lg:text-25 last:mb-0">
-                <span>We continue(d) to invest in training & continuous learning that’s aligned with our client’s
-                  roadmap.</span>
-              </p>
-            </div>
-          </li>
-        </ol>
-      </div>
-      <div class="grid grid-cols-12 gap-5">
-        <!-- <p class="px-30px col-span-12 text-center text-20 tracking-tight font-serif font-light antialiased lg:text-25 md:col-span-4 md:col-start-5">We built the future of technology consulting & services, today.</p> -->
-        <p
-          class="py-40px px-15px col-span-12 bg-mint rounded-20px text-25 font-serif tracking-tight text-center antialiased lg:text-40 md:px-75px md:py-80px md:col-span-8 md:col-start-3">
-          We are a ‘people first’ organization that strongly believes in a Client Centric approach & creating measurable
-          value.
-        </p>
-      </div>
-    </div>
-  </section>
-  <section class=" py-85px bg-ivory-deep">
-    <div class="container">
-      <div class="mb-40px lg:mb-50px">
-        <h2
-          class="inline-block rounded-5px py-5px px-[13px] font-semibold text-12-eyebrow lg:text-14-eyebrow tracking-widest uppercase antialiased bg-gold1 text-violet">
-          Our Founders</h2>
-      </div>
-    </div>
-    <div class="container md:grid md:grid-cols-12 md:gap-5 mb-40px ">
-      <div class="mb-50px md:mb-0 md:col-span-6 md:flex md:items-center lg:block">
-        <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block;">
-          <img src="assets/images/Krishna3.png" alt="Krishna">
-        </span>
-      </div>
-      <div class="md:col-span-5">
-        <!-- <div class="mb-40px lg:mb-35px">
-            <h2 class="inline-block rounded-5px py-5px px-[13px] font-semibold text-12-eyebrow lg:text-14-eyebrow tracking-widest uppercase antialiased bg-gold text-violet">Our Founder</h2>
-          </div> -->
-        <div class="text-25 lg:text-40 font-serif tracking-tight antialiased text-violet lg:max-w-[1200px]">
-          <p>Krishna Mahalingam</p>
-          <p class="text-20">Co Founder</p>
+                <div
+                  class="md:mr-25px md:order-1 col-span-5 col-start-2 counter-increment before:counter-result md:col-start-auto">
+                  <p class="mt-5px mb-15px text-20 font-serif antialiased tracking-tight lg:text-25 last:mb-0">
+                    <span>We continue(d) to invest in training & continuous learning that’s aligned with our client’s
+                      roadmap.</span>
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </div>
+          <div class="grid grid-cols-12 gap-5">
+            <!-- <p class="px-30px col-span-12 text-center text-20 tracking-tight font-serif font-light antialiased lg:text-25 md:col-span-4 md:col-start-5">We built the future of technology consulting & services, today.</p> -->
+            <p
+              class="py-40px px-15px col-span-12 bg-mint rounded-20px text-25 font-serif tracking-tight text-center antialiased lg:text-40 md:px-75px md:py-80px md:col-span-8 md:col-start-3">
+              We are a ‘people first’ organization that strongly believes in a Client Centric approach & creating
+              measurable
+              value.
+            </p>
+          </div>
         </div>
-        <div class="rich-text pt-20px lg:pt-55px">
-          <p>The architect and the heart & soul behind our organization, that understands and propagates the idea of
+      </section>
+    <section class="py-85px bg-ivory-deep">
+  <div class="container">
+    <div class="mb-40px lg:mb-50px">
+      <h2 class="inline-block rounded-5px py-5px px-[13px] font-semibold uppercase bg-gold1 text-violet">
+        Our Founders
+      </h2>
+    </div>
+
+    <!-- FORCE 3 COLUMN LAYOUT -->
+    <div class="founders-grid">
+
+      <div class="founder-card">
+        <img src="assets/images/Krishna3.png">
+        <h3>Krishna Mahalingam</h3>
+        <p class="role">Co Founder</p>
+        <p>The architect and the heart & soul behind our organization, that understands and propagates the idea of
             technology being the backbone for a successful business. Built the organization from 1 to 300 (& counting),
             putting our clients and employees always ahead of self.</p>
-        </div>
       </div>
-    </div>
 
-    <div class="container md:grid md:grid-cols-12 md:gap-5">
-      <div class="mb-50px md:mb-0 md:col-span-6 md:flex md:items-center lg:block">
-        <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block;">
-          <img src="assets/images/Gayathri.png" alt="Gayathri">
-        </span>
-      </div>
-      <div class="md:col-span-5 mb-40px lg:mb-35px">
-        <div class="text-25 lg:text-40 font-serif tracking-tight antialiased text-violet lg:max-w-[1200px]">
-          <p>Gayathri Ramaswamy</p>
-          <p class="text-20">Director & Head of Finance</p>
-        </div>
-        <div class="rich-text pt-20px lg:pt-55px">
-          <p>Gayathri has been an integral part of our organization since inception. Under her stewardship, Mahathi has
-            grown consistently with admirable financial discipline. She helped design and institutionalize an enviable
-            employee benefits program.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container md:grid md:grid-cols-12 md:gap-5">
-      <div class="mb-50px md:mb-0 md:col-span-6 md:flex md:items-center lg:block">
-        <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block;">
-          <img src="assets/images/vishwa4_1.png" alt="Vishwa">
-        </span>
-      </div>
-      <div class="md:col-span-5 mb-40px lg:mb-35px">
-        <div class="text-25 lg:text-40 font-serif tracking-tight antialiased text-violet lg:max-w-[1200px]">
-          <p>Vishwa Ganapathy</p>
-          <p class="text-20">Co Founder</p>
-        </div>
-        <div class="rich-text pt-20px lg:pt-55px">
-          <p>A serial entrepreneur with a passion for building client centric organizations that deliver measurable
+      <div class="founder-card">
+        <img src="assets/images/vishwa4_1.png">
+        <h3>Vishwa Ganapathy</h3>
+        <p class="role">Co Founder</p>
+        <p>A serial entrepreneur with a passion for building client centric organizations that deliver measurable
             value. Founded and led successful startups to address critical industry gaps through technology & process
             innovation. Intently focused on ensuring our organization is built as a trusted technology partner with
             strong foundations on being <i>‘reachable, responsible and reliable’. </i> </p>
-        </div>
       </div>
+
+      <div class="founder-card">
+        <img src="assets/images/Gayathri.png">
+        <h3>Gayathri Ramaswamy</h3>
+        <p class="role">Director & Head of Finance</p>
+        <p>Gayathri has been an integral part of our organization since inception. Under her stewardship, Mahathi has
+            grown consistently with admirable financial discipline. She helped design and institutionalize an enviable
+            employee benefits program.</p>
+      </div>
+
     </div>
+  </div>
+</section>
+
+      <section class=" py-85px d-none">
+        <div class="pb-30px md:pb-85px">
+          <section>
+            <div class="container">
+              <div class="grid grid-cols-12 gap-5">
+                <div class="mb-40px col-span-12 md:col-span-10 lg:col-span-6 lg:mb-50px">
+                  <div class="mb-40px lg:mb-50px">
+                    <h2
+                      class="inline-block rounded-5px py-5px px-[13px] font-semibold text-12-eyebrow lg:text-14-eyebrow tracking-widest uppercase antialiased bg-gold1 text-violet">
+                      Our Management Team</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="relative">
+              <ul class="container flex flex-wrap md:flex-nowrap justify-between">
+                <li
+                  class="-left-20px sm:-top-10px sm:left-45px relative w-1/2 z-1 md:odd:px-20px md:even:px-20px md:inset-auto md:pb-0 md:w-auto md:z-0">
+                  <div class="w-90px mx-auto md:w-auto lg:h-200px xl:h-[280px] max-w-[280px]">
+                    <img width="100%" src="assets/images/anand1.png" alt="Anand">
+                  </div>
+                  <div
+                    class="hidden relative w-20px h-20px rounded-full bg-tomato md:block top-22px lg:top-28px xl:top-33px 2xl:top-37px">
+                  </div>
+                  <div class="pb-30px max-w-[150px] mx-auto block text-center md:hidden">
+                    <div class="bg-ivory rounded-full font-serif text-18 antialiased tracking-tight">Anand Mahalingham
+                    </div>
+                    <div class="bg-ivory rounded-full text-12 lg:text-base antialiased">Senior Vice President & Client
+                      Partner – Insurance</div>
+                  </div>
+                </li>
+
+                <li
+                  class="-left-20px sm:-top-10px sm:left-45px relative w-1/2 z-1 md:odd:px-20px md:even:px-20px md:inset-auto md:pb-0 md:w-auto md:z-0">
+                  <div class="w-90px mx-auto md:w-auto lg:h-200px xl:h-[280px] max-w-[280px]">
+                    <img width="100%" src="assets/images/Harish.png" alt="Anand">
+                  </div>
+                  <div
+                    class="hidden relative w-20px h-20px rounded-full bg-tomato md:block top-22px lg:top-28px xl:top-23px 2xl:top-37px">
+                  </div>
+                  <div class="pb-30px max-w-[150px] mx-auto block text-center md:hidden">
+                    <div class="bg-ivory rounded-full font-serif text-18 antialiased tracking-tight">Harish R</div>
+                    <div class="bg-ivory rounded-full text-12 lg:text-base antialiased">Vice President & Client Partner
+                      –
+                      Legal & ManLog</div>
+                  </div>
+                </li>
+
+                <li
+                  class="-left-20px sm:-top-10px sm:left-45px relative w-1/2 z-1 md:odd:px-20px md:even:px-20px md:inset-auto md:pb-0 md:w-auto md:z-0">
+                  <div class="w-90px mx-auto md:w-auto lg:h-200px xl:h-[280px] max-w-[280px]">
+                    <img width="100%" src="assets/images/pamela1.png" alt="Pamela">
+                  </div>
+                  <div
+                    class="hidden relative w-20px h-20px rounded-full bg-tomato md:block md:top-16px lg:top-18px xl:top-20px 2xl:top-23px">
+                  </div>
+                  <div class="pb-30px max-w-[150px] mx-auto block text-center md:hidden">
+                    <div class="bg-ivory rounded-full font-serif text-18 antialiased tracking-tight">Pamela Bogdanovich
+                    </div>
+                    <div class="bg-ivory rounded-full text-12 lg:text-base antialiased">Client Engagement Manager</div>
+                  </div>
+                </li>
+                <li
+                  class="-top-45px right-20px sm:right-85px relative w-1/2 z-1 md:odd:px-20px md:even:px-20px md:inset-auto md:pb-0 md:w-auto md:z-0">
+                  <div class="w-90px mx-auto md:w-auto lg:h-200px xl:h-[280px] max-w-[280px]">
+                    <img width="100%" src="assets/images/Tracey.png" alt="Tracey">
+                  </div>
+                  <div
+                    class="hidden relative w-20px h-20px rounded-full bg-tomato md:block md:top-16px lg:top-18px xl:top-20px 2xl:top-23px">
+                  </div>
+                  <div class="pb-30px max-w-[150px] mx-auto block text-center md:hidden">
+                    <div class="bg-ivory rounded-full font-serif text-18 antialiased tracking-tight">Tracey Seals</div>
+                    <div class="bg-ivory rounded-full text-12 lg:text-base antialiased">Client Engagement Director</div>
+                  </div>
+                </li>
+
+
+              </ul>
+              <div class="block max-w-[325px] mx-auto absolute top-0 inset-x-0 w-full md:hidden">
+                <svg width="100%" viewBox="0 0 307 243" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="text-tomato mx-auto">
+                  <path
+                    d="M299.233 53.6183C312.009 81.1528 307.366 113.663 289.424 144.001C271.484 174.338 240.269 202.454 200.019 221.131C159.769 239.807 118.144 245.49 83.3956 239.602C48.644 233.714 20.8209 216.269 8.04443 188.735C-4.73203 161.2 -0.0888407 128.69 17.8529 98.3515C35.7933 68.0152 67.0082 39.8988 107.258 21.2221C147.508 2.54541 189.133 -3.1369 223.882 2.75069C258.633 8.63874 286.456 26.0838 299.233 53.6183Z"
+                    stroke="currentColor"></path>
+                  <circle cx="34.5" cy="220.5" r="4.5" fill="currentColor"></circle>
+                  <circle cx="204.5" cy="218.5" r="4.5" fill="currentColor"></circle>
+                  <circle cx="260.5" cy="14.5" r="4.5" fill="currentColor"></circle>
+                  <circle cx="105.5" cy="22.5" r="4.5" fill="currentColor"></circle>
+                </svg>
+              </div>
+              <div class="hidden md:block">
+                <svg width="100%" viewBox="0 0 1440 31" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="text-tomato text-tomoto1">
+                  <mask id="0850449924" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%">
+                    <rect width="100%" height="100%" fill="white"></rect>
+                  </mask>
+                  <g mask="url(#0850449924)">
+                    <path
+                      d="M1912.5 105.5C1912.5 108.606 1910.55 111.769 1906.53 114.975C1902.51 118.175 1896.51 121.35 1888.58 124.483C1872.73 130.748 1849.33 136.8 1819.15 142.571C1758.81 154.111 1671.48 164.506 1563.54 173.237C1347.66 190.699 1049.43 201.5 720 201.5C390.571 201.5 92.3353 190.699 -123.538 173.237C-231.477 164.506 -318.812 154.111 -379.154 142.571C-409.329 136.8 -432.731 130.748 -448.579 124.483C-456.505 121.35 -462.512 118.175 -466.529 114.975C-470.554 111.769 -472.5 108.606 -472.5 105.5C-472.5 102.394 -470.554 99.2305 -466.529 96.0245C-462.512 92.8251 -456.505 89.6502 -448.579 86.5169C-432.731 80.2524 -409.329 74.1997 -379.154 68.4289C-318.812 56.8889 -231.477 46.4936 -123.538 37.7626C92.3353 20.3009 390.571 9.5 720 9.5C1049.43 9.5 1347.66 20.3009 1563.54 37.7626C1671.48 46.4936 1758.81 56.8889 1819.15 68.4289C1849.33 74.1997 1872.73 80.2524 1888.58 86.5169C1896.51 89.6502 1902.51 92.8251 1906.53 96.0245C1910.55 99.2305 1912.5 102.394 1912.5 105.5Z"
+                      stroke="currentColor"></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="hidden container md:pt-5px md:flex md:justify-between">
+                <div
+                  class="pb-30px relative w-1/2 odd:pr-15px even:pl-15px md:odd:px-20px md:even:px-20px md:pb-0 md:w-auto">
+                  <div class="md:w-139px lg:w-[203px] xl:w-[267px] 2xl:w-[280px]">
+                    <div class="font-serif text-18 antialiased tracking-tight md:text-22">Anand Mahalingham</div>
+                    <div class="text-12 lg:text-base antialiased">Senior Vice President & Client Partner – Insurance
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="pb-30px relative w-1/2 odd:pr-15px even:pl-15px md:odd:px-20px md:even:px-20px md:pb-0 md:w-auto">
+                  <div class="md:w-139px lg:w-[203px] xl:w-[267px] 2xl:w-[280px]">
+                    <div class="font-serif text-18 antialiased tracking-tight md:text-22">Harish R</div>
+                    <div class="text-12 lg:text-base antialiased">Vice President & Client Partner – Legal & ManLog</div>
+                  </div>
+                </div>
+
+                <div
+                  class="pb-30px relative w-1/2 odd:pr-15px even:pl-15px md:odd:px-20px md:even:px-20px md:pb-0 md:w-auto">
+                  <div class="md:w-139px lg:w-[203px] xl:w-[267px] 2xl:w-[280px]">
+                    <div class="font-serif text-18 antialiased tracking-tight md:text-22">Pamela Bogdanovich</div>
+                    <div class="text-12 lg:text-base antialiased">Client Engagement Director</div>
+                  </div>
+                </div>
+                <div
+                  class="pb-30px relative w-1/2 odd:pr-15px even:pl-15px md:odd:px-20px md:even:px-20px md:pb-0 md:w-auto">
+                  <div class="md:w-139px lg:w-[203px] xl:w-[267px] 2xl:w-[280px]">
+                    <div class="font-serif text-18 antialiased tracking-tight md:text-22">Tracey Seals</div>
+                    <div class="text-12 lg:text-base antialiased">Client Engagement Director</div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+            <div class="relative" style="margin-top:5em">
+              <ul class="container flex flex-wrap md:flex-nowrap justify-between">
+
+                <li
+                  class="-top-45px right-20px sm:right-85px relative w-1/2 z-1 md:odd:px-20px md:even:px-20px md:inset-auto md:pb-0 md:w-auto md:z-0">
+                  <div class="w-90px mx-auto md:w-auto lg:h-200px xl:h-[280px] max-w-[280px]">
+                    <img width="100%" src="assets/images/Heather.png" alt="Heather">
+                  </div>
+                  <div
+                    class="hidden relative w-20px h-20px rounded-full bg-tomato md:block md:top-16px lg:top-18px xl:top-33px 2xl:top-33px">
+                  </div>
+                  <div class="pb-30px max-w-[150px] mx-auto block text-center md:hidden">
+                    <div class="bg-ivory rounded-full font-serif text-18 antialiased tracking-tight">Heather Sterett
+                    </div>
+                    <div class="bg-ivory rounded-full text-12 lg:text-base antialiased">Client Engagement Manager</div>
+                  </div>
+                </li>
+
+                <li
+                  class="top-10px left-5px sm:left-75px relative w-1/2 z-1 md:odd:px-20px md:even:px-20px md:inset-auto md:pb-0 md:w-auto md:z-0">
+                  <div class="w-90px mx-auto md:w-auto lg:h-200px xl:h-[280px] max-w-[280px]">
+                    <img width="100%" src="assets/images/ganesan.png" alt="ganesan">
+                  </div>
+                  <div
+                    class="hidden relative w-20px h-20px rounded-full bg-tomato md:block top-22px lg:top-28px xl:top-23px 2xl:top-37px">
+                  </div>
+                  <div class="pb-30px max-w-[150px] mx-auto block text-center md:hidden">
+                    <div class="bg-ivory rounded-full font-serif text-18 antialiased tracking-tight">Ganesan Durairaj
+                    </div>
+                    <div class="bg-ivory rounded-full text-12 lg:text-base antialiased">Senior Vice President</div>
+                  </div>
+                </li>
+                <li
+                  class="-left-20px sm:-top-10px sm:left-45px relative w-1/2 z-1 md:odd:px-20px md:even:px-20px md:inset-auto md:pb-0 md:w-auto md:z-0">
+                  <div class="w-90px mx-auto md:w-auto lg:h-200px xl:h-[280px] max-w-[280px]">
+                    <img width="100%" src="assets/images/niru.png" alt="niru">
+                  </div>
+                  <div
+                    class="hidden relative w-20px h-20px rounded-full bg-tomato md:block top-22px lg:top-28px xl:top-20px 2xl:top-37px">
+                  </div>
+                  <div class="pb-30px max-w-[150px] mx-auto block text-center md:hidden">
+                    <div class="bg-ivory rounded-full font-serif text-18 antialiased tracking-tight">Nirupama Rajendran
+                    </div>
+                    <div class="bg-ivory rounded-full text-12 lg:text-base antialiased">Head of Business Consulting –
+                      Insurance</div>
+                  </div>
+                </li>
+                <li
+                  class="-left-20px sm:-top-10px sm:left-45px relative w-1/2 z-1 md:odd:px-20px md:even:px-20px md:inset-auto md:pb-0 md:w-auto md:z-0">
+                  <div class="w-90px mx-auto md:w-auto lg:h-200px xl:h-[280px] max-w-[280px]">
+                    <img width="100%" src="assets/images/pranesh.png" alt="Pranesh">
+                  </div>
+                  <div
+                    class="hidden relative w-20px h-20px rounded-full bg-tomato md:block top-22px lg:top-28px xl:top-20px 2xl:top-37px">
+                  </div>
+                  <div class="pb-30px max-w-[150px] mx-auto block text-center md:hidden">
+                    <div class="bg-ivory rounded-full font-serif text-18 antialiased tracking-tight">Pranesh Mahendran
+                    </div>
+                    <div class="bg-ivory rounded-full text-12 lg:text-base antialiased">Delivery Partner - Insurance
+                    </div>
+                  </div>
+                </li>
+
+
+              </ul>
+              <div class="block max-w-[325px] mx-auto absolute top-0 inset-x-0 w-full md:hidden">
+                <svg width="100%" viewBox="0 0 307 243" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="text-tomato mx-auto">
+                  <path
+                    d="M299.233 53.6183C312.009 81.1528 307.366 113.663 289.424 144.001C271.484 174.338 240.269 202.454 200.019 221.131C159.769 239.807 118.144 245.49 83.3956 239.602C48.644 233.714 20.8209 216.269 8.04443 188.735C-4.73203 161.2 -0.0888407 128.69 17.8529 98.3515C35.7933 68.0152 67.0082 39.8988 107.258 21.2221C147.508 2.54541 189.133 -3.1369 223.882 2.75069C258.633 8.63874 286.456 26.0838 299.233 53.6183Z"
+                    stroke="currentColor"></path>
+                  <circle cx="34.5" cy="220.5" r="4.5" fill="currentColor"></circle>
+                  <circle cx="204.5" cy="218.5" r="4.5" fill="currentColor"></circle>
+                  <circle cx="260.5" cy="14.5" r="4.5" fill="currentColor"></circle>
+                  <circle cx="105.5" cy="22.5" r="4.5" fill="currentColor"></circle>
+                </svg>
+              </div>
+              <div class="hidden md:block">
+                <svg width="100%" viewBox="0 0 1440 31" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="text-tomato text-tomoto1">
+                  <mask id="0850449924" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%">
+                    <rect width="100%" height="100%" fill="white"></rect>
+                  </mask>
+                  <g mask="url(#0850449924)">
+                    <path
+                      d="M1912.5 105.5C1912.5 108.606 1910.55 111.769 1906.53 114.975C1902.51 118.175 1896.51 121.35 1888.58 124.483C1872.73 130.748 1849.33 136.8 1819.15 142.571C1758.81 154.111 1671.48 164.506 1563.54 173.237C1347.66 190.699 1049.43 201.5 720 201.5C390.571 201.5 92.3353 190.699 -123.538 173.237C-231.477 164.506 -318.812 154.111 -379.154 142.571C-409.329 136.8 -432.731 130.748 -448.579 124.483C-456.505 121.35 -462.512 118.175 -466.529 114.975C-470.554 111.769 -472.5 108.606 -472.5 105.5C-472.5 102.394 -470.554 99.2305 -466.529 96.0245C-462.512 92.8251 -456.505 89.6502 -448.579 86.5169C-432.731 80.2524 -409.329 74.1997 -379.154 68.4289C-318.812 56.8889 -231.477 46.4936 -123.538 37.7626C92.3353 20.3009 390.571 9.5 720 9.5C1049.43 9.5 1347.66 20.3009 1563.54 37.7626C1671.48 46.4936 1758.81 56.8889 1819.15 68.4289C1849.33 74.1997 1872.73 80.2524 1888.58 86.5169C1896.51 89.6502 1902.51 92.8251 1906.53 96.0245C1910.55 99.2305 1912.5 102.394 1912.5 105.5Z"
+                      stroke="currentColor"></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="hidden container md:pt-5px md:flex md:justify-between">
+                <div
+                  class="pb-30px relative w-1/2 odd:pr-15px even:pl-15px md:odd:px-20px md:even:px-20px md:pb-0 md:w-auto">
+                  <div class="md:w-139px lg:w-[203px] xl:w-[267px] 2xl:w-[280px]">
+                    <div class="font-serif text-18 antialiased tracking-tight md:text-22">Heather Sterett</div>
+                    <div class="text-12 lg:text-base antialiased">Client Engagement Manager</div>
+                  </div>
+                </div>
+
+                <div
+                  class="pb-30px relative w-1/2 odd:pr-15px even:pl-15px md:odd:px-20px md:even:px-20px md:pb-0 md:w-auto">
+                  <div class="md:w-139px lg:w-[203px] xl:w-[267px] 2xl:w-[280px]">
+                    <div class="font-serif text-18 antialiased tracking-tight md:text-22">Ganesan Durairaj</div>
+                    <div class="text-12 lg:text-base antialiased">Senior Vice President</div>
+                  </div>
+                </div>
+                <div
+                  class="pb-30px relative w-1/2 odd:pr-15px even:pl-15px md:odd:px-20px md:even:px-20px md:pb-0 md:w-auto">
+                  <div class="md:w-139px lg:w-[203px] xl:w-[267px] 2xl:w-[280px]">
+                    <div class="font-serif text-18 antialiased tracking-tight md:text-22">Nirupama Rajendran</div>
+                    <div class="text-12 lg:text-base antialiased">Head of Business Consulting – Insurance</div>
+                  </div>
+                </div>
+                <div
+                  class="pb-30px relative w-1/2 odd:pr-15px even:pl-15px md:odd:px-20px md:even:px-20px md:pb-0 md:w-auto">
+                  <div class="md:w-139px lg:w-[203px] xl:w-[267px] 2xl:w-[280px]">
+                    <div class="font-serif text-18 antialiased tracking-tight md:text-22">Pranesh Mahendran</div>
+                    <div class="text-12 lg:text-base antialiased">Delivery Partner - Insurance</div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+
+            <div class="relative" style="margin-top:5em">
+              <ul class="container flex flex-wrap md:flex-nowrap justify-between">
+                <li
+                  class="-top-45px right-20px sm:right-85px relative w-1/2 z-1 md:odd:px-20px md:even:px-20px md:inset-auto md:pb-0 md:w-auto md:z-0">
+                  <div class="w-90px mx-auto md:w-auto lg:h-200px xl:h-[280px] max-w-[280px]">
+                    <img width="100%" src="assets/images/sukumar3.png" alt="Sukumar">
+                  </div>
+                  <div
+                    class="hidden relative w-20px h-20px rounded-full bg-tomato md:block md:top-16px lg:top-18px xl:top-33px 2xl:top-23px">
+                  </div>
+                  <div class="pb-30px max-w-[150px] mx-auto block text-center md:hidden">
+                    <div class="bg-ivory rounded-full font-serif text-18 antialiased tracking-tight">Sukumar Karuppusamy
+                    </div>
+                    <div class="bg-ivory rounded-full text-12 lg:text-base antialiased">Technology Partner - Insurance
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="top-10px left-5px sm:left-75px relative w-1/2 z-1 md:odd:px-20px md:even:px-20px md:inset-auto md:pb-0 md:w-auto md:z-0">
+                  <div class="w-90px mx-auto md:w-auto lg:h-200px xl:h-[280px] max-w-[280px]">
+                    <img width="100%" src="assets/images/J7.png" alt="Jerry">
+                  </div>
+                  <div
+                    class="hidden relative w-20px h-20px rounded-full bg-tomato md:block md:top-18px lg:top-22px xl:top-23px 2xl:top-28px">
+                  </div>
+                  <div class="pb-30px max-w-[150px] mx-auto block text-center md:hidden">
+                    <div class="bg-ivory rounded-full font-serif text-18 antialiased tracking-tight">Jerry Gonsel</div>
+                    <div class="bg-ivory rounded-full text-12 lg:text-base antialiased">Head of Operations</div>
+                  </div>
+                </li>
+                <li
+                  class="-top-40px -right-25px sm:right-40px relative w-1/2 z-1 md:odd:px-20px md:even:px-20px md:inset-auto md:pb-0 md:w-auto md:z-0">
+                  <div class="w-90px mx-auto md:w-auto lg:h-200px xl:h-[280px] max-w-[280px]">
+                    <img width="100%" src="assets/images/dhy_main.png" alt="Dhyanesh">
+                  </div>
+                  <div
+                    class="hidden relative w-20px h-20px rounded-full bg-tomato md:block top-22px lg:top-28px xl:top-20px 2xl:top-37px">
+                  </div>
+                  <div class="pb-30px max-w-[150px] mx-auto block text-center md:hidden">
+                    <div class="bg-ivory rounded-full font-serif text-18 antialiased tracking-tight">Dhyanesh Mahendran
+                    </div>
+                    <div class="bg-ivory rounded-full text-12 lg:text-base antialiased">Head of Infrastructure &
+                      Business
+                      Process Management</div>
+                  </div>
+                </li>
+                <li
+                  class="-left-20px sm:-top-10px sm:left-45px relative w-1/2 z-1 md:odd:px-20px md:even:px-20px md:inset-auto md:pb-0 md:w-auto md:z-0">
+                  <div class="w-90px mx-auto md:w-auto lg:h-200px xl:h-[280px] max-w-[280px]">
+                    <img width="100%" src="assets/images/santhosh.png" alt="Santhosh">
+                  </div>
+                  <div
+                    class="hidden relative w-20px h-20px rounded-full bg-tomato md:block md:top-16px lg:top-18px xl:top-23px 2xl:top-23px">
+                  </div>
+                  <div class="pb-30px max-w-[150px] mx-auto block text-center md:hidden">
+                    <div class="bg-ivory rounded-full font-serif text-18 antialiased tracking-tight">Santhosh Kumar
+                    </div>
+                    <div class="bg-ivory rounded-full text-12 lg:text-base antialiased">Head of Technology Incubation &
+                      Innovation</div>
+                  </div>
+                </li>
 
 
 
-  </section>
-  <section class=" py-85px d-none">
-    <div class="pb-30px md:pb-85px">
-      <section>
-        <div class="container">
-          <div class="grid grid-cols-12 gap-5">
-            <div class="mb-40px col-span-12 md:col-span-10 lg:col-span-6 lg:mb-50px">
-              <div class="mb-40px lg:mb-50px">
-                <h2
-                  class="inline-block rounded-5px py-5px px-[13px] font-semibold text-12-eyebrow lg:text-14-eyebrow tracking-widest uppercase antialiased bg-gold1 text-violet">
-                  Our Management Team</h2>
+              </ul>
+              <div class="block max-w-[325px] mx-auto absolute top-0 inset-x-0 w-full md:hidden">
+                <svg width="100%" viewBox="0 0 307 243" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="text-tomato mx-auto">
+                  <path
+                    d="M299.233 53.6183C312.009 81.1528 307.366 113.663 289.424 144.001C271.484 174.338 240.269 202.454 200.019 221.131C159.769 239.807 118.144 245.49 83.3956 239.602C48.644 233.714 20.8209 216.269 8.04443 188.735C-4.73203 161.2 -0.0888407 128.69 17.8529 98.3515C35.7933 68.0152 67.0082 39.8988 107.258 21.2221C147.508 2.54541 189.133 -3.1369 223.882 2.75069C258.633 8.63874 286.456 26.0838 299.233 53.6183Z"
+                    stroke="currentColor"></path>
+                  <circle cx="34.5" cy="220.5" r="4.5" fill="currentColor"></circle>
+                  <circle cx="204.5" cy="218.5" r="4.5" fill="currentColor"></circle>
+                  <circle cx="260.5" cy="14.5" r="4.5" fill="currentColor"></circle>
+                  <circle cx="105.5" cy="22.5" r="4.5" fill="currentColor"></circle>
+                </svg>
+              </div>
+              <div class="hidden md:block">
+                <svg width="100%" viewBox="0 0 1440 31" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="text-tomato text-tomoto1">
+                  <mask id="0850449924" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%">
+                    <rect width="100%" height="100%" fill="white"></rect>
+                  </mask>
+                  <g mask="url(#0850449924)">
+                    <path
+                      d="M1912.5 105.5C1912.5 108.606 1910.55 111.769 1906.53 114.975C1902.51 118.175 1896.51 121.35 1888.58 124.483C1872.73 130.748 1849.33 136.8 1819.15 142.571C1758.81 154.111 1671.48 164.506 1563.54 173.237C1347.66 190.699 1049.43 201.5 720 201.5C390.571 201.5 92.3353 190.699 -123.538 173.237C-231.477 164.506 -318.812 154.111 -379.154 142.571C-409.329 136.8 -432.731 130.748 -448.579 124.483C-456.505 121.35 -462.512 118.175 -466.529 114.975C-470.554 111.769 -472.5 108.606 -472.5 105.5C-472.5 102.394 -470.554 99.2305 -466.529 96.0245C-462.512 92.8251 -456.505 89.6502 -448.579 86.5169C-432.731 80.2524 -409.329 74.1997 -379.154 68.4289C-318.812 56.8889 -231.477 46.4936 -123.538 37.7626C92.3353 20.3009 390.571 9.5 720 9.5C1049.43 9.5 1347.66 20.3009 1563.54 37.7626C1671.48 46.4936 1758.81 56.8889 1819.15 68.4289C1849.33 74.1997 1872.73 80.2524 1888.58 86.5169C1896.51 89.6502 1902.51 92.8251 1906.53 96.0245C1910.55 99.2305 1912.5 102.394 1912.5 105.5Z"
+                      stroke="currentColor"></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="hidden container md:pt-5px md:flex md:justify-between">
+
+                <div
+                  class="pb-30px relative w-1/2 odd:pr-15px even:pl-15px md:odd:px-20px md:even:px-20px md:pb-0 md:w-auto">
+                  <div class="md:w-139px lg:w-[203px] xl:w-[267px] 2xl:w-[280px]">
+                    <div class="font-serif text-18 antialiased tracking-tight md:text-22">Sukumar Karuppusamy</div>
+                    <div class="text-12 lg:text-base antialiased">Technology Partner - Insurance</div>
+                  </div>
+                </div>
+
+                <div
+                  class="pb-30px relative w-1/2 odd:pr-15px even:pl-15px md:odd:px-20px md:even:px-20px md:pb-0 md:w-auto">
+                  <div class="md:w-139px lg:w-[203px] xl:w-[267px] 2xl:w-[280px]">
+                    <div class="font-serif text-18 antialiased tracking-tight md:text-22">Jerry Gonsel</div>
+                    <div class="text-12 lg:text-base antialiased">Head of Operations </div>
+                  </div>
+                </div>
+                <div
+                  class="pb-30px relative w-1/2 odd:pr-15px even:pl-15px md:odd:px-20px md:even:px-20px md:pb-0 md:w-auto">
+                  <div class="md:w-139px lg:w-[203px] xl:w-[267px] 2xl:w-[280px]">
+                    <div class="font-serif text-18 antialiased tracking-tight md:text-22">Dhyanesh Mahendran</div>
+                    <div class="text-12 lg:text-base antialiased">Head of Infrastructure & Business Process Management
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="pb-30px relative w-1/2 odd:pr-15px even:pl-15px md:odd:px-20px md:even:px-20px md:pb-0 md:w-auto">
+                  <div class="md:w-139px lg:w-[203px] xl:w-[267px] 2xl:w-[280px]">
+                    <div class="font-serif text-18 antialiased tracking-tight md:text-22">Santhosh Kumar </div>
+                    <div class="text-12 lg:text-base antialiased">Head of Technology Incubation & Innovation</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="relative" style="margin-top:5em">
+              <ul class="container flex flex-wrap md:flex-nowrap justify-between">
+                <li
+                  class="top-10px left-5px sm:left-75px relative w-1/2 z-1 md:odd:px-20px md:even:px-20px md:inset-auto md:pb-0 md:w-auto md:z-0">
+                  <div class="w-90px mx-auto md:w-auto lg:h-200px xl:h-[280px] max-w-[280px]">
+                    <img width="100%" src="assets/images/thani.png" alt="Thanikaivel">
+                  </div>
+                  <div
+                    class="hidden relative w-20px h-20px rounded-full bg-tomato md:block md:top-16px lg:top-18px xl:top-33px 2xl:top-23px">
+                  </div>
+                  <div class="pb-30px max-w-[150px] mx-auto block text-center md:hidden">
+                    <div class="bg-ivory rounded-full font-serif text-18 antialiased tracking-tight">Thanikaivel
+                      Ekambaram
+                    </div>
+                    <div class="bg-ivory rounded-full text-12 lg:text-base antialiased">Head of Information Security
+                    </div>
+                  </div>
+                </li>
+                <li
+                  class="-top-40px -right-25px sm:right-40px relative w-1/2 z-1 md:odd:px-20px md:even:px-20px md:inset-auto md:pb-0 md:w-auto md:z-0">
+                  <div class="w-90px mx-auto md:w-auto lg:h-200px xl:h-[280px] max-w-[280px]">
+                    <img width="100%" src="assets/images/rajkumar.png" alt="Rajkumar">
+                  </div>
+                  <div
+                    class="hidden relative w-20px h-20px rounded-full bg-tomato md:block md:top-18px lg:top-22px xl:top-20px 2xl:top-28px">
+                  </div>
+                  <div class="pb-30px max-w-[150px] mx-auto block text-center md:hidden">
+                    <div class="bg-ivory rounded-full font-serif text-18 antialiased tracking-tight">Rajkumar Kanagaraju
+                    </div>
+                    <div class="bg-ivory rounded-full text-12 lg:text-base antialiased">Head of Quality Assurance &
+                      Automation </div>
+                  </div>
+                </li>
+                <li
+                  class="-top-40px -right-25px sm:right-40px relative w-1/2 z-1 md:odd:px-20px md:even:px-20px md:inset-auto md:pb-0 md:w-auto md:z-0">
+                  <div class="w-90px mx-auto md:w-auto lg:h-200px xl:h-[280px] max-w-[280px]">
+                    <img width="100%" src="assets/images/dominic.png" alt="Dominic">
+                  </div>
+                  <div
+                    class="hidden relative w-20px h-20px rounded-full bg-tomato md:block md:top-18px lg:top-22px xl:top-20px 2xl:top-28px">
+                  </div>
+                  <div class="pb-30px max-w-[150px] mx-auto block text-center md:hidden">
+                    <div class="bg-ivory rounded-full font-serif text-18 antialiased tracking-tight">Dominic Lintan
+                    </div>
+                    <div class="bg-ivory rounded-full text-12 lg:text-base antialiased">Quality Assurance Manager &
+                      Lead,
+                      Philippines Operations</div>
+                  </div>
+                </li>
+                <li
+                  class="-top-40px -right-25px sm:right-40px relative w-1/2 z-1 md:odd:px-20px md:even:px-20px md:inset-auto md:pb-0 md:w-auto md:z-0">
+                  <div class="w-90px mx-auto md:w-auto lg:h-200px xl:h-[280px] max-w-[280px]">
+                    <img width="100%" src="assets/images/petite.png" alt="Petite">
+                  </div>
+                  <div
+                    class="hidden relative w-20px h-20px rounded-full bg-tomato md:block md:top-18px lg:top-22px xl:top-20px 2xl:top-28px">
+                  </div>
+                  <div class="pb-30px max-w-[150px] mx-auto block text-center md:hidden">
+                    <div class="bg-ivory rounded-full font-serif text-18 antialiased tracking-tight">Petite Apostol
+                    </div>
+                    <div class="bg-ivory rounded-full text-12 lg:text-base antialiased">Lead Quality Assurance Engineer
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="block max-w-[325px] mx-auto absolute top-0 inset-x-0 w-full md:hidden">
+                <svg width="100%" viewBox="0 0 307 243" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="text-tomato mx-auto">
+                  <path
+                    d="M299.233 53.6183C312.009 81.1528 307.366 113.663 289.424 144.001C271.484 174.338 240.269 202.454 200.019 221.131C159.769 239.807 118.144 245.49 83.3956 239.602C48.644 233.714 20.8209 216.269 8.04443 188.735C-4.73203 161.2 -0.0888407 128.69 17.8529 98.3515C35.7933 68.0152 67.0082 39.8988 107.258 21.2221C147.508 2.54541 189.133 -3.1369 223.882 2.75069C258.633 8.63874 286.456 26.0838 299.233 53.6183Z"
+                    stroke="currentColor"></path>
+                  <circle cx="34.5" cy="220.5" r="4.5" fill="currentColor"></circle>
+                  <circle cx="204.5" cy="218.5" r="4.5" fill="currentColor"></circle>
+                  <circle cx="260.5" cy="14.5" r="4.5" fill="currentColor"></circle>
+                  <circle cx="105.5" cy="22.5" r="4.5" fill="currentColor"></circle>
+                </svg>
+              </div>
+              <div class="hidden md:block">
+                <svg width="100%" viewBox="0 0 1440 31" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="text-tomato text-tomoto1">
+                  <mask id="0850449924" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%">
+                    <rect width="100%" height="100%" fill="white"></rect>
+                  </mask>
+                  <g mask="url(#0850449924)">
+                    <path
+                      d="M1912.5 105.5C1912.5 108.606 1910.55 111.769 1906.53 114.975C1902.51 118.175 1896.51 121.35 1888.58 124.483C1872.73 130.748 1849.33 136.8 1819.15 142.571C1758.81 154.111 1671.48 164.506 1563.54 173.237C1347.66 190.699 1049.43 201.5 720 201.5C390.571 201.5 92.3353 190.699 -123.538 173.237C-231.477 164.506 -318.812 154.111 -379.154 142.571C-409.329 136.8 -432.731 130.748 -448.579 124.483C-456.505 121.35 -462.512 118.175 -466.529 114.975C-470.554 111.769 -472.5 108.606 -472.5 105.5C-472.5 102.394 -470.554 99.2305 -466.529 96.0245C-462.512 92.8251 -456.505 89.6502 -448.579 86.5169C-432.731 80.2524 -409.329 74.1997 -379.154 68.4289C-318.812 56.8889 -231.477 46.4936 -123.538 37.7626C92.3353 20.3009 390.571 9.5 720 9.5C1049.43 9.5 1347.66 20.3009 1563.54 37.7626C1671.48 46.4936 1758.81 56.8889 1819.15 68.4289C1849.33 74.1997 1872.73 80.2524 1888.58 86.5169C1896.51 89.6502 1902.51 92.8251 1906.53 96.0245C1910.55 99.2305 1912.5 102.394 1912.5 105.5Z"
+                      stroke="currentColor"></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="hidden container md:pt-5px md:flex md:justify-between">
+                <div
+                  class="pb-30px relative w-1/2 odd:pr-15px even:pl-15px md:odd:px-20px md:even:px-20px md:pb-0 md:w-auto">
+                  <div class="md:w-139px lg:w-[203px] xl:w-[267px] 2xl:w-[280px]">
+                    <div class="font-serif text-18 antialiased tracking-tight md:text-22">Thanikaivel Ekambaram</div>
+                    <div class="text-12 lg:text-base antialiased">Head of Information Security </div>
+                  </div>
+                </div>
+                <div
+                  class="pb-30px relative w-1/2 odd:pr-15px even:pl-15px md:odd:px-20px md:even:px-20px md:pb-0 md:w-auto">
+                  <div class="md:w-139px lg:w-[203px] xl:w-[267px] 2xl:w-[280px]">
+                    <div class="font-serif text-18 antialiased tracking-tight md:text-22">Rajkumar Kanagaraju </div>
+                    <div class="text-12 lg:text-base antialiased">Head of Quality Assurance & Automation</div>
+                  </div>
+                </div>
+                <div
+                  class="pb-30px relative w-1/2 odd:pr-15px even:pl-15px md:odd:px-20px md:even:px-20px md:pb-0 md:w-auto">
+                  <div class="md:w-139px lg:w-[203px] xl:w-[267px] 2xl:w-[280px]">
+                    <div class="font-serif text-18 antialiased tracking-tight md:text-22">Dominic Lintan</div>
+                    <div class="text-12 lg:text-base antialiased">Quality Assurance Manager & Lead, Philippines
+                      Operations
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="pb-30px relative w-1/2 odd:pr-15px even:pl-15px md:odd:px-20px md:even:px-20px md:pb-0 md:w-auto">
+                  <div class="md:w-139px lg:w-[203px] xl:w-[267px] 2xl:w-[280px]">
+                    <div class="font-serif text-18 antialiased tracking-tight md:text-22">Petite Apostol </div>
+                    <div class="text-12 lg:text-base antialiased">Lead Quality Assurance Engineer</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </section>
+        </div>
+        <div class="container md:grid md:grid-cols-12 md:gap-5">
+
+          <div class="col-span-12 lg:col-span-10 lg:col-start-2">
+            <div
+              class="swiper-container swiper-container-initialized swiper-container-vertical swiper-container-pointer-events">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide" data-swiper-slide-index="1">
+                  <div class="text-left md:grid md:grid-cols-10 md:gap-5">
+                    <div
+                      class="flex items-start text-20 font-serif font-light tracking-tight antialiased md:text-25 md:col-span-3 md:-mt-5px">
+                      <div
+                        class="w-0 h-10px mt-7px flex-shrink-0 rounded-full bg-violet overflow-hidden transition-all ease-out lg:mt-5px lg:h-20px">
+                      </div>
+                      Diversity & Inclusion
+                    </div>
+                    <div
+                      class="antialiased text-12 tracking-wide md:tracking-normal md:text-base md:col-span-8 md:col-start-4">
+                      <p style="margin:0 0 10px 0">We understand the significance of drawing the circle wider to broaden
+                        our
+                        perspective, to connect on a deeper level, and to be a force for positive change. </p>
+                      <p style="margin:10px 0">For us, diversity, equity and inclusion are more than guiding principles.
+                        They are central to our continued growth. We firmly believe that embracing diversity and
+                        inclusion
+                        (D&I) drives innovation and improves outcomes. </p>
+                      <p style="margin:10px 0 0 0">Going further, as a Certified Minority Owned Business Enterprise
+                        (MBE)
+                        and a Certified Small Business Enterprise (SBE), we engage & utilize Woman Owned Business
+                        Enterprise
+                        (WBE), Disabled Business Enterprise (DBE), Veteran Owned Business Enterprise (VBE) &
+                        Service-Disabled Veteran Owned Business Enterprise (SDVBE) information technology specialists
+                        and
+                        create a robust environment for all of our consultants to work together & succeed.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide" data-swiper-slide-index="2">
+                  <div class="text-left md:grid md:grid-cols-10 md:gap-5">
+                    <div
+                      class="flex items-start text-20 font-serif font-light tracking-tight antialiased md:text-25 md:col-span-3 md:-mt-5px">
+                      <div
+                        class="w-0 h-10px mt-7px flex-shrink-0 rounded-full bg-violet overflow-hidden transition-all ease-out lg:mt-5px lg:h-20px">
+                      </div>
+                      Partnerships
+                    </div>
+                    <div
+                      class="antialiased text-12 tracking-wide md:tracking-normal md:text-base md:col-span-8 md:col-start-4">
+                      <p>Successful development agenda requires inclusive partnerships — at the global, regional,
+                        national
+                        and local levels — built upon principles and values, and upon a shared vision and shared goals
+                        placing people and the client at the center. With this world view, we’ve partnered with industry
+                        leaders in multiple industries to bring the best of the solutions & services to our clients.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide" data-swiper-slide-index="3">
+                  <div class="text-left md:grid md:grid-cols-10 md:gap-5">
+                    <div
+                      class="flex items-start text-20 font-serif font-light tracking-tight antialiased md:text-25 md:col-span-3 md:-mt-5px">
+                      <div
+                        class="w-0 h-10px mt-7px flex-shrink-0 rounded-full bg-violet overflow-hidden transition-all ease-out lg:mt-5px lg:h-20px">
+                      </div>
+                      Community Giving
+                    </div>
+                    <div
+                      class="antialiased text-12 tracking-wide md:tracking-normal md:text-base md:col-span-8 md:col-start-4">
+                      <p>As a responsible corporate citizen, Mahathi consistently supports the communities in which we
+                        operate through financial assistance, volunteering, community education and green space
+                        creation.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
         </div>
-        <div class="relative">
-          <ul class="container flex flex-wrap md:flex-nowrap justify-between">
-            <li
-              class="-left-20px sm:-top-10px sm:left-45px relative w-1/2 z-1 md:odd:px-20px md:even:px-20px md:inset-auto md:pb-0 md:w-auto md:z-0">
-              <div class="w-90px mx-auto md:w-auto lg:h-200px xl:h-[280px] max-w-[280px]">
-                <img width="100%" src="assets/images/anand1.png" alt="Anand">
-              </div>
-              <div
-                class="hidden relative w-20px h-20px rounded-full bg-tomato md:block top-22px lg:top-28px xl:top-33px 2xl:top-37px">
-              </div>
-              <div class="pb-30px max-w-[150px] mx-auto block text-center md:hidden">
-                <div class="bg-ivory rounded-full font-serif text-18 antialiased tracking-tight">Anand Mahalingham</div>
-                <div class="bg-ivory rounded-full text-12 lg:text-base antialiased">Senior Vice President & Client
-                  Partner – Insurance</div>
-              </div>
-            </li>
-
-            <li
-              class="-left-20px sm:-top-10px sm:left-45px relative w-1/2 z-1 md:odd:px-20px md:even:px-20px md:inset-auto md:pb-0 md:w-auto md:z-0">
-              <div class="w-90px mx-auto md:w-auto lg:h-200px xl:h-[280px] max-w-[280px]">
-                <img width="100%" src="assets/images/Harish.png" alt="Anand">
-              </div>
-              <div
-                class="hidden relative w-20px h-20px rounded-full bg-tomato md:block top-22px lg:top-28px xl:top-23px 2xl:top-37px">
-              </div>
-              <div class="pb-30px max-w-[150px] mx-auto block text-center md:hidden">
-                <div class="bg-ivory rounded-full font-serif text-18 antialiased tracking-tight">Harish R</div>
-                <div class="bg-ivory rounded-full text-12 lg:text-base antialiased">Vice President & Client Partner –
-                  Legal & ManLog</div>
-              </div>
-            </li>
-
-            <li
-              class="-left-20px sm:-top-10px sm:left-45px relative w-1/2 z-1 md:odd:px-20px md:even:px-20px md:inset-auto md:pb-0 md:w-auto md:z-0">
-              <div class="w-90px mx-auto md:w-auto lg:h-200px xl:h-[280px] max-w-[280px]">
-                <img width="100%" src="assets/images/pamela1.png" alt="Pamela">
-              </div>
-              <div
-                class="hidden relative w-20px h-20px rounded-full bg-tomato md:block md:top-16px lg:top-18px xl:top-20px 2xl:top-23px">
-              </div>
-              <div class="pb-30px max-w-[150px] mx-auto block text-center md:hidden">
-                <div class="bg-ivory rounded-full font-serif text-18 antialiased tracking-tight">Pamela Bogdanovich
-                </div>
-                <div class="bg-ivory rounded-full text-12 lg:text-base antialiased">Client Engagement Manager</div>
-              </div>
-            </li>
-            <li
-              class="-top-45px right-20px sm:right-85px relative w-1/2 z-1 md:odd:px-20px md:even:px-20px md:inset-auto md:pb-0 md:w-auto md:z-0">
-              <div class="w-90px mx-auto md:w-auto lg:h-200px xl:h-[280px] max-w-[280px]">
-                <img width="100%" src="assets/images/Tracey.png" alt="Tracey">
-              </div>
-              <div
-                class="hidden relative w-20px h-20px rounded-full bg-tomato md:block md:top-16px lg:top-18px xl:top-20px 2xl:top-23px">
-              </div>
-              <div class="pb-30px max-w-[150px] mx-auto block text-center md:hidden">
-                <div class="bg-ivory rounded-full font-serif text-18 antialiased tracking-tight">Tracey Seals</div>
-                <div class="bg-ivory rounded-full text-12 lg:text-base antialiased">Client Engagement Director</div>
-              </div>
-            </li>
-
-
-          </ul>
-          <div class="block max-w-[325px] mx-auto absolute top-0 inset-x-0 w-full md:hidden">
-            <svg width="100%" viewBox="0 0 307 243" fill="none" xmlns="http://www.w3.org/2000/svg"
-              class="text-tomato mx-auto">
-              <path
-                d="M299.233 53.6183C312.009 81.1528 307.366 113.663 289.424 144.001C271.484 174.338 240.269 202.454 200.019 221.131C159.769 239.807 118.144 245.49 83.3956 239.602C48.644 233.714 20.8209 216.269 8.04443 188.735C-4.73203 161.2 -0.0888407 128.69 17.8529 98.3515C35.7933 68.0152 67.0082 39.8988 107.258 21.2221C147.508 2.54541 189.133 -3.1369 223.882 2.75069C258.633 8.63874 286.456 26.0838 299.233 53.6183Z"
-                stroke="currentColor"></path>
-              <circle cx="34.5" cy="220.5" r="4.5" fill="currentColor"></circle>
-              <circle cx="204.5" cy="218.5" r="4.5" fill="currentColor"></circle>
-              <circle cx="260.5" cy="14.5" r="4.5" fill="currentColor"></circle>
-              <circle cx="105.5" cy="22.5" r="4.5" fill="currentColor"></circle>
-            </svg>
-          </div>
-          <div class="hidden md:block">
-            <svg width="100%" viewBox="0 0 1440 31" fill="none" xmlns="http://www.w3.org/2000/svg"
-              class="text-tomato text-tomoto1">
-              <mask id="0850449924" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%">
-                <rect width="100%" height="100%" fill="white"></rect>
-              </mask>
-              <g mask="url(#0850449924)">
-                <path
-                  d="M1912.5 105.5C1912.5 108.606 1910.55 111.769 1906.53 114.975C1902.51 118.175 1896.51 121.35 1888.58 124.483C1872.73 130.748 1849.33 136.8 1819.15 142.571C1758.81 154.111 1671.48 164.506 1563.54 173.237C1347.66 190.699 1049.43 201.5 720 201.5C390.571 201.5 92.3353 190.699 -123.538 173.237C-231.477 164.506 -318.812 154.111 -379.154 142.571C-409.329 136.8 -432.731 130.748 -448.579 124.483C-456.505 121.35 -462.512 118.175 -466.529 114.975C-470.554 111.769 -472.5 108.606 -472.5 105.5C-472.5 102.394 -470.554 99.2305 -466.529 96.0245C-462.512 92.8251 -456.505 89.6502 -448.579 86.5169C-432.731 80.2524 -409.329 74.1997 -379.154 68.4289C-318.812 56.8889 -231.477 46.4936 -123.538 37.7626C92.3353 20.3009 390.571 9.5 720 9.5C1049.43 9.5 1347.66 20.3009 1563.54 37.7626C1671.48 46.4936 1758.81 56.8889 1819.15 68.4289C1849.33 74.1997 1872.73 80.2524 1888.58 86.5169C1896.51 89.6502 1902.51 92.8251 1906.53 96.0245C1910.55 99.2305 1912.5 102.394 1912.5 105.5Z"
-                  stroke="currentColor"></path>
-              </g>
-            </svg>
-          </div>
-          <div class="hidden container md:pt-5px md:flex md:justify-between">
-            <div
-              class="pb-30px relative w-1/2 odd:pr-15px even:pl-15px md:odd:px-20px md:even:px-20px md:pb-0 md:w-auto">
-              <div class="md:w-139px lg:w-[203px] xl:w-[267px] 2xl:w-[280px]">
-                <div class="font-serif text-18 antialiased tracking-tight md:text-22">Anand Mahalingham</div>
-                <div class="text-12 lg:text-base antialiased">Senior Vice President & Client Partner – Insurance</div>
-              </div>
-            </div>
-
-            <div
-              class="pb-30px relative w-1/2 odd:pr-15px even:pl-15px md:odd:px-20px md:even:px-20px md:pb-0 md:w-auto">
-              <div class="md:w-139px lg:w-[203px] xl:w-[267px] 2xl:w-[280px]">
-                <div class="font-serif text-18 antialiased tracking-tight md:text-22">Harish R</div>
-                <div class="text-12 lg:text-base antialiased">Vice President & Client Partner – Legal & ManLog</div>
-              </div>
-            </div>
-
-            <div
-              class="pb-30px relative w-1/2 odd:pr-15px even:pl-15px md:odd:px-20px md:even:px-20px md:pb-0 md:w-auto">
-              <div class="md:w-139px lg:w-[203px] xl:w-[267px] 2xl:w-[280px]">
-                <div class="font-serif text-18 antialiased tracking-tight md:text-22">Pamela Bogdanovich</div>
-                <div class="text-12 lg:text-base antialiased">Client Engagement Director</div>
-              </div>
-            </div>
-            <div
-              class="pb-30px relative w-1/2 odd:pr-15px even:pl-15px md:odd:px-20px md:even:px-20px md:pb-0 md:w-auto">
-              <div class="md:w-139px lg:w-[203px] xl:w-[267px] 2xl:w-[280px]">
-                <div class="font-serif text-18 antialiased tracking-tight md:text-22">Tracey Seals</div>
-                <div class="text-12 lg:text-base antialiased">Client Engagement Director</div>
-              </div>
-            </div>
-
-
-          </div>
-        </div>
-        <div class="relative" style="margin-top:5em">
-          <ul class="container flex flex-wrap md:flex-nowrap justify-between">
-
-            <li
-              class="-top-45px right-20px sm:right-85px relative w-1/2 z-1 md:odd:px-20px md:even:px-20px md:inset-auto md:pb-0 md:w-auto md:z-0">
-              <div class="w-90px mx-auto md:w-auto lg:h-200px xl:h-[280px] max-w-[280px]">
-                <img width="100%" src="assets/images/Heather.png" alt="Heather">
-              </div>
-              <div
-                class="hidden relative w-20px h-20px rounded-full bg-tomato md:block md:top-16px lg:top-18px xl:top-33px 2xl:top-33px">
-              </div>
-              <div class="pb-30px max-w-[150px] mx-auto block text-center md:hidden">
-                <div class="bg-ivory rounded-full font-serif text-18 antialiased tracking-tight">Heather Sterett</div>
-                <div class="bg-ivory rounded-full text-12 lg:text-base antialiased">Client Engagement Manager</div>
-              </div>
-            </li>
-
-            <li
-              class="top-10px left-5px sm:left-75px relative w-1/2 z-1 md:odd:px-20px md:even:px-20px md:inset-auto md:pb-0 md:w-auto md:z-0">
-              <div class="w-90px mx-auto md:w-auto lg:h-200px xl:h-[280px] max-w-[280px]">
-                <img width="100%" src="assets/images/ganesan.png" alt="ganesan">
-              </div>
-              <div
-                class="hidden relative w-20px h-20px rounded-full bg-tomato md:block top-22px lg:top-28px xl:top-23px 2xl:top-37px">
-              </div>
-              <div class="pb-30px max-w-[150px] mx-auto block text-center md:hidden">
-                <div class="bg-ivory rounded-full font-serif text-18 antialiased tracking-tight">Ganesan Durairaj</div>
-                <div class="bg-ivory rounded-full text-12 lg:text-base antialiased">Senior Vice President</div>
-              </div>
-            </li>
-            <li
-              class="-left-20px sm:-top-10px sm:left-45px relative w-1/2 z-1 md:odd:px-20px md:even:px-20px md:inset-auto md:pb-0 md:w-auto md:z-0">
-              <div class="w-90px mx-auto md:w-auto lg:h-200px xl:h-[280px] max-w-[280px]">
-                <img width="100%" src="assets/images/niru.png" alt="niru">
-              </div>
-              <div
-                class="hidden relative w-20px h-20px rounded-full bg-tomato md:block top-22px lg:top-28px xl:top-20px 2xl:top-37px">
-              </div>
-              <div class="pb-30px max-w-[150px] mx-auto block text-center md:hidden">
-                <div class="bg-ivory rounded-full font-serif text-18 antialiased tracking-tight">Nirupama Rajendran
-                </div>
-                <div class="bg-ivory rounded-full text-12 lg:text-base antialiased">Head of Business Consulting –
-                  Insurance</div>
-              </div>
-            </li>
-            <li
-              class="-left-20px sm:-top-10px sm:left-45px relative w-1/2 z-1 md:odd:px-20px md:even:px-20px md:inset-auto md:pb-0 md:w-auto md:z-0">
-              <div class="w-90px mx-auto md:w-auto lg:h-200px xl:h-[280px] max-w-[280px]">
-                <img width="100%" src="assets/images/pranesh.png" alt="Pranesh">
-              </div>
-              <div
-                class="hidden relative w-20px h-20px rounded-full bg-tomato md:block top-22px lg:top-28px xl:top-20px 2xl:top-37px">
-              </div>
-              <div class="pb-30px max-w-[150px] mx-auto block text-center md:hidden">
-                <div class="bg-ivory rounded-full font-serif text-18 antialiased tracking-tight">Pranesh Mahendran
-                </div>
-                <div class="bg-ivory rounded-full text-12 lg:text-base antialiased">Delivery Partner - Insurance</div>
-              </div>
-            </li>
-
-
-          </ul>
-          <div class="block max-w-[325px] mx-auto absolute top-0 inset-x-0 w-full md:hidden">
-            <svg width="100%" viewBox="0 0 307 243" fill="none" xmlns="http://www.w3.org/2000/svg"
-              class="text-tomato mx-auto">
-              <path
-                d="M299.233 53.6183C312.009 81.1528 307.366 113.663 289.424 144.001C271.484 174.338 240.269 202.454 200.019 221.131C159.769 239.807 118.144 245.49 83.3956 239.602C48.644 233.714 20.8209 216.269 8.04443 188.735C-4.73203 161.2 -0.0888407 128.69 17.8529 98.3515C35.7933 68.0152 67.0082 39.8988 107.258 21.2221C147.508 2.54541 189.133 -3.1369 223.882 2.75069C258.633 8.63874 286.456 26.0838 299.233 53.6183Z"
-                stroke="currentColor"></path>
-              <circle cx="34.5" cy="220.5" r="4.5" fill="currentColor"></circle>
-              <circle cx="204.5" cy="218.5" r="4.5" fill="currentColor"></circle>
-              <circle cx="260.5" cy="14.5" r="4.5" fill="currentColor"></circle>
-              <circle cx="105.5" cy="22.5" r="4.5" fill="currentColor"></circle>
-            </svg>
-          </div>
-          <div class="hidden md:block">
-            <svg width="100%" viewBox="0 0 1440 31" fill="none" xmlns="http://www.w3.org/2000/svg"
-              class="text-tomato text-tomoto1">
-              <mask id="0850449924" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%">
-                <rect width="100%" height="100%" fill="white"></rect>
-              </mask>
-              <g mask="url(#0850449924)">
-                <path
-                  d="M1912.5 105.5C1912.5 108.606 1910.55 111.769 1906.53 114.975C1902.51 118.175 1896.51 121.35 1888.58 124.483C1872.73 130.748 1849.33 136.8 1819.15 142.571C1758.81 154.111 1671.48 164.506 1563.54 173.237C1347.66 190.699 1049.43 201.5 720 201.5C390.571 201.5 92.3353 190.699 -123.538 173.237C-231.477 164.506 -318.812 154.111 -379.154 142.571C-409.329 136.8 -432.731 130.748 -448.579 124.483C-456.505 121.35 -462.512 118.175 -466.529 114.975C-470.554 111.769 -472.5 108.606 -472.5 105.5C-472.5 102.394 -470.554 99.2305 -466.529 96.0245C-462.512 92.8251 -456.505 89.6502 -448.579 86.5169C-432.731 80.2524 -409.329 74.1997 -379.154 68.4289C-318.812 56.8889 -231.477 46.4936 -123.538 37.7626C92.3353 20.3009 390.571 9.5 720 9.5C1049.43 9.5 1347.66 20.3009 1563.54 37.7626C1671.48 46.4936 1758.81 56.8889 1819.15 68.4289C1849.33 74.1997 1872.73 80.2524 1888.58 86.5169C1896.51 89.6502 1902.51 92.8251 1906.53 96.0245C1910.55 99.2305 1912.5 102.394 1912.5 105.5Z"
-                  stroke="currentColor"></path>
-              </g>
-            </svg>
-          </div>
-          <div class="hidden container md:pt-5px md:flex md:justify-between">
-            <div
-              class="pb-30px relative w-1/2 odd:pr-15px even:pl-15px md:odd:px-20px md:even:px-20px md:pb-0 md:w-auto">
-              <div class="md:w-139px lg:w-[203px] xl:w-[267px] 2xl:w-[280px]">
-                <div class="font-serif text-18 antialiased tracking-tight md:text-22">Heather Sterett</div>
-                <div class="text-12 lg:text-base antialiased">Client Engagement Manager</div>
-              </div>
-            </div>
-
-            <div
-              class="pb-30px relative w-1/2 odd:pr-15px even:pl-15px md:odd:px-20px md:even:px-20px md:pb-0 md:w-auto">
-              <div class="md:w-139px lg:w-[203px] xl:w-[267px] 2xl:w-[280px]">
-                <div class="font-serif text-18 antialiased tracking-tight md:text-22">Ganesan Durairaj</div>
-                <div class="text-12 lg:text-base antialiased">Senior Vice President</div>
-              </div>
-            </div>
-            <div
-              class="pb-30px relative w-1/2 odd:pr-15px even:pl-15px md:odd:px-20px md:even:px-20px md:pb-0 md:w-auto">
-              <div class="md:w-139px lg:w-[203px] xl:w-[267px] 2xl:w-[280px]">
-                <div class="font-serif text-18 antialiased tracking-tight md:text-22">Nirupama Rajendran</div>
-                <div class="text-12 lg:text-base antialiased">Head of Business Consulting – Insurance</div>
-              </div>
-            </div>
-            <div
-              class="pb-30px relative w-1/2 odd:pr-15px even:pl-15px md:odd:px-20px md:even:px-20px md:pb-0 md:w-auto">
-              <div class="md:w-139px lg:w-[203px] xl:w-[267px] 2xl:w-[280px]">
-                <div class="font-serif text-18 antialiased tracking-tight md:text-22">Pranesh Mahendran</div>
-                <div class="text-12 lg:text-base antialiased">Delivery Partner - Insurance</div>
-              </div>
-            </div>
-
-
-          </div>
-        </div>
-
-        <div class="relative" style="margin-top:5em">
-          <ul class="container flex flex-wrap md:flex-nowrap justify-between">
-            <li
-              class="-top-45px right-20px sm:right-85px relative w-1/2 z-1 md:odd:px-20px md:even:px-20px md:inset-auto md:pb-0 md:w-auto md:z-0">
-              <div class="w-90px mx-auto md:w-auto lg:h-200px xl:h-[280px] max-w-[280px]">
-                <img width="100%" src="assets/images/sukumar3.png" alt="Sukumar">
-              </div>
-              <div
-                class="hidden relative w-20px h-20px rounded-full bg-tomato md:block md:top-16px lg:top-18px xl:top-33px 2xl:top-23px">
-              </div>
-              <div class="pb-30px max-w-[150px] mx-auto block text-center md:hidden">
-                <div class="bg-ivory rounded-full font-serif text-18 antialiased tracking-tight">Sukumar Karuppusamy
-                </div>
-                <div class="bg-ivory rounded-full text-12 lg:text-base antialiased">Technology Partner - Insurance</div>
-              </div>
-            </li>
-
-            <li
-              class="top-10px left-5px sm:left-75px relative w-1/2 z-1 md:odd:px-20px md:even:px-20px md:inset-auto md:pb-0 md:w-auto md:z-0">
-              <div class="w-90px mx-auto md:w-auto lg:h-200px xl:h-[280px] max-w-[280px]">
-                <img width="100%" src="assets/images/J7.png" alt="Jerry">
-              </div>
-              <div
-                class="hidden relative w-20px h-20px rounded-full bg-tomato md:block md:top-18px lg:top-22px xl:top-23px 2xl:top-28px">
-              </div>
-              <div class="pb-30px max-w-[150px] mx-auto block text-center md:hidden">
-                <div class="bg-ivory rounded-full font-serif text-18 antialiased tracking-tight">Jerry Gonsel</div>
-                <div class="bg-ivory rounded-full text-12 lg:text-base antialiased">Head of Operations</div>
-              </div>
-            </li>
-            <li
-              class="-top-40px -right-25px sm:right-40px relative w-1/2 z-1 md:odd:px-20px md:even:px-20px md:inset-auto md:pb-0 md:w-auto md:z-0">
-              <div class="w-90px mx-auto md:w-auto lg:h-200px xl:h-[280px] max-w-[280px]">
-                <img width="100%" src="assets/images/dhy_main.png" alt="Dhyanesh">
-              </div>
-              <div
-                class="hidden relative w-20px h-20px rounded-full bg-tomato md:block top-22px lg:top-28px xl:top-20px 2xl:top-37px">
-              </div>
-              <div class="pb-30px max-w-[150px] mx-auto block text-center md:hidden">
-                <div class="bg-ivory rounded-full font-serif text-18 antialiased tracking-tight">Dhyanesh Mahendran
-                </div>
-                <div class="bg-ivory rounded-full text-12 lg:text-base antialiased">Head of Infrastructure & Business
-                  Process Management</div>
-              </div>
-            </li>
-            <li
-              class="-left-20px sm:-top-10px sm:left-45px relative w-1/2 z-1 md:odd:px-20px md:even:px-20px md:inset-auto md:pb-0 md:w-auto md:z-0">
-              <div class="w-90px mx-auto md:w-auto lg:h-200px xl:h-[280px] max-w-[280px]">
-                <img width="100%" src="assets/images/santhosh.png" alt="Santhosh">
-              </div>
-              <div
-                class="hidden relative w-20px h-20px rounded-full bg-tomato md:block md:top-16px lg:top-18px xl:top-23px 2xl:top-23px">
-              </div>
-              <div class="pb-30px max-w-[150px] mx-auto block text-center md:hidden">
-                <div class="bg-ivory rounded-full font-serif text-18 antialiased tracking-tight">Santhosh Kumar</div>
-                <div class="bg-ivory rounded-full text-12 lg:text-base antialiased">Head of Technology Incubation &
-                  Innovation</div>
-              </div>
-            </li>
-
-
-
-          </ul>
-          <div class="block max-w-[325px] mx-auto absolute top-0 inset-x-0 w-full md:hidden">
-            <svg width="100%" viewBox="0 0 307 243" fill="none" xmlns="http://www.w3.org/2000/svg"
-              class="text-tomato mx-auto">
-              <path
-                d="M299.233 53.6183C312.009 81.1528 307.366 113.663 289.424 144.001C271.484 174.338 240.269 202.454 200.019 221.131C159.769 239.807 118.144 245.49 83.3956 239.602C48.644 233.714 20.8209 216.269 8.04443 188.735C-4.73203 161.2 -0.0888407 128.69 17.8529 98.3515C35.7933 68.0152 67.0082 39.8988 107.258 21.2221C147.508 2.54541 189.133 -3.1369 223.882 2.75069C258.633 8.63874 286.456 26.0838 299.233 53.6183Z"
-                stroke="currentColor"></path>
-              <circle cx="34.5" cy="220.5" r="4.5" fill="currentColor"></circle>
-              <circle cx="204.5" cy="218.5" r="4.5" fill="currentColor"></circle>
-              <circle cx="260.5" cy="14.5" r="4.5" fill="currentColor"></circle>
-              <circle cx="105.5" cy="22.5" r="4.5" fill="currentColor"></circle>
-            </svg>
-          </div>
-          <div class="hidden md:block">
-            <svg width="100%" viewBox="0 0 1440 31" fill="none" xmlns="http://www.w3.org/2000/svg"
-              class="text-tomato text-tomoto1">
-              <mask id="0850449924" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%">
-                <rect width="100%" height="100%" fill="white"></rect>
-              </mask>
-              <g mask="url(#0850449924)">
-                <path
-                  d="M1912.5 105.5C1912.5 108.606 1910.55 111.769 1906.53 114.975C1902.51 118.175 1896.51 121.35 1888.58 124.483C1872.73 130.748 1849.33 136.8 1819.15 142.571C1758.81 154.111 1671.48 164.506 1563.54 173.237C1347.66 190.699 1049.43 201.5 720 201.5C390.571 201.5 92.3353 190.699 -123.538 173.237C-231.477 164.506 -318.812 154.111 -379.154 142.571C-409.329 136.8 -432.731 130.748 -448.579 124.483C-456.505 121.35 -462.512 118.175 -466.529 114.975C-470.554 111.769 -472.5 108.606 -472.5 105.5C-472.5 102.394 -470.554 99.2305 -466.529 96.0245C-462.512 92.8251 -456.505 89.6502 -448.579 86.5169C-432.731 80.2524 -409.329 74.1997 -379.154 68.4289C-318.812 56.8889 -231.477 46.4936 -123.538 37.7626C92.3353 20.3009 390.571 9.5 720 9.5C1049.43 9.5 1347.66 20.3009 1563.54 37.7626C1671.48 46.4936 1758.81 56.8889 1819.15 68.4289C1849.33 74.1997 1872.73 80.2524 1888.58 86.5169C1896.51 89.6502 1902.51 92.8251 1906.53 96.0245C1910.55 99.2305 1912.5 102.394 1912.5 105.5Z"
-                  stroke="currentColor"></path>
-              </g>
-            </svg>
-          </div>
-          <div class="hidden container md:pt-5px md:flex md:justify-between">
-
-            <div
-              class="pb-30px relative w-1/2 odd:pr-15px even:pl-15px md:odd:px-20px md:even:px-20px md:pb-0 md:w-auto">
-              <div class="md:w-139px lg:w-[203px] xl:w-[267px] 2xl:w-[280px]">
-                <div class="font-serif text-18 antialiased tracking-tight md:text-22">Sukumar Karuppusamy</div>
-                <div class="text-12 lg:text-base antialiased">Technology Partner - Insurance</div>
-              </div>
-            </div>
-
-            <div
-              class="pb-30px relative w-1/2 odd:pr-15px even:pl-15px md:odd:px-20px md:even:px-20px md:pb-0 md:w-auto">
-              <div class="md:w-139px lg:w-[203px] xl:w-[267px] 2xl:w-[280px]">
-                <div class="font-serif text-18 antialiased tracking-tight md:text-22">Jerry Gonsel</div>
-                <div class="text-12 lg:text-base antialiased">Head of Operations </div>
-              </div>
-            </div>
-            <div
-              class="pb-30px relative w-1/2 odd:pr-15px even:pl-15px md:odd:px-20px md:even:px-20px md:pb-0 md:w-auto">
-              <div class="md:w-139px lg:w-[203px] xl:w-[267px] 2xl:w-[280px]">
-                <div class="font-serif text-18 antialiased tracking-tight md:text-22">Dhyanesh Mahendran</div>
-                <div class="text-12 lg:text-base antialiased">Head of Infrastructure & Business Process Management</div>
-              </div>
-            </div>
-            <div
-              class="pb-30px relative w-1/2 odd:pr-15px even:pl-15px md:odd:px-20px md:even:px-20px md:pb-0 md:w-auto">
-              <div class="md:w-139px lg:w-[203px] xl:w-[267px] 2xl:w-[280px]">
-                <div class="font-serif text-18 antialiased tracking-tight md:text-22">Santhosh Kumar </div>
-                <div class="text-12 lg:text-base antialiased">Head of Technology Incubation & Innovation</div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="relative" style="margin-top:5em">
-          <ul class="container flex flex-wrap md:flex-nowrap justify-between">
-            <li
-              class="top-10px left-5px sm:left-75px relative w-1/2 z-1 md:odd:px-20px md:even:px-20px md:inset-auto md:pb-0 md:w-auto md:z-0">
-              <div class="w-90px mx-auto md:w-auto lg:h-200px xl:h-[280px] max-w-[280px]">
-                <img width="100%" src="assets/images/thani.png" alt="Thanikaivel">
-              </div>
-              <div
-                class="hidden relative w-20px h-20px rounded-full bg-tomato md:block md:top-16px lg:top-18px xl:top-33px 2xl:top-23px">
-              </div>
-              <div class="pb-30px max-w-[150px] mx-auto block text-center md:hidden">
-                <div class="bg-ivory rounded-full font-serif text-18 antialiased tracking-tight">Thanikaivel Ekambaram
-                </div>
-                <div class="bg-ivory rounded-full text-12 lg:text-base antialiased">Head of Information Security</div>
-              </div>
-            </li>
-            <li
-              class="-top-40px -right-25px sm:right-40px relative w-1/2 z-1 md:odd:px-20px md:even:px-20px md:inset-auto md:pb-0 md:w-auto md:z-0">
-              <div class="w-90px mx-auto md:w-auto lg:h-200px xl:h-[280px] max-w-[280px]">
-                <img width="100%" src="assets/images/rajkumar.png" alt="Rajkumar">
-              </div>
-              <div
-                class="hidden relative w-20px h-20px rounded-full bg-tomato md:block md:top-18px lg:top-22px xl:top-20px 2xl:top-28px">
-              </div>
-              <div class="pb-30px max-w-[150px] mx-auto block text-center md:hidden">
-                <div class="bg-ivory rounded-full font-serif text-18 antialiased tracking-tight">Rajkumar Kanagaraju
-                </div>
-                <div class="bg-ivory rounded-full text-12 lg:text-base antialiased">Head of Quality Assurance &
-                  Automation </div>
-              </div>
-            </li>
-            <li
-              class="-top-40px -right-25px sm:right-40px relative w-1/2 z-1 md:odd:px-20px md:even:px-20px md:inset-auto md:pb-0 md:w-auto md:z-0">
-              <div class="w-90px mx-auto md:w-auto lg:h-200px xl:h-[280px] max-w-[280px]">
-                <img width="100%" src="assets/images/dominic.png" alt="Dominic">
-              </div>
-              <div
-                class="hidden relative w-20px h-20px rounded-full bg-tomato md:block md:top-18px lg:top-22px xl:top-20px 2xl:top-28px">
-              </div>
-              <div class="pb-30px max-w-[150px] mx-auto block text-center md:hidden">
-                <div class="bg-ivory rounded-full font-serif text-18 antialiased tracking-tight">Dominic Lintan</div>
-                <div class="bg-ivory rounded-full text-12 lg:text-base antialiased">Quality Assurance Manager & Lead,
-                  Philippines Operations</div>
-              </div>
-            </li>
-            <li
-              class="-top-40px -right-25px sm:right-40px relative w-1/2 z-1 md:odd:px-20px md:even:px-20px md:inset-auto md:pb-0 md:w-auto md:z-0">
-              <div class="w-90px mx-auto md:w-auto lg:h-200px xl:h-[280px] max-w-[280px]">
-                <img width="100%" src="assets/images/petite.png" alt="Petite">
-              </div>
-              <div
-                class="hidden relative w-20px h-20px rounded-full bg-tomato md:block md:top-18px lg:top-22px xl:top-20px 2xl:top-28px">
-              </div>
-              <div class="pb-30px max-w-[150px] mx-auto block text-center md:hidden">
-                <div class="bg-ivory rounded-full font-serif text-18 antialiased tracking-tight">Petite Apostol</div>
-                <div class="bg-ivory rounded-full text-12 lg:text-base antialiased">Lead Quality Assurance Engineer
-                </div>
-              </div>
-            </li>
-          </ul>
-          <div class="block max-w-[325px] mx-auto absolute top-0 inset-x-0 w-full md:hidden">
-            <svg width="100%" viewBox="0 0 307 243" fill="none" xmlns="http://www.w3.org/2000/svg"
-              class="text-tomato mx-auto">
-              <path
-                d="M299.233 53.6183C312.009 81.1528 307.366 113.663 289.424 144.001C271.484 174.338 240.269 202.454 200.019 221.131C159.769 239.807 118.144 245.49 83.3956 239.602C48.644 233.714 20.8209 216.269 8.04443 188.735C-4.73203 161.2 -0.0888407 128.69 17.8529 98.3515C35.7933 68.0152 67.0082 39.8988 107.258 21.2221C147.508 2.54541 189.133 -3.1369 223.882 2.75069C258.633 8.63874 286.456 26.0838 299.233 53.6183Z"
-                stroke="currentColor"></path>
-              <circle cx="34.5" cy="220.5" r="4.5" fill="currentColor"></circle>
-              <circle cx="204.5" cy="218.5" r="4.5" fill="currentColor"></circle>
-              <circle cx="260.5" cy="14.5" r="4.5" fill="currentColor"></circle>
-              <circle cx="105.5" cy="22.5" r="4.5" fill="currentColor"></circle>
-            </svg>
-          </div>
-          <div class="hidden md:block">
-            <svg width="100%" viewBox="0 0 1440 31" fill="none" xmlns="http://www.w3.org/2000/svg"
-              class="text-tomato text-tomoto1">
-              <mask id="0850449924" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%">
-                <rect width="100%" height="100%" fill="white"></rect>
-              </mask>
-              <g mask="url(#0850449924)">
-                <path
-                  d="M1912.5 105.5C1912.5 108.606 1910.55 111.769 1906.53 114.975C1902.51 118.175 1896.51 121.35 1888.58 124.483C1872.73 130.748 1849.33 136.8 1819.15 142.571C1758.81 154.111 1671.48 164.506 1563.54 173.237C1347.66 190.699 1049.43 201.5 720 201.5C390.571 201.5 92.3353 190.699 -123.538 173.237C-231.477 164.506 -318.812 154.111 -379.154 142.571C-409.329 136.8 -432.731 130.748 -448.579 124.483C-456.505 121.35 -462.512 118.175 -466.529 114.975C-470.554 111.769 -472.5 108.606 -472.5 105.5C-472.5 102.394 -470.554 99.2305 -466.529 96.0245C-462.512 92.8251 -456.505 89.6502 -448.579 86.5169C-432.731 80.2524 -409.329 74.1997 -379.154 68.4289C-318.812 56.8889 -231.477 46.4936 -123.538 37.7626C92.3353 20.3009 390.571 9.5 720 9.5C1049.43 9.5 1347.66 20.3009 1563.54 37.7626C1671.48 46.4936 1758.81 56.8889 1819.15 68.4289C1849.33 74.1997 1872.73 80.2524 1888.58 86.5169C1896.51 89.6502 1902.51 92.8251 1906.53 96.0245C1910.55 99.2305 1912.5 102.394 1912.5 105.5Z"
-                  stroke="currentColor"></path>
-              </g>
-            </svg>
-          </div>
-          <div class="hidden container md:pt-5px md:flex md:justify-between">
-            <div
-              class="pb-30px relative w-1/2 odd:pr-15px even:pl-15px md:odd:px-20px md:even:px-20px md:pb-0 md:w-auto">
-              <div class="md:w-139px lg:w-[203px] xl:w-[267px] 2xl:w-[280px]">
-                <div class="font-serif text-18 antialiased tracking-tight md:text-22">Thanikaivel Ekambaram</div>
-                <div class="text-12 lg:text-base antialiased">Head of Information Security </div>
-              </div>
-            </div>
-            <div
-              class="pb-30px relative w-1/2 odd:pr-15px even:pl-15px md:odd:px-20px md:even:px-20px md:pb-0 md:w-auto">
-              <div class="md:w-139px lg:w-[203px] xl:w-[267px] 2xl:w-[280px]">
-                <div class="font-serif text-18 antialiased tracking-tight md:text-22">Rajkumar Kanagaraju </div>
-                <div class="text-12 lg:text-base antialiased">Head of Quality Assurance & Automation</div>
-              </div>
-            </div>
-            <div
-              class="pb-30px relative w-1/2 odd:pr-15px even:pl-15px md:odd:px-20px md:even:px-20px md:pb-0 md:w-auto">
-              <div class="md:w-139px lg:w-[203px] xl:w-[267px] 2xl:w-[280px]">
-                <div class="font-serif text-18 antialiased tracking-tight md:text-22">Dominic Lintan</div>
-                <div class="text-12 lg:text-base antialiased">Quality Assurance Manager & Lead, Philippines Operations
-                </div>
-              </div>
-            </div>
-            <div
-              class="pb-30px relative w-1/2 odd:pr-15px even:pl-15px md:odd:px-20px md:even:px-20px md:pb-0 md:w-auto">
-              <div class="md:w-139px lg:w-[203px] xl:w-[267px] 2xl:w-[280px]">
-                <div class="font-serif text-18 antialiased tracking-tight md:text-22">Petite Apostol </div>
-                <div class="text-12 lg:text-base antialiased">Lead Quality Assurance Engineer</div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
       </section>
+
+<section id="page-block-leadership" class="page-block-section position-relative d-none" style="min-height: 0;">
+  <div class="container position-relative">
+
+    <div class="row leadership leadership-500147" data-carousel="500147">
+
+      <div
+  *ngFor="let leader of leadershipRows"
+  class="col-12 col-md-6 col-xl-4 leadership-card">
+
+  <div class="card-wrapper">
+
+    <!-- IMAGE -->
+    <img
+      class="card-image"
+      [src]="'assets/images/' + leader.filename"
+      [alt]="leader.name">
+
+    <!-- NAME BAR (always visible) -->
+    <div class="card-footer">
+      <h3>{{ leader.name }}</h3>
+      <p>{{ leader.title }}</p>
     </div>
-    <div class="container md:grid md:grid-cols-12 md:gap-5">
 
-      <div class="col-span-12 lg:col-span-10 lg:col-start-2">
-        <div
-          class="swiper-container swiper-container-initialized swiper-container-vertical swiper-container-pointer-events">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide" data-swiper-slide-index="1">
-              <div class="text-left md:grid md:grid-cols-10 md:gap-5">
-                <div
-                  class="flex items-start text-20 font-serif font-light tracking-tight antialiased md:text-25 md:col-span-3 md:-mt-5px">
-                  <div
-                    class="w-0 h-10px mt-7px flex-shrink-0 rounded-full bg-violet overflow-hidden transition-all ease-out lg:mt-5px lg:h-20px">
-                  </div>
-                  Diversity & Inclusion
-                </div>
-                <div
-                  class="antialiased text-12 tracking-wide md:tracking-normal md:text-base md:col-span-8 md:col-start-4">
-                  <p style="margin:0 0 10px 0">We understand the significance of drawing the circle wider to broaden our
-                    perspective, to connect on a deeper level, and to be a force for positive change. </p>
-                  <p style="margin:10px 0">For us, diversity, equity and inclusion are more than guiding principles.
-                    They are central to our continued growth. We firmly believe that embracing diversity and inclusion
-                    (D&I) drives innovation and improves outcomes. </p>
-                  <p style="margin:10px 0 0 0">Going further, as a Certified Minority Owned Business Enterprise (MBE)
-                    and a Certified Small Business Enterprise (SBE), we engage & utilize Woman Owned Business Enterprise
-                    (WBE), Disabled Business Enterprise (DBE), Veteran Owned Business Enterprise (VBE) &
-                    Service-Disabled Veteran Owned Business Enterprise (SDVBE) information technology specialists and
-                    create a robust environment for all of our consultants to work together & succeed.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide" data-swiper-slide-index="2">
-              <div class="text-left md:grid md:grid-cols-10 md:gap-5">
-                <div
-                  class="flex items-start text-20 font-serif font-light tracking-tight antialiased md:text-25 md:col-span-3 md:-mt-5px">
-                  <div
-                    class="w-0 h-10px mt-7px flex-shrink-0 rounded-full bg-violet overflow-hidden transition-all ease-out lg:mt-5px lg:h-20px">
-                  </div>
-                  Partnerships
-                </div>
-                <div
-                  class="antialiased text-12 tracking-wide md:tracking-normal md:text-base md:col-span-8 md:col-start-4">
-                  <p>Successful development agenda requires inclusive partnerships — at the global, regional, national
-                    and local levels — built upon principles and values, and upon a shared vision and shared goals
-                    placing people and the client at the center. With this world view, we’ve partnered with industry
-                    leaders in multiple industries to bring the best of the solutions & services to our clients. </p>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="swiper-slide" data-swiper-slide-index="3">
-              <div class="text-left md:grid md:grid-cols-10 md:gap-5">
-                <div
-                  class="flex items-start text-20 font-serif font-light tracking-tight antialiased md:text-25 md:col-span-3 md:-mt-5px">
-                  <div
-                    class="w-0 h-10px mt-7px flex-shrink-0 rounded-full bg-violet overflow-hidden transition-all ease-out lg:mt-5px lg:h-20px">
-                  </div>
-                  Community Giving
-                </div>
-                <div
-                  class="antialiased text-12 tracking-wide md:tracking-normal md:text-base md:col-span-8 md:col-start-4">
-                  <p>As a responsible corporate citizen, Mahathi consistently supports the communities in which we
-                    operate through financial assistance, volunteering, community education and green space creation.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
+    <!-- HOVER OVERLAY -->
+    <div class="card-overlay">
+      <div class="overlay-content">
+        <h3>{{ leader.name }}</h3>
+        <p class="title">{{ leader.title }}</p>
+        <p class="desc">{{ leader.description }}</p>
+        <a [href]="leader.link">READ MORE</a>
       </div>
     </div>
-  </section>
 
-</main>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+         
+
+    </div>
+  </div>
+</div>
