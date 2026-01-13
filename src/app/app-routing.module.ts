@@ -47,7 +47,7 @@ const routes: Routes = [
     {path: 'aboutus', component: AboutusComponent},
   {path: 'workerscompensiation', component: WorkersCompensiationComponent},
   {path: 'workerscompensiation', component: WorkersCompensiationComponent},
-  {path: 'NewsComponent', component: NewsComponent},
+  {path: 'News', component: NewsComponent},
   {path: 'workerscompensiation', component: WorkersCompensiationComponent},
   {path: 'maintemp', component: MainTemplateComponent}
 ];
