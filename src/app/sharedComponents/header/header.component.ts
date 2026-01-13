@@ -64,6 +64,24 @@ private registerPageContent(): void {
     });
   }
 
+  isScrolled = false;
+
+@HostListener('window:scroll', [])
+onWindowScroll(): void {
+  if (this.router.url === '/') {
+    const scrollTop =
+      window.pageYOffset || document.documentElement.scrollTop;
+
+    this.isScrolled = scrollTop > 100;
+    this.headerClass = this.isScrolled ? 'inner' : 'home';
+  } else {
+    // Inner pages always scrolled
+    this.isScrolled = true;
+    this.headerClass = 'inner';
+  }
+}
+
+
   ngAfterViewInit(): void {
     this.closeMenu();
       this.registerPageContent();
