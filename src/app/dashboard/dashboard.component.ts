@@ -1,4 +1,6 @@
 import { Component, ElementRef, ViewChild, AfterViewInit, OnDestroy } from '@angular/core';
+import { GlobalSearchItem, GlobalSearchService } from '../global-search.service';
+import { Router } from '@angular/router';
 
 declare var $: any;
 
@@ -196,7 +198,42 @@ export class DashboardComponent implements AfterViewInit, OnDestroy {
     setTimeout(() => {
       this.initSlider();
     }, 250);
+      this.registerPageContent();
   }
+  
+
+constructor(
+  private searchService: GlobalSearchService,
+  private router: Router
+) {}
+
+
+
+
+private registerPageContent(): void {
+  const items: GlobalSearchItem[] = [];
+
+  const elements = Array.from(
+    document.querySelectorAll('h1, h2, h3, p, li')
+  );
+
+  elements.forEach((el: Element, index: number) => {
+    const text = el.textContent?.trim();
+    if (!text) return;
+
+    const id = `search-${this.router.url.replace(/\//g, '')}-${index}`;
+    el.setAttribute('id', id);
+
+    items.push({
+      text,
+      route: this.router.url,
+      elementId: id
+    });
+  });
+
+  this.searchService.register(items);
+}
+
 
   ngOnDestroy(): void {
     const slider = $('.slick-track-container');

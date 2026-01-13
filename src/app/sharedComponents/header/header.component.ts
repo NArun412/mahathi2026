@@ -6,6 +6,7 @@ import {
   AfterViewInit
 } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
+import { GlobalSearchItem, GlobalSearchService } from 'src/app/global-search.service';
 
 declare var $: any;
 
@@ -15,10 +16,40 @@ declare var $: any;
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit, AfterViewInit {
+
+  
+
+
+private registerPageContent(): void {
+  const items: GlobalSearchItem[] = [];
+
+  const elements = Array.from(
+    document.querySelectorAll('h1, h2, h3, p, li')
+  );
+
+  elements.forEach((el: Element, index: number) => {
+    const text = el.textContent?.trim();
+    if (!text) return;
+
+    const id = `search-${this.router.url.replace(/\//g, '')}-${index}`;
+    el.setAttribute('id', id);
+
+    items.push({
+      text,
+      route: this.router.url,
+      elementId: id
+    });
+  });
+
+  this.searchService.register(items);
+}
+
   @Input() headerClass: string = 'home';
   private mobileMenuOpen = false;
 
-  constructor(private router: Router) {}
+  searchResults: GlobalSearchItem[] = [];
+  private searchTimer: any;
+  constructor(private router: Router,    private searchService: GlobalSearchService) {}
 
   /* ---------------- INIT ---------------- */
 
@@ -35,6 +66,8 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     this.closeMenu();
+      this.registerPageContent();
+
   }
 
   /* ---------------- RESPONSIVE ---------------- */
@@ -154,5 +187,40 @@ export class HeaderComponent implements OnInit, AfterViewInit {
           setTimeout(() => el.removeClass('search-highlight'), 1500);
         }
       });
+  }
+ onSearchInput(event: Event): void {
+    const input = event.target as HTMLInputElement;
+    const value = input.value.trim();
+
+    clearTimeout(this.searchTimer);
+
+    if (!value) {
+      this.searchResults = [];
+      return;
+    }
+
+    // Debounced global search
+    this.searchTimer = setTimeout(() => {
+      this.searchResults = this.searchService
+        .search(value)
+        .slice(0, 8); // limit results
+    }, 200);
+  }
+
+  onResultClick(item: GlobalSearchItem): void {
+    this.searchResults = [];
+
+    this.router.navigate([item.route]).then(() => {
+      setTimeout(() => {
+        const el = document.getElementById(item.elementId);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          el.classList.add('search-highlight');
+          setTimeout(() => {
+            el.classList.remove('search-highlight');
+          }, 1500);
+        }
+      }, 300);
+    });
   }
 }

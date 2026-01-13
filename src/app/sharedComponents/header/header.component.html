@@ -308,14 +308,24 @@
           (submit)="handleSearch($event)"
         >
           <input
-            class=""
-            type="text"
-            name="q"
-            placeholder="Enter your search..."
-            aria-label="Search"
-            autocomplete="off"
-            #searchInput
-          />
+  type="text"
+  placeholder="Enter your search..."
+  aria-label="Search"
+  (input)="onSearchInput($event)"
+/>
+
+<ul class="search-results" *ngIf="searchResults.length">
+  <li
+    *ngFor="let item of searchResults"
+    (click)="onResultClick(item)"
+  >
+    {{ item.text }}
+    <small class="text-muted">
+      — {{ item.route }}
+    </small>
+  </li>
+</ul>
+
 
           <div class="search-buttons">
             <!-- search trigger -->

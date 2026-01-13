@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+import { GlobalSearchItem, GlobalSearchService } from './global-search.service';
 
 
 @Component({
@@ -10,7 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 })
 export class AppComponent {
   headerClass: string = 'home';
-  constructor(private router: Router) {
+  constructor(private router: Router,  private searchService: GlobalSearchService) {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         if (event.url === '/' || event.url === '/home') {
@@ -25,5 +26,35 @@ export class AppComponent {
 
   title = 'Mahathi Infotech';
 
+
+ngAfterViewInit(): void {
+  this.registerPageContent();
+}
+
+
+
+private registerPageContent(): void {
+  const items: GlobalSearchItem[] = [];
+
+  const elements = Array.from(
+    document.querySelectorAll('h1, h2, h3, p, li')
+  );
+
+  elements.forEach((el: Element, index: number) => {
+    const text = el.textContent?.trim();
+    if (!text) return;
+
+    const id = `search-${this.router.url.replace(/\//g, '')}-${index}`;
+    el.setAttribute('id', id);
+
+    items.push({
+      text,
+      route: this.router.url,
+      elementId: id
+    });
+  });
+
+  this.searchService.register(items);
+}
 
 }
