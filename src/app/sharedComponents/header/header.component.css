@@ -705,3 +705,16 @@ background-color: #76A379;
   background-color: transparent;
 }
 
+.page-header-nav.disable-hover {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+#page-header-nav:not(.scrolled)
+.navbar-nav > li > a.nav-link p {
+  color: #fff !important;
+}
+#page-header-nav.scrolled
+.navbar-nav > li > a.nav-link p {
+  color: #fff !important;
+}
