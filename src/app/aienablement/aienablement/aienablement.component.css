@@ -1,7 +1,7 @@
 /* General Section Styles */
 .um-section {
-    padding: 60px 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* padding: 60px 20px; */
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     background-color: #ffffff;
     text-align: center;
 }
@@ -93,7 +93,7 @@
     max-width: 1200px;
     margin: 50px auto;
     padding: 20px;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    /* font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; */
     color: #333;
 }
 
@@ -214,7 +214,7 @@ p {
     max-width: 1200px;
     margin: 60px auto;
     padding: 0 20px;
-    font-family: 'Segoe UI', Arial, sans-serif;
+    /* font-family: 'Segoe UI', Arial, sans-serif; */
 }
 
 .main-title2 { font-size: 2.2rem; margin-bottom: 10px; color: #000; }
@@ -314,7 +314,7 @@ p {
 
 /* Unique Prefix: ai-dev- */
 .ai-dev-container {
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    /* font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; */
     max-width: 1000px;
     margin: 40px auto;
     padding: 20px;
@@ -407,7 +407,7 @@ p {
 
 /* Unique Prefix: cust-ai- */
 .cust-ai-container {
-    font-family: 'Segoe UI', Arial, sans-serif;
+    /* font-family: 'Segoe UI', Arial, sans-serif; */
     max-width: 1100px;
     margin: 40px auto;
     padding: 20px;

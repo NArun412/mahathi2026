@@ -245,3 +245,6 @@
         font-size: 2rem !important;
     }
 }
+.page-block-section {
+    min-height: 0em !important;
+}
