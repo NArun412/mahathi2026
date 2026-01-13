@@ -27,6 +27,7 @@ import { SolutionGridComponent } from './sharedComponents/solution-grid/solution
 import { AboutusComponent } from './pages/aboutus/aboutus.component';
 import { NewsComponent } from './pages/news/news.component';
 import { MainTemplateComponent } from './sharedComponents/main-template/main-template.component';
+import { HealthTopBannerComponent } from './health-top-banner/health-top-banner.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { MainTemplateComponent } from './sharedComponents/main-template/main-tem
     WorkersCompensiationComponent,
     NewsComponent,
     WorkersCompensiationComponent,
-    MainTemplateComponent
+    MainTemplateComponent,
+    HealthTopBannerComponent
   ],
   imports: [
     BrowserModule,

@@ -1,8 +1,9 @@
 <div class="row no-gutters">
     <div class="col-12 py-0">
         <div>
+            <app-health-top-banner [pageData]="healthcareData"></app-health-top-banner>
             <section id="page-block-banner-carousel"
-                class="page-block-section banner-carousel position-relative active">
+                class="page-block-section banner-carousel position-relative active d-none">
                 <div class="banner-carousel-container w-100">
                     <div class="banner-carousel-item position-relative"
                         style="background-image: url(../../../assets/images/Healthcare_bann.png)">
@@ -27,7 +28,7 @@
                                                     through scalable technology, data, and AI-led services.
                                                 </p>
                                             </div>
-                                            <div class="pt-4">
+                                            <div class="pt-4 d-none">
                                                 <a class="bg-white px-5 py-4 inline-block border rounded-full duration-300 ease py-15px lg:py-20px px-25px lg:px-50px text-violet border-violet hover:bg-violet hover:text-white group "
                                                     href="#">
                                                     <div class="flex items-center lg:text-20 ">
@@ -36,7 +37,7 @@
                                                     </div>
                                                 </a>
 
-                                                <a class="ml-3 bg-white px-5 py-4 inline-block border rounded-full duration-300 ease py-15px lg:py-20px px-25px lg:px-50px text-violet border-violet hover:bg-violet hover:text-white group "
+                                                <a class="ml-3 d-none bg-white px-5 py-4 inline-block border rounded-full duration-300 ease py-15px lg:py-20px px-25px lg:px-50px text-violet border-violet hover:bg-violet hover:text-white group "
                                                     href="#">
                                                     <div class="flex items-center lg:text-20 ">
                                                         <span class="order-1" style="font-weight: bold;">Explore
@@ -279,12 +280,8 @@
                 </div>
             </section>
 
-            <section id="page-block-ec-panel" class="page-block-section position-relative "
-                style="background-color: #ddd;  min-height:0; ">
-                <div class="container flex-column">
-                    <div class="row flex-grow-1 justify-content-center">
-                        <div class="col-12 position-relative">
-                            <div class="container">
+            <section style="background-color: #ddd">
+                <div class="container mt-5">
                                 <div class="row">
                                     <div class="col editor-col">
 
@@ -323,10 +320,9 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
             </section>
+
+      
 
         </div>
     </div>
