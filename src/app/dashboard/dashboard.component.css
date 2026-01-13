@@ -111,6 +111,7 @@
 
 .dashboard-tab-wrapper {
   display: flex;
+  padding: 13px;
   align-items: center;
   justify-content: center;
   gap: 12px;
@@ -310,6 +311,7 @@
 
 .dashboard-tab-wrapper {
   display: flex;
+  padding: 13px;
   align-items: center;
   justify-content: center;
   gap: 12px;
