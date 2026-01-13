@@ -3815,10 +3815,9 @@
                                 </li>
 
                                 <li class="nav-item dropdown ct-mega-dropdown" id="megaMenuToggler">
-                                    <a class="nav-link" routerLink="/aienablement">
+                                    <a class="nav-link" routerLink="/aienablement"  routerLinkActive="active">
                                         <p>AI ENABLEMENT</p>
                                     </a>
- 
                                     <div class="dropdown-menu ct-mega-menu px-0 py-0 py-lg-0">
                                         <div class="container mb-5" style="min-height: auto;">
                                             <div class="row">
@@ -3986,16 +3985,26 @@
                                 </li>
 
 <li class="nav-item">
-  <a class="nav-link" routerLink="NewsComponent">
+  <a
+    class="nav-link"
+    routerLink="NewsComponent"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+  >
     <p>News</p>
   </a>
 </li>
 
 <li class="nav-item">
-  <a class="nav-link" routerLink="aboutus">
+  <a
+    class="nav-link"
+    routerLink="aboutus"
+    routerLinkActive="active"
+  >
     <p>About us</p>
   </a>
 </li>
+
                                
                             </ul>
                         </div>

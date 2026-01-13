@@ -723,3 +723,19 @@ background-color: #76A379;
 .navbar-nav > li > a.nav-link:hover p {
   color: #6d9b73 !important; /* choose any color */
 }
+/* Active - top of page */
+#page-header-nav:not(.scrolled)
+.navbar-nav > li > a.nav-link.active p {
+  color: #6d9b73 !important;
+}
+
+/* Active - after scroll */
+#page-header-nav.scrolled
+.navbar-nav > li > a.nav-link.active p {
+  color: #6d9b73!important;
+}
+
+#page-header-nav.disable-hover
+.navbar-nav > li > a.nav-link.active p {
+  color:  #6d9b73 !important;
+}
