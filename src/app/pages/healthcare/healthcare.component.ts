@@ -1,4 +1,6 @@
 import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { GlobalSearchItem, GlobalSearchService } from 'src/app/global-search.service';
 
 declare var $: any;
 
@@ -69,7 +71,41 @@ export class HealthcareComponent implements AfterViewInit {
         this.healthcareHeading = this.healthcareHeadingMap[0];
         this.healthcareGridItems = this.healthcareGridMap[0];
         this.initSlider();
+          this.registerPageContent();
     }
+
+
+    
+
+constructor(
+  private searchService: GlobalSearchService,
+  private router: Router
+) {}
+
+
+private registerPageContent(): void {
+  const items: GlobalSearchItem[] = [];
+
+  const elements = Array.from(
+    document.querySelectorAll('h1, h2, h3, p, li')
+  );
+
+  elements.forEach((el: Element, index: number) => {
+    const text = el.textContent?.trim();
+    if (!text) return;
+
+    const id = `search-${this.router.url.replace(/\//g, '')}-${index}`;
+    el.setAttribute('id', id);
+
+    items.push({
+      text,
+      route: this.router.url,
+      elementId: id
+    });
+  });
+
+  this.searchService.register(items);
+}
 
     onHealthcareTabChange(idx: number) {
         this.setTab(idx);
