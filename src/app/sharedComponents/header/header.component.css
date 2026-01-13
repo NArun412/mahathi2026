@@ -330,16 +330,16 @@ background-color: #76A379;
     color: #008111 !important;    /* Changes to brand green on hover */
 }
 /* Card Container Styling */
-.custom-award-card {
+/* .custom-award-card {
     background: #F4F4F2;
     border: 1px solid #eef0f2;
     border-radius: 12px;
     padding: 25px 20px;
     text-align: center;
     transition: all 0.3s ease;
-    height: 100%; /* Ensures all cards in the row are same height */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
+    /* height: 100%; /* Ensures all cards in the row are same height */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+} */   
 
  
 .custom-award-card:hover {
@@ -496,4 +496,74 @@ background-color: #76A379;
 /* Ensure the parent LI doesn't restrict the width of the menu */
 .location.nav-item.dropdown {
     position: static !important;
+}
+
+/* --- 1. DESKTOP & TABLET LANDSCAPE (992px and up) --- */
+@media (min-width: 992px) {
+    #locationMenu .row {
+        display: flex !important;
+        align-items: stretch !important;
+    }
+
+    #locationMenu .col-lg-4 {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    #locationMenu .item-details-container-title {
+        display: flex !important;
+        flex-direction: column !important;
+        height: 100% !important; /* Changed from 50% to 100% to allow full stretch */
+        flex: 1 1 auto !important;
+    }
+
+    .custom-award-card {
+        flex: 1 1 auto !important; 
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        width: 100% !important;
+        min-height: 150px !important; /* Uniform height for desktop rows */
+        margin-bottom: 20px !important; /* Added back for spacing between stacked cards in a column */
+        box-sizing: border-box !important;
+    }
+}
+
+/* --- 2. MOBILE & TABLET PORTRAIT (Under 991px) --- */
+@media (max-width: 991.98px) {
+    #locationMenu .row {
+        display: block !important; /* Allow natural stacking */
+    }
+
+    .custom-award-card {
+        display: block !important;
+        height: auto !important;
+        min-height: 90px !important; /* Shorter for mobile screens */
+        margin-bottom: 15px !important;
+        width: 50% !important;
+    }
+
+    /* Remove the vertical border lines on mobile and add a bottom separator */
+    #locationMenu .border-right {
+        border-right: none !important;
+        border-bottom: 1px solid #dee2e6 !important;
+        margin-bottom: 20px !important;
+        padding-bottom: 10px !important;
+    }
+}
+
+/* --- 3. GLOBAL LINK & TEXT STYLES (Applies to all) --- */
+.custom-award-card a {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    height: 100% !important;
+    width: 100% !important;
+    text-decoration: none !important;
+}
+
+.custom-award-card h2, 
+.custom-award-card p {
+    text-align: center !important;
+    width: 100% !important;
 }
