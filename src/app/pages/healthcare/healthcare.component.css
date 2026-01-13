@@ -248,3 +248,7 @@
 .page-block-section {
     min-height: 0em !important;
 }
+
+*{
+    overflow: hidden;
+}
