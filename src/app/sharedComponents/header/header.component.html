@@ -356,14 +356,8 @@
 </div>
 
 
-    <div
-  id="page-header-nav"
-  class="page-header-nav d-none d-md-flex align-items-stretch"
-  [class.scrolled]="isScrolled || isHovering"
-  [class.disable-hover]="!isScrolled && !isHovering"
-  (mouseenter)="onHeaderHover(true)"
-  (mouseleave)="onHeaderHover(false)"
->
+ <div id="page-header-nav" class="page-header-nav d-none d-md-flex align-items-stretch" [ngClass]="{'scrolled': headerClass === 'inner'}" style="min-height: 108px;">
+    
         <div class="container-fluid px-lg-5">
             <div class="row h-100 align-items-stretch flex-nowrap">
                 <div class="col-auto d-flex align-items-center py-0">

@@ -43,9 +43,6 @@ private registerPageContent(): void {
 }
 
   @Input() headerClass: string = 'home';
-
-  isScrolled = false;
-  isHovering = false;              // ✅ NEW
   private mobileMenuOpen = false;
 
   searchResults: GlobalSearchItem[] = [];
@@ -56,91 +53,54 @@ private registerPageContent(): void {
 
   ngOnInit(): void {
     this.initializeMenu();
-
-    this.router.events.subscribe(event => {
-      if (event instanceof NavigationEnd) {
-        this.updateHeaderState();
-      }
-    });
+    this.router.events.subscribe(event => { if (event instanceof NavigationEnd) { const url = event.urlAfterRedirects || event.url; this.headerClass = url === '/' ? 'home' : 'inner'; } });
   }
 
   ngAfterViewInit(): void {
-    this.closeMenu();
-    this.registerPageContent();
+    this.closeMenu(); 
   }
-
-  /* ---------------- HEADER STATE ---------------- */
-
-  private updateHeaderState(): void {
-    if (this.router.url === '/') {
-      this.headerClass =
-        (this.isScrolled || this.isHovering) ? 'inner' : 'home';
-    } else {
-      this.isScrolled = true;
-      this.headerClass = 'inner';
-    }
-  }
-
-  /* ---------------- SCROLL ---------------- */
-
-  @HostListener('window:scroll', [])
-  onWindowScroll(): void {
-    if (this.router.url === '/') {
-      const scrollTop =
-        window.pageYOffset || document.documentElement.scrollTop;
-
-      this.isScrolled = scrollTop > 100;
-    } else {
-      this.isScrolled = true;
-    }
-
-    this.updateHeaderState();
-  }
-
-  /* ---------------- HOVER (NEW) ---------------- */
-
-  onHeaderHover(isHover: boolean): void {
-    this.isHovering = isHover;
-    this.updateHeaderState();
-  }
-
-  /* ---------------- RESPONSIVE ---------------- */
 
   @HostListener('window:resize')
   onResize(): void {
+    // Close menu on resize
     this.closeMenu();
     this.mobileMenuOpen = false;
   }
 
-  /* ---------------- MENU ---------------- */
-
+  /**
+   * Toggle mobile menu when hamburger is clicked
+   */
   toggleMobileMenu(): void {
     this.mobileMenuOpen = !this.mobileMenuOpen;
     const menu = document.getElementById('navbarNavDropdown');
-    if (menu) {
-      menu.classList.toggle('show', this.mobileMenuOpen);
+    
+    if (this.mobileMenuOpen) {
+      if (menu) menu.classList.add('show');
+    } else {
+      if (menu) menu.classList.remove('show');
     }
   }
 
   private initializeMenu(): void {
+    // Ensure menu is closed on component initialization
     const menu = document.getElementById('navbarNavDropdown');
-    if (menu) menu.classList.remove('show');
+    if (menu) {
+      menu.classList.remove('show');
+    }
     this.mobileMenuOpen = false;
   }
 
   public closeMenu(): void {
     const menu = document.getElementById('navbarNavDropdown');
-    if (menu) menu.classList.remove('show');
+    if (menu) {
+      menu.classList.remove('show');
+    }
     this.mobileMenuOpen = false;
   }
 
-  /* ---------------- MEGA MENU ---------------- */
-
-  closeMegaMenu(menuElement: HTMLElement): void {
-    if (!menuElement) return;
-
+  closeMegaMenu(menuElement: HTMLElement) {
     menuElement.classList.remove('show');
-
+    
     const dropdownMenu = menuElement.querySelector('.dropdown-menu');
     if (dropdownMenu) {
       dropdownMenu.classList.remove('show');

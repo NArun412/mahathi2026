@@ -639,64 +639,64 @@ background-color: #76A379;
 /* TOP OF PAGE (NO HOVER) */
 /* ========================= */
 
-.page-header-nav.disable-hover {
+/* .page-header-nav.disable-hover {
   background: transparent;
   box-shadow: none;
-}
+} */
 
 /* Prevent header hover effects */
-.page-header-nav.disable-hover:hover {
+/* .page-header-nav.disable-hover:hover {
   background: transparent !important;
-}
+} */
 
 /* Prevent logo switching on hover */
-.page-header-nav.disable-hover .normal-logo {
+/* .page-header-nav.disable-hover .normal-logo {
   display: block !important;
 }
 
 .page-header-nav.disable-hover .scrolled-logo {
   display: none !important;
-}
+} */
 
 /* Menu text stays same color (no hover change) */
-.page-header-nav.disable-hover .nav-link:hover {
+/* .page-header-nav.disable-hover .nav-link:hover {
   color: inherit !important;
-}
+} */
 
 /* ========================= */
 /* SCROLLED STATE (AFTER 100PX) */
 /* ========================= */
 
-.page-header-nav.scrolled {
+/* .page-header-nav.scrolled {
   background: #fff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
+} */
 
 /* Logo switch */
-.page-header-nav.scrolled .normal-logo {
+/* .page-header-nav.scrolled .normal-logo {
   display: none;
 }
 
 .page-header-nav.scrolled .scrolled-logo {
   display: block;
-}
+} */
 
 /* Default menu color when scrolled */
-.page-header-nav.scrolled .nav-link {
+/* .page-header-nav.scrolled .nav-link {
   color: #333;
   transition: color 0.2s ease;
-}
+} */
 
 /* ✅ ONLY the hovered menu item changes */
-.page-header-nav.scrolled .nav-link:hover {
-  color: #e63946; /* change to your brand color */
-}
+/* .page-header-nav.scrolled .nav-link:hover {
+  color: #e63946; 
+} */
 
 /* ========================= */
 /* DROPDOWN / MEGA MENU */
 /* ========================= */
 
-.page-header-nav.scrolled .dropdown-item {
+/* .page-header-nav.scrolled .dropdown-item {
   color: #333;
 }
 
@@ -721,16 +721,16 @@ background-color: #76A379;
 
 #page-header-nav.scrolled
 .navbar-nav > li > a.nav-link:hover p {
-  color: #6d9b73 !important; /* choose any color */
-}
+  color: #6d9b73 !important; 
+} */
 /* Active - top of page */
-#page-header-nav:not(.scrolled)
+/* #page-header-nav:not(.scrolled)
 .navbar-nav > li > a.nav-link.active p {
   color: #6d9b73 !important;
-}
+} */
 
 /* Active - after scroll */
-#page-header-nav.scrolled
+/* #page-header-nav.scrolled
 .navbar-nav > li > a.nav-link.active p {
   color: #6d9b73!important;
 }
@@ -738,4 +738,4 @@ background-color: #76A379;
 #page-header-nav.disable-hover
 .navbar-nav > li > a.nav-link.active p {
   color:  #6d9b73 !important;
-}
+} */
