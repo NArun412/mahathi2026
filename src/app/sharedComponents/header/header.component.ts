@@ -45,6 +45,9 @@ private registerPageContent(): void {
 }
 
   @Input() headerClass: string = 'home';
+
+  isScrolled = false;
+  isHovering = false;              // ✅ NEW
   private mobileMenuOpen = false;
 
   searchResults: GlobalSearchItem[] = [];
@@ -58,34 +61,49 @@ private registerPageContent(): void {
 
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
-        const url = event.urlAfterRedirects || event.url;
-        this.headerClass = url === '/' ? 'home' : 'inner';
+        this.updateHeaderState();
       }
     });
   }
 
-  isScrolled = false;
-
-@HostListener('window:scroll', [])
-onWindowScroll(): void {
-  if (this.router.url === '/') {
-    const scrollTop =
-      window.pageYOffset || document.documentElement.scrollTop;
-
-    this.isScrolled = scrollTop > 100;
-    this.headerClass = this.isScrolled ? 'inner' : 'home';
-  } else {
-    // Inner pages always scrolled
-    this.isScrolled = true;
-    this.headerClass = 'inner';
-  }
-}
-
-
   ngAfterViewInit(): void {
     this.closeMenu();
-      this.registerPageContent();
+    this.registerPageContent();
+  }
 
+  /* ---------------- HEADER STATE ---------------- */
+
+  private updateHeaderState(): void {
+    if (this.router.url === '/') {
+      this.headerClass =
+        (this.isScrolled || this.isHovering) ? 'inner' : 'home';
+    } else {
+      this.isScrolled = true;
+      this.headerClass = 'inner';
+    }
+  }
+
+  /* ---------------- SCROLL ---------------- */
+
+  @HostListener('window:scroll', [])
+  onWindowScroll(): void {
+    if (this.router.url === '/') {
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+
+      this.isScrolled = scrollTop > 100;
+    } else {
+      this.isScrolled = true;
+    }
+
+    this.updateHeaderState();
+  }
+
+  /* ---------------- HOVER (NEW) ---------------- */
+
+  onHeaderHover(isHover: boolean): void {
+    this.isHovering = isHover;
+    this.updateHeaderState();
   }
 
   /* ---------------- RESPONSIVE ---------------- */
