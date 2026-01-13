@@ -383,3 +383,10 @@
   transition: 0.1s;
 
 }
+.big{
+font-size: 2rem !important;
+}
+
+#page-block-ec-panel {
+    min-height: 0rem !important;
+}
