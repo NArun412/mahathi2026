@@ -16,8 +16,8 @@
   bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
-  background: #6D9C72;
-  color: white;
+  /* background: #6D9C72; */
+  color: #fff;
   padding: 30px 60px;
   text-align: center;
 }
