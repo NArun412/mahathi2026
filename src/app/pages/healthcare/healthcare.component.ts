@@ -163,7 +163,7 @@ private registerPageContent(): void {
     sectionThreeText:
       "Mahathi Infotech partners with healthcare payers, providers, TPAs, and digital health organizations to modernize core operations through scalable technology, data, and AI-led services.",
 
-    heroImage: 'assets/images/Healthcare_bann.png',
+    heroImage: 'assets/images/health_baner_img.png',
     solutionsHeading: "Streamline operations, Ensure compliance, and Enhance outcomes",
     rightHeroImage:'assets/images/happy_people3.png',
     features: [
