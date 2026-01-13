@@ -674,7 +674,7 @@ pre {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
-  padding: 12px;
+  /* padding: 12px; */
   margin-left: -15px; 
 }
 
