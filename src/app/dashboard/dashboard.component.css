@@ -390,3 +390,8 @@ font-size: 2rem !important;
 #page-block-ec-panel {
     min-height: 0rem !important;
 } */
+
+.dg-home-intro, #home-intro{
+    min-height: 0vh !important;
+}
+
