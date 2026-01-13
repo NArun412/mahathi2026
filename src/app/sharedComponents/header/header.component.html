@@ -373,19 +373,23 @@
                         <img class="header-logo mobile-logo" src="assets/images/mahathi_logo_White.png">
                     </a>
                 </div>
+
+               
+
+
                 <div class="col navbar-col">
                     <nav class="navbar pb-0 pt-0 px-0 navbar-expand-md h-100 w-100">
                         <div class="d-none d-md-block h-100 w-100">
                             <ul class="navbar-nav mr-auto w-100 h-100 d-flex align-items-stretch flex-column flex-md-row"
                                 style="justify-content:end;">
-                                <li class="nav-item dropdown ct-mega-dropdown" #megaMenu id="megaMenuToggler">
-                                    <a class="nav-link" href="#" data-title="Claims Solutions"
+                                <li class="nav-item  ct-mega-dropdown"  id="megaMenuToggler"  data-toggle="collapse" data-target="#InsuranceMenu"  style="cursor:pointer;" >
+                                    <a class="nav-link" data-title="Claims Solutions"
                                         data-description="Loss adjusting, end-to-end claims programme management and related technical services that combine technical expertise and technology solutions."
                                         data-image="assets/images/claims_solutions.jpg">
-                                        <p class="header-title">INSURANCE Solutions</p>
+                                        <p >INSURANCE Solutions</p>
                                     </a>
-
-                                    <div class="dropdown-menu ct-mega-menu px-0 py-0 py-lg-0">
+ 
+                                    <div class="dropdown-menu ct-mega-menu px-0 py-0 py-lg-0" id ="InsuranceMenu"  style="cursor:pointer;" >
                                         <div class="container mb-5" style="min-height: auto;">
                                             <div class="row">
                                                 <div class="col-md-8 col-lg-8 text-left py-0 border-right">
@@ -415,7 +419,7 @@
                                                     </div>
 
                                                     <div class="row">
-                                                        <div class="col-md-6 col-lg-6 py-3 our_solution_box" [routerLink]="['/workerscompensiation']" (click)="closeMegaMenu(megaMenu)">
+                                                        <div class="col-md-6 col-lg-6 py-3 our_solution_box" [routerLink]="['/workerscompensiation']" >
                                                             <h4  style="color: #76A379;"><b>Workers Comp</b></h4>
                                                             <p class="text-left">
                                                                 Commercial carrier enablement,
@@ -1881,14 +1885,13 @@
                                     </div>
                                 </li>
 
-
-                                <li class="nav-item dropdown ct-mega-dropdown" id="megaMenuToggler">
-                                    <a class="nav-link" href="#/healthcare" data-title="InsureTech"
+                               <li class="nav-item  ct-mega-dropdown"  id="megaMenuToggler"  data-toggle="collapse" data-target="#HealthcareMenu"  style="cursor:pointer;"  >
+                                    <a class="nav-link"  data-title="InsureTech"
                                         data-description="We specialise in providing software systems and services to large and complex insurers and brokers, tailored to enhance their GWP, CoR, and compliance."
                                         data-image="https://charles-taylor-group.s3.amazonaws.com/production/filer_public/f0/b4/f0b4c572-89a5-4bbd-b227-1ec049e8e6ba/1.png">
                                         <p>HEALTHCARE SOLUTIONS</p>
                                     </a>
-                                    <div class="dropdown-menu ct-mega-menu px-0 py-0 py-lg-0">
+                                    <div class="dropdown-menu ct-mega-menu px-0 py-0 py-lg-0" id ="HealthcareMenu">
                                         <div class="container mb-5" style="min-height: auto;">
                                             <div class="row">
                                                 <div class="col-md-8 col-lg-8 text-left py-0 border-right">
@@ -1920,7 +1923,7 @@
                                                <div class="row">
                                                     <!-- First Box (Black Grid) -->
                                                     <div class="col-md-6 col-lg-6 py-3 our_solution_box">
-                                                        <div class="summary">
+                                                        <div class="summary" [routerLink]="['/healthcare']" >
                                                             <h4 style="color: #76A379;"><b>Core Healthcare Platforms & Digital Experience</b></h4>
                                                             <p class="text-left">Enrollment, core administration systems, and member/patient engagement platforms.</p>
                                                         </div>
@@ -3821,11 +3824,11 @@
                                             </div> -->
                                 </li>
 
-                                <li class="nav-item dropdown ct-mega-dropdown" id="megaMenuToggler">
-                                    <a class="nav-link" routerLink="/aienablement"  routerLinkActive="active">
+                                <li class="nav-item ct-mega-dropdown"  id="megaMenuToggler"  data-toggle="collapse" data-target="#AIMenu" style="cursor:pointer;" >
+                                    <a class="nav-link"  routerLinkActive="active">
                                         <p>AI ENABLEMENT</p>
                                     </a>
-                                    <div class="dropdown-menu ct-mega-menu px-0 py-0 py-lg-0">
+                                    <div class="dropdown-menu ct-mega-menu px-0 py-0 py-lg-0" id ="AIMenu">
                                         <div class="container mb-5" style="min-height: auto;">
                                             <div class="row">
                                                 <div class="col-md-8 col-lg-8 text-left py-0 border-right">
@@ -3856,7 +3859,7 @@
  
                                                     <div class="row">
                                                         <!-- AI Readiness & Strategy -->
-                                                        <div class="col-md-6 col-lg-6 py-3 our_solution_box">
+                                                        <div class="col-md-6 col-lg-6 py-3 our_solution_box"  [routerLink]="['/aienablement']">
                                                             <h4 style="color: #76A379;" class="text-left"><b>AI readiness & strategy consulting</b></h4>
                                                             <p class="text-left">Help clients assess their readiness and define a roadmap for adopting AI in their business.</p>
                                                         </div>
@@ -3914,12 +3917,12 @@
                                     </div>
                                 </li>
 
-                                <li class="nav-item dropdown ct-mega-dropdown" id="megaMenuToggler">
-                                    <a class="nav-link" href="#">
+                                <li class="nav-item ct-mega-dropdown"  id="megaMenuToggler"  data-toggle="collapse" data-target="#DigitalServicesMenu"  style="cursor:pointer;"  >
+                                    <a class="nav-link">
                                         <p>DIGITAL SERVICES</p>
                                     </a>
 
-                                    <div class="dropdown-menu ct-mega-menu px-0 py-0 py-lg-0">
+                                    <div class="dropdown-menu ct-mega-menu px-0 py-0 py-lg-0" id ="DigitalServicesMenu">
                                         <div class="container mb-5" style="min-height: auto;">
                                             <div class="row">
                                                 <div class="col-md-8 col-lg-8 text-left py-0 border-right">
@@ -4011,6 +4014,8 @@
     <p>About us</p>
   </a>
 </li>
+
+
 
                                
                             </ul>

@@ -17,8 +17,6 @@ declare var $: any;
 })
 export class HeaderComponent implements OnInit, AfterViewInit {
 
-  
-
 
 private registerPageContent(): void {
   const items: GlobalSearchItem[] = [];

@@ -1,3 +1,53 @@
+
+.hero-section {
+  background:  #AECFDD;
+  padding: 40px 0;
+}
+
+
+.hero-img-left-curve {
+  width: 100%;
+  max-width: 620px;
+  height: auto;
+  object-fit: cover;
+
+  padding-top: 95px;
+
+  /* ✅ Perfect curve */
+  border-top-left-radius: 280px;
+  border-bottom-left-radius: 220px;
+
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+
+  margin-left: auto;
+  display: block;
+}
+
+/* 🔸 Tablet */
+@media (max-width: 992px) {
+  .hero-img-left-curve {
+    padding-top: 48px;
+    border-top-left-radius: 120px;
+    border-bottom-left-radius: 90px;
+  }
+}
+
+/* 🔹 Mobile */
+@media (max-width: 576px) {
+    .hero-section {
+    padding: 40px 0;
+    text-align: center;
+  }
+  .hero-img-left-curve {
+     padding-top: 28px;
+    border-top-left-radius: 48px;
+    border-bottom-left-radius: 36px;
+    margin: 0 auto;
+  }
+}
+
+
 /* General Section Styles */
 .um-section {
     /* padding: 60px 20px; */
@@ -77,7 +127,7 @@
 }
 
 .text-gold {
-    color: #d4af37; /* Gold color for headers in white cards */
+    color:#76A379; /* Gold color for headers in white cards */
     font-size: 15px !important;
     font-weight: bold !important;
 }
@@ -129,12 +179,12 @@
 .content-card:hover {
     transform: translateY(-10px); /* Lifts card up */
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08); /* Adds depth shadow */
-    border-color: #f2a93b; /* Changes border to match brand orange */
+    border-color: white; /* Changes border to match brand orange */
 }
 
 /* Card Elements */
 .card-header {
-    color: #f2a93b;
+    color: black;
     font-size: 1.25rem;
     font-weight: 700;
     margin: 0 0 10px 0;
@@ -227,8 +277,8 @@ p {
     border: 1px solid #eee; border-radius: 12px;
     transition: all 0.3s ease;
 }
-.content-card:hover { transform: translateY(-8px); box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-color: #f2a93b; }
-.card-header { color: #f2a93b; font-size: 1.3rem; margin-bottom: 5px; }
+.content-card:hover { transform: translateY(-8px); box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-color: #76A379; }
+.card-header { color:black; font-size: 1.3rem; margin-bottom: 5px; }
 .accent-line { height: 2px; background: #a8dadc; margin-bottom: 20px; }
 .main-list { list-style: disc; padding-left: 20px; }
 .sub-list { list-style: circle; padding-left: 20px; margin-top: 5px; }
@@ -248,8 +298,8 @@ p {
 }
 
 .step-title {
-    background-color: #4d8465; /* Dark Green */
-    color: #f2a93b; /* Gold/Orange text */
+    background-color: #76A379; /* Dark Green */
+    color: white; /* Gold/Orange text */
     padding: 15px;
     border-radius: 15px;
     text-align: center;
@@ -276,8 +326,8 @@ p {
 }
 
 .step-body {
-    background-color: #34634d; /* Slightly darker green */
-    color: #f2a93b;
+     background: linear-gradient(180deg,  #76A379, #B2C7B3);
+    color: black;
     padding: 20px;
     border-radius: 15px;
     text-align: left;
@@ -289,8 +339,8 @@ p {
 }
 
 /* Automation Hover Effect */
-.process-card:hover .step-title { background-color: #34634d; }
-.process-card:hover .step-body { background-color: #264a39; transform: scale(1.02); transition: 0.3s; }
+.process-card:hover .step-title { background-color: #76A379; }
+.process-card:hover .step-body { background-color: #B2C7B3; transform: scale(1.02); transition: 0.3s; }
 
 /* Responsive */
 @media (max-width: 900px) {
@@ -306,7 +356,7 @@ p {
     transition: all 0.3s ease;
 }
 .content-card2:hover { transform: translateY(-10px); box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-color: #34634d; }
-.card-header { color: #f2a93b; font-size: 1.3rem; margin-bottom: 5px; }
+.card-header { color: black; font-size: 1.3rem; margin-bottom: 5px; }
 .accent-line { height: 2px; background: #264a39; margin-bottom: 20px; }
 .main-list { list-style: disc; padding-left: 20px; }
 .sub-list { list-style: circle; padding-left: 20px; margin-top: 5px; }
@@ -360,8 +410,8 @@ p {
 }
 
 .ai-dev-sidebar {
-    background-color: #437160; /* The exact green from your image */
-    color: #ffc107; /* The golden yellow text */
+    background-color: #BFBFBF; /* The exact green from your image */
+    color: white; /* The golden yellow text */
     width: 220px;
     min-width: 220px;
     display: flex;
@@ -446,8 +496,8 @@ p {
 }
 
 .cust-ai-header {
-    background-color: #3a6b58; /* Green from slide */
-    color: #ffc107; /* Yellow text */
+    background-color: #76A379; /* Green from slide */
+    color: white; /* Yellow text */
     padding: 15px 10px;
     text-align: center;
     border-radius: 12px;
@@ -460,8 +510,8 @@ p {
 }
 
 .cust-ai-body {
-    background-color: #3a6b58;
-    color: #ffc107;
+    background: linear-gradient(180deg,  #76A379, #B2C7B3);
+    color: black;
     padding: 25px 15px;
     text-align: center;
     border-radius: 12px;
@@ -486,8 +536,8 @@ p {
 }
 
 .cust-ai-deliverables-pill {
-    background-color: #3a6b58;
-    color: #ffc107;
+    background-color: #76A379;
+    color: white;
     padding: 15px 25px;
     border-radius: 8px;
     font-weight: bold;
