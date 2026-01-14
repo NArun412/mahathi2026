@@ -422,70 +422,62 @@ font-size: 2rem !important;
 .dg-home-intro, #home-intro{
     min-height: 0vh !important;
 }
-/* HARD OVERRIDE for Slick + Flex */
+
 .banner_h1 {
   font-weight: 400;
   text-transform: uppercase;
 
-  /* Mobile-first font size */
-  font-size: 22px;
+  font-size: 14px;
   line-height: 1.25;
 
-  /* Force wrapping */
-  /* white-space: normal !important; */
   word-break: break-word !important;
   overflow-wrap: anywhere !important;
 
   max-width: 100%;
 }
 
-/* Tablet */
+.banner_h4 {
+  font-size: 12px;
+}
+
+@media (min-width: 375px) {
+  .banner_h1 {
+    font-size: 16px;
+  }
+
+  .banner_h4 {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 425px) {
+  .banner_h1 {
+    font-size: 20px;
+  }
+
+  .banner_h4 {
+    font-size: 18px;
+  }
+}
+
 @media (min-width: 576px) {
   .banner_h1 {
     font-size: 28px;
   }
 }
 
-@media (min-width: 320px) {
-  .banner_h4 {
-    font-size: 12px;
-  }
-  .banner_h1 {
-    font-size: 14px;
-  }
-}
-
-@media (min-width: 375px) {
-  .banner_h4 {
-    font-size: 14px;
-  }
-  .banner_h1 {
-    font-size: 16px;
-  }
-}
-
-@media (min-width: 425px) {
-  .banner_h4 {
-    font-size: 18px;
-  }
-  .banner_h1 {
-    font-size: 20px;
-  }
-}
-
-/* Small laptop */
 @media (min-width: 768px) {
   .banner_h1 {
     font-size: 34px;
   }
 }
 
-/* Desktop */
 @media (min-width: 1200px) {
   .banner_h1 {
     font-size: 40px;
   }
 }
+
 .slick-slide,
 .slick-slide > div,
 .slide,
