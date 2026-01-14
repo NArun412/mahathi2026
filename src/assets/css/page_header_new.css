@@ -1585,7 +1585,11 @@
 
 
 
-
+@media (max-width: 425px) {
+#page-block-header {
+  width: 80% !important;
+}
+}
 
 
 
