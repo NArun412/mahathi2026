@@ -1,15 +1,70 @@
+.justify-content-end{
+    justify-content: flex-start !important;
+}
+/* ===============================
+   HAMBURGER → CANCEL ICON
+=============================== */
+
+.hamburger-menu {
+  position: relative;
+  width: 26px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hamburger-icon {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.3s ease;
+}
+
+/* 3 lines */
+.hamburger-icon:nth-child(1) {
+  top: 0;
+}
+
+.hamburger-icon:nth-child(2) {
+  top: 9px;
+}
+
+.hamburger-icon:nth-child(3) {
+  top: 18px;
+}
+
+/* ACTIVE = CANCEL ICON */
+.hamburger-menu.active .hamburger-icon:nth-child(1) {
+  top: 9px;
+  transform: rotate(45deg);
+}
+
+.hamburger-menu.active .hamburger-icon:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.active .hamburger-icon:nth-child(3) {
+  top: 9px;
+  transform: rotate(-45deg);
+}
+
 .mobile-main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 0;
+  /* padding: 14px 0; */
   font-weight: 600;
   cursor: pointer;
+      color: white;
 }
 
 .mobile-submenu {
-  background: #f7f7f7;
-  padding: 10px 16px;
+  /* background: #f7f7f7; */
+  padding: 7px 32px;
 }
 
 .submenu-title {
@@ -23,7 +78,7 @@
   display: block;
   padding: 6px 0;
   font-size: 14px;
-  color: #333;
+  color: #fff;
 }
 
 
@@ -78,13 +133,13 @@
 }
 
 .head{
-  background-color: #6D9C72;
+  background-color: #76A379;
 background-color: #76A379;
 }
 
 /* MOBILE/TABLET HEADER TOP BAR */
 .mobile-header-top {
-  background-color: #6D9C72;
+  background-color:#76A379;
   display: flex;
   align-items: center;
 }
@@ -128,7 +183,7 @@ background-color: #76A379;
   /* Show mobile menu */
   .page-header-nav-mobile {
     display: block !important;
-    background-color: #6D9C72;
+    background-color: #76A379;
   }
 
   /* Mobile menu hidden by default */
@@ -288,7 +343,7 @@ background-color: #76A379;
 /* Hover state: Increase by an extra 4 pixels */
 #page-header-nav .navbar-nav .nav-item:hover .nav-link p {
     font-size: 22px;              
-    color: #6d9b73;               
+    color: #76A379;               
 
 }
 
@@ -373,7 +428,7 @@ background-color: #76A379;
 .custom-award-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
-    border-color: #6d9b73; /* Changes border to your brand green on hover */
+    border-color: #76A379; /* Changes border to your brand green on hover */
 }
 
 /* Title Styling inside Card */
@@ -383,14 +438,14 @@ background-color: #76A379;
     margin-bottom: 10px !important;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #6d9b73;
+    color: #76A379;
 }
 
 /* Small divider line under title */
 .award-divider {
     width: 40px;
     height: 3px;
-    background-color: #6d9b73;
+    background-color: #76A379;
     margin: 0 auto 15px;
     border-radius: 2px;
 }
@@ -428,7 +483,7 @@ background-color: #76A379;
 }
 
 .location-link:hover {
-    color: #6d9b73 !important; /* Green on hover */
+    color: #76A379 !important; /* Green on hover */
 }
 
 /* THE RED LOCATION ICON FIX */
