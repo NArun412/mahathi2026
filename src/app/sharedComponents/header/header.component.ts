@@ -3,7 +3,8 @@ import {
   HostListener,
   Input,
   OnInit,
-  AfterViewInit
+  AfterViewInit,
+  ElementRef
 } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { GlobalSearchItem, GlobalSearchService } from 'src/app/global-search.service';
@@ -17,6 +18,13 @@ declare var $: any;
 })
 export class HeaderComponent implements OnInit, AfterViewInit {
 
+// Mobile submenu accordion
+activeMobileSubMenu: string | null = null;
+
+toggleMobileSub(menu: string): void {
+  this.activeMobileSubMenu =
+    this.activeMobileSubMenu === menu ? null : menu;
+}
 
 private registerPageContent(): void {
   const items: GlobalSearchItem[] = [];
@@ -43,11 +51,11 @@ private registerPageContent(): void {
 }
 
   @Input() headerClass: string = 'home';
-  private mobileMenuOpen = false;
+   mobileMenuOpen = false;
 
   searchResults: GlobalSearchItem[] = [];
   private searchTimer: any;
-  constructor(private router: Router,    private searchService: GlobalSearchService) {}
+  constructor(private router: Router,    private searchService: GlobalSearchService,  private elRef: ElementRef) {}
 
   /* ---------------- INIT ---------------- */
 
@@ -59,6 +67,15 @@ private registerPageContent(): void {
   ngAfterViewInit(): void {
     this.closeMenu(); 
   }
+  @HostListener('document:click', ['$event'])
+onDocumentClick(event: MouseEvent): void {
+  const clickedInside = this.elRef.nativeElement.contains(event.target);
+
+  if (!clickedInside) {
+    this.closeMenu(); // closes menu + submenu
+  }
+}
+
 
   @HostListener('window:resize')
   onResize(): void {
@@ -89,14 +106,15 @@ private registerPageContent(): void {
     }
     this.mobileMenuOpen = false;
   }
-
-  public closeMenu(): void {
-    const menu = document.getElementById('navbarNavDropdown');
-    if (menu) {
-      menu.classList.remove('show');
-    }
-    this.mobileMenuOpen = false;
+public closeMenu(): void {
+  const menu = document.getElementById('navbarNavDropdown');
+  if (menu) {
+    menu.classList.remove('show');
   }
+  this.mobileMenuOpen = false;
+  this.activeMobileSubMenu = null; // 👈 IMPORTANT
+}
+
 
   closeMegaMenu(menuElement: HTMLElement) {
     menuElement.classList.remove('show');

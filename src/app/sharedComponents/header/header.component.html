@@ -1,20 +1,31 @@
 
 <section id="page-block-header" class="page-block-section page-header" [ngClass]="headerClass">
     <!-- MOBILE/TABLET TOP HEADER WITH HAMBURGER -->
-    <div class="mobile-header-top d-lg-none">
-        <div class="container-fluid px-lg-5 px-3 head">
-            <div class="row h-100 align-items-center" style="padding: 10px 0;">
-                <div class="col-auto">
-                    <button class="hamburger-menu" type="button" (click)="toggleMobileMenu()" 
-                        aria-label="Toggle navigation" id="headerToggler">
-                        <span class="hamburger-icon"></span>
-                        <span class="hamburger-icon"></span>
-                        <span class="hamburger-icon"></span>
-                    </button>
-                </div>
-            </div>
-        </div>
+<div class="mobile-header-top d-lg-none">
+  <div class="container-fluid px-lg-5 px-3 head">
+    <div class="row h-100 align-items-center" style="padding: 10px 0;">
+      <!-- FLEX END -->
+      <div class="col d-flex justify-content-end">
+        <button
+          class="hamburger-menu"
+          type="button"
+          aria-label="Toggle navigation"
+          [class.active]="mobileMenuOpen"
+          (click)="toggleMobileMenu()"
+          id="headerToggler">
+
+          <span class="hamburger-icon"></span>
+          <span class="hamburger-icon"></span>
+          <span class="hamburger-icon"></span>
+
+        </button>
+
+      </div>
+
     </div>
+  </div>
+</div>
+
 
     <div class="page-header-head">
   
@@ -4022,7 +4033,7 @@
 
 
 <div class="page-header-head">
-    <div class="page-header-nav-mobile d-lg-none">
+    <div class="page-header-nav-mobile d-lg-none" (click)="$event.stopPropagation()">
         <nav class="navbar navbar-expand-lg px-3">
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav w-100">
@@ -4528,36 +4539,118 @@
                         </ul>
                     </li>
                        <li class="nav-item level-1-nav">
-                        <div class="container">
-                            <a class="nav-link" href="#" (click)="closeMenu()">
-                                INSURANCE Solutions
-                            </a>
-                        </div>
-                    </li>
-                       <li class="nav-item level-1-nav">
-                        <div class="container">
-                            <a class="nav-link" routerLink="healthcare" (click)="closeMenu()">
-                               HEALTHCARE Solutions
-                            </a>
-                        </div>
-                    </li>
+
+  <div class="container mobile-main" 
+       (click)="toggleMobileSub('insurance')">
+    <a class="nav-link">INSURANCE Solutions</a>
+    <i class="fas"
+       [ngClass]="{
+        'fa-chevron-down': activeMobileSubMenu !== 'insurance',
+        'fa-chevron-up': activeMobileSubMenu === 'insurance'
+       }">
+    </i>
+  </div>
+
+  <!-- SUB MENU -->
+  <div class="mobile-submenu"
+       *ngIf="activeMobileSubMenu === 'insurance'">
+
+    <!-- <div class="submenu-title">Insurance Solutions</div> -->
+
+    <a routerLink="/workerscompensiation" (click)="closeMenu()">Workers Comp</a>
+    <a routerLink="" (click)="closeMenu()">Property & Casualty</a>
+    <a routerLink="" (click)="closeMenu()">Personal Lines</a>
+    <a routerLink="" (click)="closeMenu()">Life & Annuity</a>
+    <a routerLink="" (click)="closeMenu()">Reinsurance</a>
+
+  </div>
+</li>
+                    <li class="nav-item level-1-nav">
+  <div class="container mobile-main"
+       (click)="toggleMobileSub('healthcare')">
+    <a class="nav-link">HEALTHCARE Solutions</a>
+    <i class="fas"
+       [ngClass]="{
+        'fa-chevron-down': activeMobileSubMenu !== 'healthcare',
+        'fa-chevron-up': activeMobileSubMenu === 'healthcare'
+       }">
+    </i>
+  </div>
+
+  <div class="mobile-submenu"
+       *ngIf="activeMobileSubMenu === 'healthcare'">
+
+    <!-- <div class="submenu-title">Healthcare Solutions</div> -->
+
+    <a routerLink="/healthcare" (click)="closeMenu()">Core Healthcare Platforms & Digital Experience</a>
+    <a routerLink="" (click)="closeMenu()">Claims, Revenue & Financial Operations</a>
+    <a routerLink="" (click)="closeMenu()">Clinical, Pharmacy & Care Management</a>
+    <a routerLink="" (click)="closeMenu()">Data, AI, Compliance & Risk</a>
+
+  </div>
+</li>
+<li class="nav-item level-1-nav">
+  <div class="container mobile-main"
+       (click)="toggleMobileSub('ai')">
+    <a class="nav-link">AI ENABLEMENT</a>
+    <i class="fas"
+       [ngClass]="{
+        'fa-chevron-down': activeMobileSubMenu !== 'ai',
+        'fa-chevron-up': activeMobileSubMenu === 'ai'
+       }">
+    </i>
+  </div>
+
+  <div class="mobile-submenu"
+       *ngIf="activeMobileSubMenu === 'ai'">
+
+    <!-- <div class="submenu-title">AI Enablement</div> -->
+
+    <a routerLink="/aienablement" (click)="closeMenu()">AI readiness & strategy consulting</a>
+    <a routerLink="" (click)="closeMenu()">AI-Driven automation services</a>
+    <a routerLink="" (click)="closeMenu()">AI for software development productivity</a>
+    <a routerLink="" (click)="closeMenu()">Custom AI application development</a>
+  </div>
+</li>
+
+                  <li class="nav-item level-1-nav">
+
+  <div class="container mobile-main"
+       (click)="toggleMobileSub('digital')">
+    <a class="nav-link">DIGITAL SERVICES</a>
+    <i class="fas"
+       [ngClass]="{
+        'fa-chevron-down': activeMobileSubMenu !== 'digital',
+        'fa-chevron-up': activeMobileSubMenu === 'digital'
+       }">
+    </i>
+  </div>
+
+  <div class="mobile-submenu"
+       *ngIf="activeMobileSubMenu === 'digital'">
+
+    <!-- <div class="submenu-title">Digital Services</div> -->
+
+    <a routerLink="" (click)="closeMenu()">Application Services</a>
+    <a routerLink="" (click)="closeMenu()">Business Consulting</a>
+    <a routerLink="" (click)="closeMenu()">Business Process Services</a>
+    <a routerLink="" (click)="closeMenu()">Infrastructure Services</a>
+    <a routerLink="" (click)="closeMenu()">Managed Services</a>
+    <a routerLink="" (click)="closeMenu()">Artificial Intelligence</a>
+    <a routerLink="" (click)="closeMenu()">Cloud</a>
+    <a routerLink="" (click)="closeMenu()">Data Analytics</a>
+    <a routerLink="" (click)="closeMenu()">Digital Transformation</a>
+    <a routerLink="" (click)="closeMenu()">IT Modernization</a>
+    <a routerLink="" (click)="closeMenu()">Cybersecurity</a>
+    <a routerLink="" (click)="closeMenu()">Data Management & Modernization</a>
+    <a routerLink="" (click)="closeMenu()">IT-Enabled Business Process</a>
+    <a routerLink="" (click)="closeMenu()">Systems Integration & Modernization</a>
+  </div>
+</li>
+
                     <li class="nav-item level-1-nav">
                         <div class="container">
-                            <a class="nav-link" href="#" (click)="closeMenu()">
-                                AI ENABLEMENT
-                            </a>
-                        </div>
-                    </li>
-                    <li class="nav-item level-1-nav">
-                        <div class="container">
-                            <a class="nav-link" href="#" (click)="closeMenu()">
-                                DIGITAL SERVICES
-                            </a>
-                        </div>
-                    </li>
-                    <li class="nav-item level-1-nav">
-                        <div class="container">
-                            <a class="nav-link" routerLink="healthcare/coming-soon" (click)="closeMenu()">
+                            <a class="nav-link" routerLink="News" (click)="closeMenu()">
                                 News
                             </a>
                         </div>
