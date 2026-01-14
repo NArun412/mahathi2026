@@ -1,13 +1,14 @@
 
 <section id="page-block-header" class="page-block-section page-header" [ngClass]="headerClass">
     <!-- MOBILE/TABLET TOP HEADER WITH HAMBURGER -->
-<div class="mobile-header-top d-lg-none">
+<!-- <div class="mobile-header-top d-lg-none">
   <div class="container-fluid px-lg-5 px-3 head">
-    <div class="row h-100 align-items-center" style="padding: 10px 0;">
-      <!-- FLEX END -->
-      <div class="col d-flex justify-content-end">
+    <div class="row h-100 align-items-center">
+
+      <div class="col d-flex">
+        
         <button
-          class="hamburger-menu"
+          class="hamburger-menu justify-content-start"
           type="button"
           aria-label="Toggle navigation"
           [class.active]="mobileMenuOpen"
@@ -19,13 +20,46 @@
           <span class="hamburger-icon"></span>
 
         </button>
+ <img class="header-logo mobile-logo justify-content-end" src="assets/images/mahathi_logo_White.png">
+      </div>
+
+    </div>
+  </div>
+</div> -->
+
+<div class="mobile-header-top d-lg-none">
+  <div class="container-fluid px-lg-5 px-3 head">
+    <div class="row h-100 align-items-center">
+
+      <div class="col d-flex align-items-center">
+
+        <!-- Menu Icon - Left -->
+        <button
+          class="hamburger-menu"
+          type="button"
+          aria-label="Toggle navigation"
+          [class.active]="mobileMenuOpen"
+          (click)="toggleMobileMenu()"
+          id="headerToggler">
+
+          <span class="hamburger-icon"></span>
+          <span class="hamburger-icon"></span>
+          <span class="hamburger-icon"></span>
+        </button>
+
+        <!-- Logo - Right --><a
+            routerLink="/"
+            >
+        <img
+          class="header-logo mobile-logo"
+          src="assets/images/mahathi_logo_White.png"
+          alt="Logo" /></a>
 
       </div>
 
     </div>
   </div>
 </div>
-
 
     <div class="page-header-head">
   

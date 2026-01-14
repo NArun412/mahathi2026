@@ -1,5 +1,23 @@
-.justify-content-end{
+.justify-content-start{
     justify-content: flex-start !important;
+}
+
+.mobile-header-top .col {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-header-top .hamburger-menu {
+  margin-right: auto; /* Pushes everything else to the right */
+}
+
+.mobile-header-top .mobile-logo {
+  margin-left: auto;  /* Forces logo to the right end */
+}
+
+
+.justify-content-end{
+    justify-content: flex-end !important;
 }
 /* ===============================
    HAMBURGER → CANCEL ICON
@@ -7,7 +25,7 @@
 
 .hamburger-menu {
   position: relative;
-  width: 26px;
+  width: 30px;
   height: 20px;
   background: none;
   border: none;
@@ -153,6 +171,7 @@ background-color: #76A379;
   padding: 8px;
   cursor: pointer;
   gap: 6px;
+  margin: 10px 0px;
 }
 
 .hamburger-icon {
