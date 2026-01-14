@@ -1587,7 +1587,7 @@
 
 @media (max-width: 425px) {
 #page-block-header {
-  width: 80% !important;
+  width: 100% !important;
 }
 }
 
