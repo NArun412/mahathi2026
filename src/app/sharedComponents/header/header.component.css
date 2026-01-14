@@ -1,3 +1,31 @@
+.mobile-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.mobile-submenu {
+  background: #f7f7f7;
+  padding: 10px 16px;
+}
+
+.submenu-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #76A379;
+  margin-bottom: 8px;
+}
+
+.mobile-submenu a {
+  display: block;
+  padding: 6px 0;
+  font-size: 14px;
+  color: #333;
+}
+
 
 /* Header text (16px) */
 .ct-mega-menu .col-lg-4 h4,

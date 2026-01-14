@@ -17,6 +17,13 @@ declare var $: any;
 })
 export class HeaderComponent implements OnInit, AfterViewInit {
 
+// Mobile submenu accordion
+activeMobileSubMenu: string | null = null;
+
+toggleMobileSub(menu: string): void {
+  this.activeMobileSubMenu =
+    this.activeMobileSubMenu === menu ? null : menu;
+}
 
 private registerPageContent(): void {
   const items: GlobalSearchItem[] = [];
@@ -89,14 +96,15 @@ private registerPageContent(): void {
     }
     this.mobileMenuOpen = false;
   }
-
-  public closeMenu(): void {
-    const menu = document.getElementById('navbarNavDropdown');
-    if (menu) {
-      menu.classList.remove('show');
-    }
-    this.mobileMenuOpen = false;
+public closeMenu(): void {
+  const menu = document.getElementById('navbarNavDropdown');
+  if (menu) {
+    menu.classList.remove('show');
   }
+  this.mobileMenuOpen = false;
+  this.activeMobileSubMenu = null; // 👈 IMPORTANT
+}
+
 
   closeMegaMenu(menuElement: HTMLElement) {
     menuElement.classList.remove('show');
