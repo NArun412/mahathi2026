@@ -1,0 +1,273 @@
+.top-white {
+  background-color: #b2b2b2;
+}
+
+.hero-section {
+  background: #BFBFBF;
+  padding: 40px 0;
+}
+.py-5 {
+    padding: 1.7rem !important;
+}
+.extra {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+}
+/* Hero image – desktop default */
+.hero-img-left-curve {
+  width: 100%;
+  max-width: 720px;
+  height: 370px;
+  object-fit: cover;
+
+  border-top-left-radius: 220px;
+  border-bottom-left-radius: 220px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+
+  margin-left: auto; /* push image to right */
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .hero-img-left-curve {
+    max-width: 600px;
+    border-top-left-radius: 160px;
+    border-bottom-left-radius: 160px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .hero-img-left-curve {
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 24px;
+  }
+}
+
+.bg-omni-grey {
+  background-color: #f4f6f8;
+  min-height: 300px;
+}
+
+.section-title {
+  color: #333;
+  letter-spacing: -0.5px;
+}
+
+.text-purple {
+  color: black;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.icon-purple {
+  color:black;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.omni-card {
+ background-color: white !important;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid transparent !important;
+  min-width: 200px;
+}
+
+.omni-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
+  border-color: #76A379 !important;
+}
+
+@media (max-width: 576px) {
+  .omni-card {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.solutions-section {
+  background-color: #efefef;
+}
+
+/* Card */
+.solution-card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.solution-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Image */
+.solution-img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Button */
+.btn-purple {
+  background-color: #76A379;
+  color: #fff;
+  border: none;
+}
+
+.btn-purple:hover {
+  background-color: #76A379;
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .solution-img {
+    height: 180px;
+  }
+}
+
+.hero-split {
+  min-height: 455px;
+  overflow: hidden;
+    }
+   
+    .hero-split-container {
+ background: linear-gradient(180deg,  #AECFDD, #BFBFBF);
+}
+/* LEFT PANEL */
+.hero-content {
+  background: linear-gradient(180deg,  #AECFDD, #BFBFBF);
+  color: #fff;
+}
+
+.hero-text {
+  max-width: 560px;
+}
+
+.hero-text h1 {
+  font-size: 2.4rem;
+  line-height: 1.2;
+}
+
+.hero-desc {
+  font-size: 0.95rem;
+  opacity: 0.95;
+}
+
+/* CTA BUTTON */
+.btn-hero {
+  background-color: #76A379;
+  color: #fff;
+  padding: 10px 22px;
+  font-size: 0.85rem;
+}
+
+.btn-hero:hover {
+  background-color: #76A379;
+  color: #fff;
+}
+
+/* RIGHT IMAGE */
+
+.hero-image img {
+  display: block;      /* removes inline image gap */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+@media (max-width: 992px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-split {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-content {
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-desc {
+    font-size: 0.9rem;
+  }
+
+  .hero-image img {
+    height: 260px;
+  }
+}
+
+
+.industries-section {
+  padding: 40px 20px;
+  background: linear-gradient(180deg, #76A379, #B2C7B3);
+}
+
+.industry-pill {
+  background: #fff;
+  border-radius: 6px;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+   color:black;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.industry-pill i {
+  font-size: 1rem;
+  color:black;
+  font-weight: 700;
+}
+
+.industry-pill:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.underline_cls1 {
+  display: inline-block;
+  background-image: url('/src/assets/images/Underline_img.png');
+  background-repeat: repeat-x;
+  background-position: 0 1.1em;
+  background-size: auto 6px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid transparent;
+}
+
+.solution-card h5 {
+  color: #76A379;        /* brand green */
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  letter-spacing: -0.25px;
+}

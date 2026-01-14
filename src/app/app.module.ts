@@ -28,6 +28,7 @@ import { AboutusComponent } from './pages/aboutus/aboutus.component';
 import { NewsComponent } from './pages/news/news.component';
 import { MainTemplateComponent } from './sharedComponents/main-template/main-template.component';
 import { HealthTopBannerComponent } from './health-top-banner/health-top-banner.component';
+import { AboutusBannerComponent } from './aboutus-banner/aboutus-banner.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { HealthTopBannerComponent } from './health-top-banner/health-top-banner.
     NewsComponent,
     WorkersCompensiationComponent,
     MainTemplateComponent,
-    HealthTopBannerComponent
+    HealthTopBannerComponent,
+    AboutusBannerComponent
   ],
   imports: [
     BrowserModule,
