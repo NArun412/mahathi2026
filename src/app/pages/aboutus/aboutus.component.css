@@ -8645,3 +8645,11 @@ header .header-bottom .header-container .main-navigation #mega-menu-wrap-header-
     border-radius: 10px;
     padding: 15px;
 }
+
+.cont_txt {
+    background: linear-gradient(180deg, #DCEBE1, #76A379);
+    padding: 20px;
+    border-radius: 15px;
+    color:#000;
+    margin: 30px 0px;
+}
