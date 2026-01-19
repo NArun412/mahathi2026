@@ -7,9 +7,12 @@
 </div>
 
 <!-- Heading below the options -->
-<div class="solution-grid-heading" *ngIf="heading">
-    {{ heading }}
+<div
+  class="solution-grid-heading"
+  *ngIf="safeHeading"
+  [innerHTML]="safeHeading">
 </div>
+
 
 <!-- Responsive grid of cards with images -->
 <div class="solution-grid-main">

@@ -30,14 +30,15 @@ export class DashboardComponent implements AfterViewInit, OnDestroy {
   dashboardHeading = '';
   dashboardGridItems: DashboardGridItem[] = [];
 
-  dashboardHeadingMap: Record<number, string> = {
-    0: 'We bring over a decade of deep Workers’ Comp expertise supporting 30+ carriers',
-    1: 'Combining broad experience across the insurance value chain and exceptional technical capabilities',
-    2: 'Bringing deep experience in Payor and PBM domains, delivering solutions across claims processing',
-    3: 'Delivered unified insurance portals streamlining experiences for Underwriters, Policyholders, Agents, Providers, and Third Parties',
-    4: 'Helping claims examiners and supervisors manage total claims expenses across claims and files',
-    5: 'A modular, à la carte regulatory and compliance practice purpose-built for Workers’ Compensation carriers, TPAs, self-insureds, MGAs'
-  };
+dashboardHeadingMap: Record<number, string> = {
+  0: 'We bring over a decade of deep Workers’ Comp expertise<br>supporting 30+ carriers',
+  1: 'Combining broad experience across the insurance value chain<br>and exceptional technical capabilities',
+  2: 'Bringing deep experience in Payor and PBM domains,<br>delivering solutions across claims processing',
+  3: 'Delivered unified insurance portals streamlining experiences<br>for Underwriters, Policyholders, Agents, Providers, and Third Parties',
+  4: 'Helping claims examiners and supervisors manage<br>total claims expenses across claims and files',
+  5: 'A modular, à la carte regulatory and compliance practice<br>purpose-built for Workers’ Compensation carriers, TPAs, self-insureds, MGAs'
+};
+
 
   dashboardGridMap: Record<number, DashboardGridItem[]> = {
     0: [
