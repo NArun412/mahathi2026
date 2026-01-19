@@ -29,7 +29,7 @@ export class DashboardComponent implements AfterViewInit, OnDestroy {
     { label: 'WORKERS COMP', active: true },
     { label: 'P&C AND PERSONAL LINES' },
     { label: 'MCOs' },
-    { label: 'File & ANNUITY' },
+    { label: 'LIFE & ANNUITY' },
     { label: 'HEALTHCARE SOLUTIONS' }
   ];
 
