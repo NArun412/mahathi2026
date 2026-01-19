@@ -29,10 +29,11 @@
 
 .solution-grid-heading {
     text-align: center;
-    font-size: 2.25rem;
+    font-size: 2.35rem;
     font-weight: 500;
     color: #fff;
     margin-bottom: 1.5rem;
+    word-spacing: 3px;
 }
 
 .solution-grid-main {
