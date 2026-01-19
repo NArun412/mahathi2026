@@ -13418,7 +13418,7 @@ ul {
     font-weight: 400; }
 
 .col > .editor-text {
-  margin-bottom: 1rem; }
+  margin-bottom: 7rem; }
   @media (max-width: 815.98px) {
     .col > .editor-text:last-of-type {
       margin-bottom: 0; } }
