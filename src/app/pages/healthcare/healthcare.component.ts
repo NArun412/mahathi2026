@@ -3,10 +3,14 @@ import { Router } from '@angular/router';
 import { GlobalSearchItem, GlobalSearchService } from 'src/app/global-search.service';
 import { MainTemplateData } from 'src/app/sharedComponents/main-template/main-template.model';
 declare var $: any;
+    type GridSpan = {
+  colSpan?: number;
+  rowSpan?: number;
+};
 
 export type SolutionGridItem =
-    | { type: 'image'; image: string }
-    | { type: 'card'; label: string; link?: string; color?: string };
+  | ({ type: "image"; image: string } & GridSpan)
+  | ({ type: "card"; label: string; link?: string; color?: string } & GridSpan);
 
 @Component({
     selector: 'app-healthcare',
@@ -38,21 +42,27 @@ export class HealthcareComponent implements AfterViewInit {
     healthcareGridMap: Record<number, SolutionGridItem[]> = {
         0: [
             { type: 'image', image: 'assets/images/workers_comp_2.jpg' },
-            { type: 'card', label: 'Member & Patient Administration', link: '#/healthcare/member-patient-administration', color: '#e8f5e9' }, // soft green
+            { type: 'card', label: 'Member & Patient Administration', link: '#/healthcare/member-patient-administration', color: '#e0f7fa', rowSpan: 2 }, // soft green
             { type: 'image', image: 'assets/images/workers_comp_4.jpg' },
-            { type: 'card', label: 'Core Administration Platforms', link: '#/healthcare/core-administration-platforms', color: '#fff3e0' } // soft orange
+            { type: 'card', label: 'Core Administration Platforms', link: '#/healthcare/core-administration-platforms', color: '#e0f7fa' , rowSpan: 2  }, // soft orange
+              { type: 'image', image: 'assets/images/workers_comp_3.jpg' },
+                { type: 'image', image: 'assets/images/workers_comp_6.jpg' },
         ],
         1: [
             { type: 'image', image: 'assets/images/workers_comp_1.jpg' },
-            { type: 'card', label: 'Claims Management', link: '#/healthcare/claims-management', color: '#e3f2fd' }, // soft blue
+            { type: 'card', label: 'Claims Management', link: '#/healthcare/claims-management', color: '#e0f7fa' , rowSpan: 2  }, // soft blue
             { type: 'image', image: 'assets/images/workers_comp_3.jpg' },
-            { type: 'card', label: 'Medical Management', link: '#/healthcare/medical-management', color: '#fce4ec' } // soft pink
+            { type: 'card', label: 'Medical Management', link: '#/healthcare/medical-management', color:'#e0f7fa' , rowSpan: 2  }, // soft pink
+             { type: 'image', image: 'assets/images/workers_comp_5.jpg' },
+              { type: 'image', image: 'assets/images/workers_comp_7.jpg' },
         ],
         2: [
             { type: 'image', image: 'assets/images/workers_comp_5.jpg' },
-            { type: 'card', label: 'Pharmacy Benefits Management (PBM)', link: '#/healthcare/pharmacy-benefits-management', color: '#f3e5f5' }, // soft purple
+            { type: 'card', label: 'Pharmacy Benefits Management (PBM)', link: '#/healthcare/pharmacy-benefits-management', color:'#e0f7fa', rowSpan: 2  }, // soft purple
             { type: 'image', image: 'assets/images/workers_comp_7.jpg' },
-            { type: 'card', label: 'Revenue Cycle Management', link: '#/healthcare/revenue-cycle-management', color: '#e0f7fa' } // soft cyan
+            { type: 'card', label: 'Revenue Cycle Management', link: '#/healthcare/revenue-cycle-management',  color:'#e0f7fa', rowSpan: 2 },// soft cyan
+              { type: 'image', image: 'assets/images/workers_comp_8.jpg' },
+               { type: 'image', image: 'assets/images/workers_comp_6.jpg' }
         ],
         3: [
             { type: 'image', image: 'assets/images/workers_comp_6.jpg' },

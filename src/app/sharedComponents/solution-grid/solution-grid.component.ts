@@ -3,6 +3,15 @@ import { Router } from '@angular/router';
 import { GlobalSearchItem, GlobalSearchService } from 'src/app/global-search.service';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
+export interface GridSpan {
+  colSpan?: number;
+  rowSpan?: number;
+}
+
+export type DashboardGridItem =
+  | ({ type: 'image'; image: string } & GridSpan)
+  | ({ type: 'card'; label: string; link?: string; color?: string } & GridSpan);
+
 @Component({
   selector: 'app-solution-grid',
   templateUrl: './solution-grid.component.html',
@@ -19,18 +28,14 @@ export class SolutionGridComponent implements AfterViewInit {
   // Top options (tabs)
   @Input() options: { label: string; active?: boolean }[] = [];
 
-  // Grid items (cards/boxes)
-  @Input() gridItems: (
-    | { type: 'image'; image: string }
-    | { type: 'card'; label: string; link?: string; color?: string }
-  )[] = [];
+  // ✅ Grid items (SINGLE, CORRECT declaration)
+  @Input() gridItems: DashboardGridItem[] = [];
 
   // Optionally emit when an option is selected
   @Output() optionSelected = new EventEmitter<number>();
 
   // ✅ HTML-safe heading
   safeHeading!: SafeHtml;
-
   private _heading = '';
 
   @Input()

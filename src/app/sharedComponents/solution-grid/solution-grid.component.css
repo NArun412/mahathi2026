@@ -183,3 +183,7 @@
     background-color: #CDB5C7 !important;
     color: #000 !important; /* Optional: adjust text color for contrast */
 }
+
+.solution-grid-cards {
+    grid-auto-rows: 140px; /* same as min-height */
+}

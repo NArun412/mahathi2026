@@ -18,15 +18,38 @@
 <div class="solution-grid-main">
     <div class="solution-grid-cards">
         <ng-container *ngFor="let item of gridItems">
-            <!-- Render image cell -->
+                <!--Render image cell
             <div *ngIf="item.type === 'image'" class="solution-grid-card solution-grid-image-cell"
                 [ngStyle]="{'background-image': 'url(' + item.image + ')'}">
             </div>
-            <!-- Render card cell -->
+          Render card cell 
             <a *ngIf="item.type === 'card'" class="solution-grid-card solution-grid-card-cell" [href]="item.link || '#'"
                 [ngStyle]="{'background-color': item.color || '#e0e0e0'}">
                 <span class="solution-grid-card-label">{{ item.label }}</span>
-            </a>
+            </a>-->
+
+ <div
+  *ngIf="item.type === 'image'"
+  class="solution-grid-card solution-grid-image-cell"
+  [ngStyle]="{
+    'background-image': 'url(' + item.image + ')',
+    'grid-column': item.colSpan ? 'span ' + item.colSpan : null,
+    'grid-row': item.rowSpan ? 'span ' + item.rowSpan : null
+  }">
+</div>
+
+<a
+  *ngIf="item.type === 'card'"
+  class="solution-grid-card solution-grid-card-cell"
+  [href]="item.link || '#'"
+  [ngStyle]="{
+    'background-color': item.color,
+    'grid-column': item.colSpan ? 'span ' + item.colSpan : null,
+    'grid-row': item.rowSpan ? 'span ' + item.rowSpan : null
+  }">
+  <span class="solution-grid-card-label">{{ item.label }}</span>
+</a>
         </ng-container>
+
     </div>
 </div>
