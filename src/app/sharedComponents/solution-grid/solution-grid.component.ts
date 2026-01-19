@@ -2,13 +2,21 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 import { GlobalSearchItem, GlobalSearchService } from 'src/app/global-search.service';
 
+export interface GridSpan {
+  colSpan?: number;
+  rowSpan?: number;
+}
+
+export type DashboardGridItem =
+  | ({ type: 'image'; image: string } & GridSpan)
+  | ({ type: 'card'; label: string; link?: string; color?: string } & GridSpan);
+
 @Component({
   selector: 'app-solution-grid',
   templateUrl: './solution-grid.component.html',
   styleUrls: ['./solution-grid.component.css']
 })
 export class SolutionGridComponent {
-  
 
 constructor(
   private searchService: GlobalSearchService,
@@ -47,12 +55,13 @@ private registerPageContent(): void {
   this.searchService.register(items);
 }
 
+
   // Top options (tabs)
   @Input() options: { label: string, active?: boolean }[] = [];
   // Heading below the options
   @Input() heading: string = '';
   // Grid items (cards/boxes)
-  @Input() gridItems: ({ type: 'image', image: string } | { type: 'card', label: string, link?: string, color?: string })[] = [];
+  @Input() gridItems: DashboardGridItem[] = [];
   // Optionally emit when an option is selected
   @Output() optionSelected = new EventEmitter<number>();
 

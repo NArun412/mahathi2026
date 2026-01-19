@@ -31,7 +31,7 @@
     text-align: center;
     font-size: 2.25rem;
     font-weight: 500;
-    color: rgb(0, 0, 0);
+    color: white;
     margin-bottom: 1.5rem;
 }
 
@@ -182,4 +182,8 @@
 .solution-grid-tab:hover {
     background-color: #CDB5C7 !important;
     color: #000 !important; /* Optional: adjust text color for contrast */
+}
+
+.solution-grid-cards {
+    grid-auto-rows: 140px; /* same as min-height */
 }

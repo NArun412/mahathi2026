@@ -4,7 +4,14 @@ import { Router } from '@angular/router';
 
 declare var $: any;
 
-export type DashboardGridItem = | { type: "image"; image: string } | { type: "card"; label: string; link?: string; color?: string };
+type GridSpan = {
+  colSpan?: number;
+  rowSpan?: number;
+};
+
+export type DashboardGridItem =
+  | ({ type: "image"; image: string } & GridSpan)
+  | ({ type: "card"; label: string; link?: string; color?: string } & GridSpan);
 
 @Component({
   selector: 'app-dashboard',
@@ -20,11 +27,10 @@ export class DashboardComponent implements AfterViewInit, OnDestroy {
 
   dashboardTabs = [
     { label: 'WORKERS COMP', active: true },
-    { label: 'P&C AND LIFE' },
-    { label: 'PAYOR AND PBM' },
-    { label: 'MAILROOM SOLUTION' },
-    { label: 'WORKBENCH SOLUTIONS' },
-    { label: 'WORKCOMP COMPLIANCE' }
+    { label: 'P&C AND PERSONAL LINES' },
+    { label: 'MCOs' },
+    { label: 'File & ANNUITY' },
+    { label: 'HEALTHCARE SOLUTIONS' }
   ];
 
   dashboardHeading = '';
@@ -40,126 +46,106 @@ export class DashboardComponent implements AfterViewInit, OnDestroy {
   };
 
   dashboardGridMap: Record<number, DashboardGridItem[]> = {
-    0: [
-      { type: 'image', image: 'assets/images/workers_comp_1.jpg' },
-      { type: 'card', label: 'Carrier Enablement at Scale', link: '#', color: '#f5f5f5' },
-      { type: 'image', image: 'assets/images/workers_comp_2.jpg' },
-      { type: 'card', label: 'Policy Administration', link: '#', color: '#e8f0fe' },
-      { type: 'image', image: 'assets/images/workers_comp_3.jpg' },
-      { type: 'card', label: 'Billing Solutions', link: '#', color: '#fff3e0' },
-      { type: 'card', label: 'Claims Management', link: '#', color: '#e0f7fa' },
-      { type: 'image', image: 'assets/images/workers_comp_4.jpg' },
-      { type: 'card', label: 'Investigative Services', link: '#', color: '#fce4ec' },
-      { type: 'image', image: 'assets/images/workers_comp_5.jpg' },
-      { type: 'card', label: 'Medical & Pharmacy Management', link: '#', color: '#f3e5f5' },
-      { type: 'image', image: 'assets/images/workers_comp_6.jpg' },
-      { type: 'image', image: 'assets/images/workers_comp_7.jpg' },
-      { type: 'card', label: 'Litigation Management', link: '#', color: '#ede7f6' },
-      { type: 'image', image: 'assets/images/workers_comp_8.jpg' },
-      { type: 'card', label: 'Regulatory & Compliance', link: '#', color: '#e0f2f1' },
-      { type: 'image', image: 'assets/images/workers_comp_9.jpg' },
-      { type: 'card', label: 'Loss Control Services', link: '#', color: '#fffde7' }
-    ],
+    0:[
+  { type: 'image', image: 'assets/images/workers_comp_1.jpg' },
+  { type: 'card', label: 'Carrier Enablement at Scale', link: '#', color: '#f5f5f5' },
+  { type: 'image', image: 'assets/images/workers_comp_2.jpg' },
+  { type: 'card', label: 'Policy Administration', link: '#', color: '#e8f0fe' },
+  { type: 'image', image: 'assets/images/workers_comp_3.jpg' },
+  { type: 'card', label: 'Billing Solutions', link: '#', color: '#fff3e0' },
+  { type: 'card', label: 'Claims Management', link: '#', color: '#e0f7fa' },
+  { type: 'image', image: 'assets/images/workers_comp_4.jpg' },
+  { type: 'card', label: 'Investigative Services', link: '#', color: '#fce4ec'},
+  { type: 'image', image: 'assets/images/workers_comp_5.jpg' },
+  { type: 'card', label: 'Medical & Pharmacy Management', link: '#', color: '#f3e5f5' },
+  { type: 'image', image: 'assets/images/workers_comp_6.jpg' },
+  { type: 'image', image: 'assets/images/workers_comp_7.jpg' },
+  { type: 'card', label: 'Litigation Management', link: '#', color: '#ede7f6' },
+  { type: 'image', image: 'assets/images/workers_comp_8.jpg' },
+  { type: 'card', label: 'Regulatory & Compliance', link: '#', color: '#e0f2f1'},
+  { type: 'image', image: 'assets/images/workers_comp_9.jpg' },
+  { type: 'card', label: 'Loss Control Services', link: '#', color: '#fffde7'}
+],
     1: [
-      { type: 'image', image: 'assets/images/workers_comp_1.jpg' },
-      { type: 'card', label: 'Carrier Enablement at Scale', link: '#', color: '#f5f5f5' },
-      { type: 'image', image: 'assets/images/workers_comp_2.jpg' },
-      { type: 'card', label: 'Policy Administration', link: '#', color: '#e8f0fe' },
-      { type: 'image', image: 'assets/images/workers_comp_3.jpg' },
-      { type: 'card', label: 'Billing Solutions', link: '#', color: '#fff3e0' },
-      { type: 'card', label: 'Claims Management', link: '#', color: '#e0f7fa' },
-      { type: 'image', image: 'assets/images/workers_comp_4.jpg' },
-      { type: 'card', label: 'Investigative Services', link: '#', color: '#fce4ec' },
-      { type: 'image', image: 'assets/images/workers_comp_5.jpg' },
-      { type: 'card', label: 'Medical & Pharmacy Management', link: '#', color: '#f3e5f5' },
-      { type: 'image', image: 'assets/images/workers_comp_6.jpg' },
-      { type: 'image', image: 'assets/images/workers_comp_7.jpg' },
-      { type: 'card', label: 'Litigation Management', link: '#', color: '#ede7f6' },
-      { type: 'image', image: 'assets/images/workers_comp_8.jpg' },
-      { type: 'card', label: 'Regulatory & Compliance', link: '#', color: '#e0f2f1' },
-      { type: 'image', image: 'assets/images/workers_comp_9.jpg' },
-      { type: 'card', label: 'Loss Control Services', link: '#', color: '#fffde7' }
-    ],
+  { type: 'card', label: 'Admitted Package Lines', link: '#', color: '#e0f7fa' ,rowSpan: 2},
+  { type: 'image', image: 'assets/images/workers_comp_2.jpg' },
+  { type: 'card', label: 'Exess & Surplus', link: '#', color: '#e0f7fa',rowSpan: 2},
+  { type: 'image', image: 'assets/images/workers_comp_9.jpg' },
+  { type: 'card', label: 'Specialty Products', link: '#', color: '#e0f7fa',rowSpan: 2 },
+  { type: 'image', image: 'assets/images/workers_comp_4.jpg' },
+  { type: 'card', label: 'Service Center Enablement', link: '#', color: '#e0f7fa',rowSpan: 2 },
+  { type: 'card', label: 'Claims,Policy & Billing Management', link: '#', color: '#e0f7fa',rowSpan: 2 },
+  { type: 'card', label: 'Litigation Management', link: '#', color: '#e0f7fa',rowSpan: 2 },
+ { type: 'image', image: 'assets/images/workers_comp_5.jpg' },
+  { type: 'image', image: 'assets/images/workers_comp_6.jpg' },
+  { type: 'image', image: 'assets/images/workers_comp_7.jpg' }
+],
     2: [
-      { type: 'image', image: 'assets/images/workers_comp_1.jpg' },
-      { type: 'card', label: 'Carrier Enablement at Scale', link: '#', color: '#f5f5f5' },
-      { type: 'image', image: 'assets/images/workers_comp_2.jpg' },
-      { type: 'card', label: 'Policy Administration', link: '#', color: '#e8f0fe' },
-      { type: 'image', image: 'assets/images/workers_comp_3.jpg' },
-      { type: 'card', label: 'Billing Solutions', link: '#', color: '#fff3e0' },
-      { type: 'card', label: 'Claims Management', link: '#', color: '#e0f7fa' },
-      { type: 'image', image: 'assets/images/workers_comp_4.jpg' },
-      { type: 'card', label: 'Investigative Services', link: '#', color: '#fce4ec' },
-      { type: 'image', image: 'assets/images/workers_comp_5.jpg' },
-      { type: 'card', label: 'Medical & Pharmacy Management', link: '#', color: '#f3e5f5' },
-      { type: 'image', image: 'assets/images/workers_comp_6.jpg' },
-      { type: 'image', image: 'assets/images/workers_comp_7.jpg' },
-      { type: 'card', label: 'Litigation Management', link: '#', color: '#ede7f6' },
-      { type: 'image', image: 'assets/images/workers_comp_8.jpg' },
-      { type: 'card', label: 'Regulatory & Compliance', link: '#', color: '#e0f2f1' },
-      { type: 'image', image: 'assets/images/workers_comp_9.jpg' },
-      { type: 'card', label: 'Loss Control Services', link: '#', color: '#fffde7' }
-    ],
-    3: [
-      { type: 'image', image: 'assets/images/workers_comp_1.jpg' },
-      { type: 'card', label: 'Carrier Enablement at Scale', link: '#', color: '#f5f5f5' },
-      { type: 'image', image: 'assets/images/workers_comp_2.jpg' },
-      { type: 'card', label: 'Policy Administration', link: '#', color: '#e8f0fe' },
-      { type: 'image', image: 'assets/images/workers_comp_3.jpg' },
-      { type: 'card', label: 'Billing Solutions', link: '#', color: '#fff3e0' },
-      { type: 'card', label: 'Claims Management', link: '#', color: '#e0f7fa' },
-      { type: 'image', image: 'assets/images/workers_comp_4.jpg' },
-      { type: 'card', label: 'Investigative Services', link: '#', color: '#fce4ec' },
-      { type: 'image', image: 'assets/images/workers_comp_5.jpg' },
-      { type: 'card', label: 'Medical & Pharmacy Management', link: '#', color: '#f3e5f5' },
-      { type: 'image', image: 'assets/images/workers_comp_6.jpg' },
-      { type: 'image', image: 'assets/images/workers_comp_7.jpg' },
-      { type: 'card', label: 'Litigation Management', link: '#', color: '#ede7f6' },
-      { type: 'image', image: 'assets/images/workers_comp_8.jpg' },
-      { type: 'card', label: 'Regulatory & Compliance', link: '#', color: '#e0f2f1' },
-      { type: 'image', image: 'assets/images/workers_comp_9.jpg' },
-      { type: 'card', label: 'Loss Control Services', link: '#', color: '#fffde7' }
-    ],
+  { type: 'card', label: 'Medication Intervention', link: '#', color: '#e0f7fa' ,rowSpan: 2,colSpan: 2},
+  { type: 'image', image: 'assets/images/workers_comp_2.jpg' },
+ { type: 'card', label: 'Case Management Optimization', link: '#', color: '#e0f7fa' ,rowSpan: 2,colSpan: 2},
+ { type: 'image', image: 'assets/images/workers_comp_2.jpg' },
+   { type: 'image', image: 'assets/images/workers_comp_5.jpg' },
+  { type: 'image', image: 'assets/images/workers_comp_6.jpg' },
+ { type: 'image', image: 'assets/images/workers_comp_4.jpg' },
+  { type: 'card', label: 'Revenue Loss Prevention​', link: '#', color: '#e0f7fa' ,rowSpan: 2,colSpan: 2},
+  { type: 'image', image: 'assets/images/workers_comp_7.jpg' },
+  { type: 'card', label: 'PBM Accelerators​', link: '#', color: '#e0f7fa' ,rowSpan: 2,colSpan: 2},
+  { type: 'image', image: 'assets/images/workers_comp_9.jpg' },
+ { type: 'image', image: 'assets/images/workers_comp_5.jpg' }
+
+],
+    3:  [
+  { type: 'card', label: 'Claims Transformation​', link: '#', color: '#e0f7fa' ,rowSpan: 2,colSpan: 2},
+  { type: 'image', image: 'assets/images/workers_comp_2.jpg' },
+ { type: 'card', label: 'Digital Platform Management', link: '#', color: '#e0f7fa' ,rowSpan: 2,colSpan: 2},
+ { type: 'image', image: 'assets/images/workers_comp_2.jpg' },
+   { type: 'image', image: 'assets/images/workers_comp_5.jpg' },
+  { type: 'image', image: 'assets/images/workers_comp_6.jpg' },
+ { type: 'image', image: 'assets/images/workers_comp_4.jpg' },
+  { type: 'card', label: 'Actuarial PracticeTransformation​​', link: '#', color: '#e0f7fa' ,rowSpan: 2,colSpan: 2},
+  { type: 'image', image: 'assets/images/workers_comp_7.jpg' },
+  { type: 'card', label: 'Insurance Modernization​', link: '#', color: '#e0f7fa' ,rowSpan: 2,colSpan: 2},
+  { type: 'image', image: 'assets/images/workers_comp_9.jpg' },
+ { type: 'image', image: 'assets/images/workers_comp_5.jpg' }
+
+],
+
     4: [
-      { type: 'image', image: 'assets/images/workers_comp_1.jpg' },
-      { type: 'card', label: 'Carrier Enablement at Scale', link: '#', color: '#f5f5f5' },
-      { type: 'image', image: 'assets/images/workers_comp_2.jpg' },
-      { type: 'card', label: 'Policy Administration', link: '#', color: '#e8f0fe' },
-      { type: 'image', image: 'assets/images/workers_comp_3.jpg' },
-      { type: 'card', label: 'Billing Solutions', link: '#', color: '#fff3e0' },
-      { type: 'card', label: 'Claims Management', link: '#', color: '#e0f7fa' },
-      { type: 'image', image: 'assets/images/workers_comp_4.jpg' },
-      { type: 'card', label: 'Investigative Services', link: '#', color: '#fce4ec' },
-      { type: 'image', image: 'assets/images/workers_comp_5.jpg' },
-      { type: 'card', label: 'Medical & Pharmacy Management', link: '#', color: '#f3e5f5' },
-      { type: 'image', image: 'assets/images/workers_comp_6.jpg' },
-      { type: 'image', image: 'assets/images/workers_comp_7.jpg' },
-      { type: 'card', label: 'Litigation Management', link: '#', color: '#ede7f6' },
-      { type: 'image', image: 'assets/images/workers_comp_8.jpg' },
-      { type: 'card', label: 'Regulatory & Compliance', link: '#', color: '#e0f2f1' },
-      { type: 'image', image: 'assets/images/workers_comp_9.jpg' },
-      { type: 'card', label: 'Loss Control Services', link: '#', color: '#fffde7' }
-    ],
+  { type: 'card', label: 'Core Healthcare Platform Management​', link: '#', color: '#e0f7fa' ,rowSpan: 2,colSpan: 2},
+  { type: 'image', image: 'assets/images/workers_comp_2.jpg' },
+ { type: 'card', label: 'Claims, Revenue & Financial Operations​', link: '#', color: '#e0f7fa' ,rowSpan: 2,colSpan: 2},
+ { type: 'image', image: 'assets/images/workers_comp_2.jpg' },
+   { type: 'image', image: 'assets/images/workers_comp_5.jpg' },
+  { type: 'image', image: 'assets/images/workers_comp_6.jpg' },
+ { type: 'image', image: 'assets/images/workers_comp_4.jpg' },
+  { type: 'card', label: 'Clinical,Pharmacy & Care Management​​', link: '#', color: '#e0f7fa' ,rowSpan: 2,colSpan: 2},
+  { type: 'image', image: 'assets/images/workers_comp_7.jpg' },
+  { type: 'card', label: 'Data, AI,Compliance & Risk​​', link: '#', color: '#e0f7fa' ,rowSpan: 2,colSpan: 2},
+  { type: 'image', image: 'assets/images/workers_comp_9.jpg' },
+ { type: 'image', image: 'assets/images/workers_comp_5.jpg' }
+
+],
     5: [
-      { type: 'image', image: 'assets/images/workers_comp_1.jpg' },
-      { type: 'card', label: 'Carrier Enablement at Scale', link: '#', color: '#f5f5f5' },
-      { type: 'image', image: 'assets/images/workers_comp_2.jpg' },
-      { type: 'card', label: 'Policy Administration', link: '#', color: '#e8f0fe' },
-      { type: 'image', image: 'assets/images/workers_comp_3.jpg' },
-      { type: 'card', label: 'Billing Solutions', link: '#', color: '#fff3e0' },
-      { type: 'card', label: 'Claims Management', link: '#', color: '#e0f7fa' },
-      { type: 'image', image: 'assets/images/workers_comp_4.jpg' },
-      { type: 'card', label: 'Investigative Services', link: '#', color: '#fce4ec' },
-      { type: 'image', image: 'assets/images/workers_comp_5.jpg' },
-      { type: 'card', label: 'Medical & Pharmacy Management', link: '#', color: '#f3e5f5' },
-      { type: 'image', image: 'assets/images/workers_comp_6.jpg' },
-      { type: 'image', image: 'assets/images/workers_comp_7.jpg' },
-      { type: 'card', label: 'Litigation Management', link: '#', color: '#ede7f6' },
-      { type: 'image', image: 'assets/images/workers_comp_8.jpg' },
-      { type: 'card', label: 'Regulatory & Compliance', link: '#', color: '#e0f2f1' },
-      { type: 'image', image: 'assets/images/workers_comp_9.jpg' },
-      { type: 'card', label: 'Loss Control Services', link: '#', color: '#fffde7' }
-    ]
+  { type: 'image', image: 'assets/images/workers_comp_1.jpg'},
+  { type: 'card', label: 'Carrier Enablement at Scale', link: '#', color: '#f5f5f5' },
+  { type: 'image', image: 'assets/images/workers_comp_2.jpg' },
+  { type: 'card', label: 'Policy Administration', link: '#', color: '#e8f0fe'},
+  { type: 'image', image: 'assets/images/workers_comp_3.jpg' },
+  { type: 'card', label: 'Billing Solutions', link: '#', color: '#fff3e0' },
+  { type: 'card', label: 'Claims Management', link: '#', color: '#e0f7fa' },
+  { type: 'image', image: 'assets/images/workers_comp_4.jpg' },
+  { type: 'card', label: 'Investigative Services', link: '#', color: '#fce4ec' },
+  { type: 'image', image: 'assets/images/workers_comp_5.jpg' },
+  { type: 'card', label: 'Medical & Pharmacy Management', link: '#', color: '#f3e5f5' },
+  { type: 'image', image: 'assets/images/workers_comp_6.jpg' },
+  { type: 'image', image: 'assets/images/workers_comp_7.jpg' },
+  { type: 'card', label: 'Litigation Management', link: '#', color: '#ede7f6' },
+  { type: 'image', image: 'assets/images/workers_comp_8.jpg' },
+  { type: 'card', label: 'Regulatory & Compliance', link: '#', color: '#e0f2f1' },
+  { type: 'image', image: 'assets/images/workers_comp_9.jpg' },
+  { type: 'card', label: 'Loss Control Services', link: '#', color: '#fffde7' }
+]
   };
 
   onTabChange(idx: number) {
