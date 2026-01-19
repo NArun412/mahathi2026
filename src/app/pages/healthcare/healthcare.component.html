@@ -73,6 +73,70 @@
 
 
 
+            <section id="healthcare-capabilities-header" class="page-block-section position-relative font-dark"
+                style="background-color:#fff;  min-height:0 !important; ">
+                <div class="container flex-column">
+                    <div class="row flex-grow-1 justify-content-center">
+                        <div class="col-12 position-relative sec-1">
+                            <div class="container">
+                                <div class="row justify-content-between">
+                                    <div
+                                        class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 align-self-center editor-col">
+                                        <div class="editor-text align-items-center">
+                                            <h2 class="h1" style="text-align: center; line-height: 3.5rem;">
+                                                <span class="big">
+                                  Driving innovation across the care continuum with 
+                                                    <span class="underline_cls1 highlight-pop">
+specialized technology and operational expertise.</span>
+   
+                                                </span>
+                                            </h2>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dg-home-intro" id="home-intro">
+                <div class="healthcare-tab-wrapper">
+                    <button class="arrow-button" (click)="goToPreviousTab()">
+                        <div class="arrow-icon-wrapper">
+                            <svg width="38" height="38" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M22 40C31.9411 40 40 31.9411 40 22C40 12.0589 31.9411 4 22 4C12.0589 4 4 12.0589 4 22C4 31.9411 12.0589 40 22 40ZM22 44C34.1503 44 44 34.1503 44 22C44 9.84974 34.1503 0 22 0C9.84974 0 0 9.84974 0 22C0 34.1503 9.84974 44 22 44Z"
+                                    fill="#76A379" />
+
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M30 19C31.1 19 32 19.9 32 21C32 22.1 31.1 23 30 23H18.83L23.42 27.59C24.2 28.37 24.2 29.63 23.42 30.41C22.63 31.2 21.37 31.2 20.59 30.41L12.59 22.41C11.8 21.63 11.8 20.37 12.59 19.59L20.59 11.59C21.37 10.8 22.63 10.8 23.42 11.59C24.2 12.37 24.2 13.63 23.42 14.41L18.83 19H30Z"
+                                    fill="#76A379" />
+                            </svg>
+                        </div>
+                    </button>
+
+                    <app-solution-grid [options]="healthcareTabs" [heading]="healthcareHeading"
+                        [gridItems]="healthcareGridItems" (optionSelected)="onHealthcareTabChange($event)">
+                    </app-solution-grid>
+
+                    <button class="arrow-button" (click)="goToNextTab()">
+                        <div class="arrow-icon-wrapper">
+                            <svg width="38" height="38" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M22 40C31.9411 40 40 31.9411 40 22C40 12.0589 31.9411 4 22 4C12.0589 4 4 12.0589 4 22C4 31.9411 12.0589 40 22 40ZM22 44C34.1503 44 44 34.1503 44 22C44 9.84974 34.1503 0 22 0C9.84974 0 0 9.84974 0 22C0 34.1503 9.84974 44 22 44Z"
+                                    fill="#76A379" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14 19C12.9 19 12 19.9 12 21C12 22.1 12.9 23 14 23H25.17L20.58 27.59C19.8 28.37 19.8 29.63 20.58 30.41C21.37 31.2 22.63 31.2 23.41 30.41L31.41 22.41C32.2 21.63 32.2 20.37 31.41 19.59L23.41 11.59C22.63 10.8 21.37 10.8 20.58 11.59C19.8 12.37 19.8 13.63 20.58 14.41L25.17 19H14Z"
+                                    fill="#76A379" />
+                            </svg>
+                        </div>
+                    </button>
+
+                </div>
+            </section>
+
 
 
             <section id="page-block-ec-panel" class="page-block-section position-relative font-dark"
@@ -87,8 +151,11 @@
                                         <h4 class="h1" style="text-align: center;font-size: 2.5rem !important;"><span
                                                 class="font-weight-bold">
                                                 <!-- <big> -->
-                                                Who We Serve
-                                                <!-- </big> -->
+We deliver healthcare solutions ​
+<span class="underline_cls1 highlight-pop">
+    <br>
+across the ecosystem​      
+</span>                                       
                                             </span></h4>
                                     </div>
                                 </div>
@@ -159,59 +226,6 @@
                         </div>
 
                     </div>
-                </div>
-            </section>
-
-
-            <section id="healthcare-capabilities-header" class="page-block-section pb-0"
-                style="background-color: #FFFFFF;">
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 text-center">
-                        <div class="editor-text">
-                            <h2 class="display-4 fw-light text-dark mb-2">Healthcare Capabilities</h2>
-                            <div class="brand-divider-center mb-3"></div>
-                            <p class="lead text-muted mx-auto mb-0" style="max-width: 600px;">
-                                Driving innovation across the care continuum with specialized technology and operational
-                                expertise.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="dg-home-intro" id="home-intro">
-                <div class="healthcare-tab-wrapper">
-                    <button class="arrow-button" (click)="goToPreviousTab()">
-                        <div class="arrow-icon-wrapper">
-                            <svg width="38" height="38" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M22 40C31.9411 40 40 31.9411 40 22C40 12.0589 31.9411 4 22 4C12.0589 4 4 12.0589 4 22C4 31.9411 12.0589 40 22 40ZM22 44C34.1503 44 44 34.1503 44 22C44 9.84974 34.1503 0 22 0C9.84974 0 0 9.84974 0 22C0 34.1503 9.84974 44 22 44Z"
-                                    fill="#76A379" />
-
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M30 19C31.1 19 32 19.9 32 21C32 22.1 31.1 23 30 23H18.83L23.42 27.59C24.2 28.37 24.2 29.63 23.42 30.41C22.63 31.2 21.37 31.2 20.59 30.41L12.59 22.41C11.8 21.63 11.8 20.37 12.59 19.59L20.59 11.59C21.37 10.8 22.63 10.8 23.42 11.59C24.2 12.37 24.2 13.63 23.42 14.41L18.83 19H30Z"
-                                    fill="#76A379" />
-                            </svg>
-                        </div>
-                    </button>
-
-                    <app-solution-grid [options]="healthcareTabs" [heading]="healthcareHeading"
-                        [gridItems]="healthcareGridItems" (optionSelected)="onHealthcareTabChange($event)">
-                    </app-solution-grid>
-
-                    <button class="arrow-button" (click)="goToNextTab()">
-                        <div class="arrow-icon-wrapper">
-                            <svg width="38" height="38" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M22 40C31.9411 40 40 31.9411 40 22C40 12.0589 31.9411 4 22 4C12.0589 4 4 12.0589 4 22C4 31.9411 12.0589 40 22 40ZM22 44C34.1503 44 44 34.1503 44 22C44 9.84974 34.1503 0 22 0C9.84974 0 0 9.84974 0 22C0 34.1503 9.84974 44 22 44Z"
-                                    fill="#76A379" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M14 19C12.9 19 12 19.9 12 21C12 22.1 12.9 23 14 23H25.17L20.58 27.59C19.8 28.37 19.8 29.63 20.58 30.41C21.37 31.2 22.63 31.2 23.41 30.41L31.41 22.41C32.2 21.63 32.2 20.37 31.41 19.59L23.41 11.59C22.63 10.8 21.37 10.8 20.58 11.59C19.8 12.37 19.8 13.63 20.58 14.41L25.17 19H14Z"
-                                    fill="#76A379" />
-                            </svg>
-                        </div>
-                    </button>
-
                 </div>
             </section>
 
