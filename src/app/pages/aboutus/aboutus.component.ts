@@ -60,7 +60,7 @@ export class AboutusComponent implements OnInit, AfterViewInit {
        this.registerPageContent();
     setTimeout(() => {
       window.scrollTo({
-        top: 30,
+        top: 0,
         behavior: 'smooth'
       });
     }, 200);
@@ -92,11 +92,11 @@ export class AboutusComponent implements OnInit, AfterViewInit {
 
    healthcareData: MainTemplateData = {
       sectionOneText: "",
-      sectionTwoText: 'Healthcare Technology & Digital Services',
+      sectionTwoText: 'Our purpose has always been client centricity',
       sectionThreeText:
-        "Mahathi Infotech partners with healthcare payers, providers, TPAs, and digital health organizations to modernize core operations through scalable technology, data, and AI-led services.",
+        "A lean & responsive management, a team that’s invested in client’s success, consultants consistently developing subject matter expertise and a leadership that’s focused on quality & timely delivery than selling new services.",
   
-      heroImage: 'assets/images/enhanced_customer_experience.png',
+      heroImage: 'assets/images/abtus.png',
       solutionsHeading: "Streamline operations, Ensure compliance, and Enhance outcomes",
       rightHeroImage:'assets/images/happy_people3.png',
       features: [
