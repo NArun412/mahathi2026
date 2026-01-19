@@ -8639,12 +8639,15 @@ header .header-bottom .header-container .main-navigation #mega-menu-wrap-header-
 }
 
 .p-bg {
-  font-size: 2.25rem;
-    color: #fff;
-    background: #76A379;
-    border-radius: 10px;
-    padding: 15px;
+  font-size: clamp(1rem, 2.2vw, 2.25rem);
+  color: #fff;
+background: #76A379;
+  border-radius: clamp(6px, 1vw, 10px);
+  padding: clamp(10px, 2vw, 15px);
+  line-height: 1.4;
+  word-break: break-word;
 }
+
 
 .cont_txt {
     background: linear-gradient(180deg, #DCEBE1, #76A379);
