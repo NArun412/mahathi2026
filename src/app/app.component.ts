@@ -34,10 +34,16 @@ export class AppComponent implements AfterViewInit, OnDestroy {
   ) {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
-        this.headerClass =
-          event.url === '/' || event.url === '/home' ? 'home' : 'inner';
-
-        setTimeout(() => this.registerPageContent(), 100);
+        window.scrollTo(0, 0); // 👈 always scroll to top
+      }
+    });
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        if (event.url === '/' || event.url === '/home') {
+          this.headerClass = 'home';
+        } else {
+          this.headerClass = 'inner';
+        }
       }
     });
   }
