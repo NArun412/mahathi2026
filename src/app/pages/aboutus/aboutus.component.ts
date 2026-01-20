@@ -20,7 +20,16 @@ export class AboutusComponent implements OnInit, AfterViewInit {
   ngAfterViewInit(): void {
     this.registerPageContent();
 
-    const cards = document.querySelectorAll<HTMLElement>('.founder-card');
+    const cards = Array.from(
+      document.querySelectorAll<HTMLElement>('.founder-card')
+    );
+
+    const grid = document.querySelector('.founders-grid') as HTMLElement;
+
+    const getColumnCount = () =>
+      grid
+        ? getComputedStyle(grid).gridTemplateColumns.split(' ').length
+        : 1;
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -32,14 +41,16 @@ export class AboutusComponent implements OnInit, AfterViewInit {
         });
       },
       {
-        threshold: 0.15,
+        threshold: 0.18,
         rootMargin: '0px 0px -30px 0px'
       }
     );
 
+    const columns = getColumnCount();
+
     cards.forEach((card, index) => {
-      /* Faster stagger, elegant rhythm */
-      card.style.transitionDelay = `${index * 35}ms`;
+      const rowIndex = Math.floor(index / columns);
+      card.style.transitionDelay = `${rowIndex * 90}ms`; // row-based reveal
       observer.observe(card);
     });
   }
