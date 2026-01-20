@@ -1,30 +1,32 @@
+/* ======================================================
+   EXISTING STYLES (UNCHANGED)
+====================================================== */
 
 .p-bg {
   font-size: clamp(1rem, 2.2vw, 2.25rem);
   color: #fff;
-background: #76A379;
+  background: #76A379;
   border-radius: clamp(6px, 1vw, 10px);
   padding: clamp(10px, 2vw, 15px);
   line-height: 1.4;
   word-break: break-word;
 }
 
-
 .cont_txt {
-    background: linear-gradient(180deg, #DCEBE1, #76A379);
-    padding: 20px;
-    border-radius: 15px;
-    color:#000;
-    margin: 30px 0px;
+  background: linear-gradient(180deg, #DCEBE1, #76A379);
+  padding: 20px;
+  border-radius: 15px;
+  color: #000;
+  margin: 30px 0;
 }
-/* BASE (Mobile First) */
+
+/* GRID */
 .founders-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;
 }
 
-/* TABLET (≥ 768px) */
 @media (min-width: 768px) {
   .founders-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -32,21 +34,20 @@ background: #76A379;
   }
 }
 
-/* DESKTOP (≥ 1200px) */
 @media (min-width: 1200px) {
   .founders-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 60px;
   }
 }
+
 .founder-card img {
   margin-bottom: 8px;
   max-width: 100%;
   height: auto;
 }
 
-.founder-card h3,
-.founder-card .name {
+.founder-card h3 {
   margin-top: 0;
 }
 
@@ -60,12 +61,130 @@ background: #76A379;
   margin-top: 4px;
   line-height: 1.5;
 }
+
 .founder-card {
   text-align: center;
 }
 
-@media (min-width: 768px) {
-  .founder-card {
-    text-align: center;
+/* ======================================================
+   ORGANIC / ATMOSPHERIC ANIMATION SYSTEM
+====================================================== */
+
+/* BASE — NOT A CARD */
+.founder-card {
+  position: relative;
+  padding: 28px 22px 32px;
+  border-radius: 28px 22px 30px 24px;
+  background:
+    radial-gradient(
+      circle at 30% 20%,
+      rgba(118, 163, 121, 0.18),
+      transparent 60%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.45)
+    );
+  backdrop-filter: blur(14px);
+
+  opacity: 0;
+  transform: translateY(56px) scale(0.94);
+  filter: blur(10px) saturate(0.9);
+
+  transition:
+    opacity 0.45s ease-out,
+    transform 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.6s ease-out;
+
+  will-change: transform, opacity, filter;
+  overflow: hidden;
+}
+
+/* AMBIENT AURA */
+.founder-card::before {
+  content: '';
+  position: absolute;
+  inset: -20%;
+  background:
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(118, 163, 121, 0.25),
+      transparent 70%
+    );
+  opacity: 0;
+  transform: scale(0.85);
+  transition:
+    opacity 0.6s ease,
+    transform 0.8s ease;
+  pointer-events: none;
+}
+
+/* LIGHT DRIFT */
+.founder-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      120deg,
+      transparent 30%,
+      rgba(118, 163, 121, 0.12),
+      transparent 70%
+    );
+  opacity: 0;
+  transform: translateX(-40%);
+  transition:
+    opacity 0.4s ease,
+    transform 0.9s ease;
+  pointer-events: none;
+}
+
+/* REVEAL */
+.founder-card.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0) saturate(1);
+}
+
+.founder-card.is-visible::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.founder-card.is-visible::after {
+  opacity: 1;
+  transform: translateX(40%);
+}
+
+/* IMAGE — SOFT & HUMAN */
+.founder-card img {
+  border-radius: 50%;
+  filter:
+    drop-shadow(0 14px 26px rgba(0, 0, 0, 0.12))
+    saturate(0.95);
+  transition:
+    transform 0.6s ease,
+    filter 0.6s ease;
+}
+
+.founder-card.is-visible img {
+  filter:
+    drop-shadow(0 18px 34px rgba(0, 0, 0, 0.18))
+    saturate(1);
+}
+
+/* HOVER — ORGANIC */
+@media (hover: hover) {
+  .founder-card:hover {
+    transform: translateY(-10px) scale(1.03);
+  }
+
+  .founder-card:hover::before {
+    opacity: 1;
+  }
+
+  .founder-card:hover img {
+    transform: scale(1.08);
   }
 }
