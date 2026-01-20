@@ -13,6 +13,7 @@ import { GlobalSearchItem, GlobalSearchService } from './global-search.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements AfterViewInit, OnDestroy {
+
   headerClass: string = 'home';
   title = 'Mahathi Infotech';
 
@@ -21,24 +22,32 @@ export class AppComponent implements AfterViewInit, OnDestroy {
   private currentScroll = 0;
   private targetScroll = 0;
   private velocity = 0;
-  private isTicking = false;
+  private animationFrameId: number | null = null;
 
-  // Motion tuning (IMPORTANT)
-  private readonly EASING = 0.07;        // lower = heavier
-  private readonly VELOCITY_DAMP = 0.85; // inertia decay
+  private readonly EASING = 0.08;
+  private readonly VELOCITY_DAMP = 0.82;
 
   constructor(
     private router: Router,
     private searchService: GlobalSearchService,
     private zone: NgZone
   ) {
+    // ✅ PREVENT BROWSER SCROLL RESTORE (CRITICAL)
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
-        window.scrollTo(0, 0); // 👈 always scroll to top
-      }
-    });
-    this.router.events.subscribe(event => {
-      if (event instanceof NavigationEnd) {
+
+        // ✅ LOAD DIRECTLY AT TOP (NO MID FLASH)
+        this.currentScroll = 0;
+        this.targetScroll = 0;
+        this.velocity = 0;
+
+        window.scrollTo(0, 0);
+
+        // Header logic
         if (event.url === '/' || event.url === '/home') {
           this.headerClass = 'home';
         } else {
@@ -48,6 +57,8 @@ export class AppComponent implements AfterViewInit, OnDestroy {
     });
   }
 
+  /* ================= LIFECYCLE ================= */
+
   ngAfterViewInit(): void {
     this.registerPageContent();
     this.initEnhancedSmoothScroll();
@@ -55,6 +66,9 @@ export class AppComponent implements AfterViewInit, OnDestroy {
 
   ngOnDestroy(): void {
     window.removeEventListener('wheel', this.onWheel);
+    if (this.animationFrameId) {
+      cancelAnimationFrame(this.animationFrameId);
+    }
   }
 
   /* ================= GLOBAL SEARCH ================= */
@@ -86,8 +100,8 @@ export class AppComponent implements AfterViewInit, OnDestroy {
   /* ================= ENHANCED SMOOTH SCROLL ================= */
 
   private initEnhancedSmoothScroll(): void {
-    this.currentScroll = window.scrollY;
-    this.targetScroll = window.scrollY;
+    this.currentScroll = 0;
+    this.targetScroll = 0;
 
     this.zone.runOutsideAngular(() => {
       window.addEventListener('wheel', this.onWheel, { passive: false });
@@ -99,33 +113,29 @@ export class AppComponent implements AfterViewInit, OnDestroy {
     event.preventDefault();
 
     this.targetScroll += event.deltaY;
-    this.targetScroll = Math.max(
-      0,
-      Math.min(
-        this.targetScroll,
-        document.documentElement.scrollHeight - window.innerHeight
-      )
-    );
 
-    // Track velocity for animation intensity
+    const maxScroll =
+      document.documentElement.scrollHeight - window.innerHeight;
+
+    this.targetScroll = Math.max(0, Math.min(this.targetScroll, maxScroll));
+
     this.velocity += event.deltaY * 0.002;
   };
 
   private animate = () => {
-    // Smooth scroll interpolation
     this.currentScroll +=
       (this.targetScroll - this.currentScroll) * this.EASING;
 
-    // Velocity easing
     this.velocity *= this.VELOCITY_DAMP;
 
     window.scrollTo(0, this.currentScroll);
 
-    // Apply global motion effects
     this.applyVisualEffects();
 
-    requestAnimationFrame(this.animate);
+    this.animationFrameId = requestAnimationFrame(this.animate);
   };
+
+  /* ================= VISUAL EFFECTS ================= */
 
   private applyVisualEffects(): void {
     const v = Math.min(Math.abs(this.velocity), 1);
@@ -142,5 +152,5 @@ export class AppComponent implements AfterViewInit, OnDestroy {
       '--scroll-glow',
       `${v * 0.25}`
     );
-  };
+  }
 }
