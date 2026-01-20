@@ -14,6 +14,11 @@ export class AppComponent {
   constructor(private router: Router,  private searchService: GlobalSearchService) {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
+        window.scrollTo(0, 0); // 👈 always scroll to top
+      }
+    });
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
         if (event.url === '/' || event.url === '/home') {
           this.headerClass = 'home';
         } else {
