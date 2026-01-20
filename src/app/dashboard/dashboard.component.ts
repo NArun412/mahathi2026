@@ -67,15 +67,15 @@ export class DashboardComponent implements AfterViewInit, OnDestroy {
   { type: 'card', label: 'Loss Control Services', link: '#', color: '#fffde7'}
 ],
     1: [
-  { type: 'card', label: 'Admitted Package Lines', link: '#', color: '#e0f7fa' ,rowSpan: 2},
+  { type: 'card', label: 'Admitted Package Lines', link: '#', color: '#fffde7' ,rowSpan: 2},
   { type: 'image', image: 'assets/images/workers_comp_2.jpg' },
   { type: 'card', label: 'Exess & Surplus', link: '#', color: '#e0f7fa',rowSpan: 2},
   { type: 'image', image: 'assets/images/workers_comp_9.jpg' },
-  { type: 'card', label: 'Specialty Products', link: '#', color: '#e0f7fa',rowSpan: 2 },
+  { type: 'card', label: 'Specialty Products', link: '#', color: '#f3e5f5',rowSpan: 2 },
   { type: 'image', image: 'assets/images/workers_comp_4.jpg' },
-  { type: 'card', label: 'Service Center Enablement', link: '#', color: '#e0f7fa',rowSpan: 2 },
+  { type: 'card', label: 'Service Center Enablement', link: '#', color: '#fce4ec',rowSpan: 2 },
   { type: 'card', label: 'Claims,Policy & Billing Management', link: '#', color: '#e0f7fa',rowSpan: 2 },
-  { type: 'card', label: 'Litigation Management', link: '#', color: '#e0f7fa',rowSpan: 2 },
+  { type: 'card', label: 'Litigation Management', link: '#', color: '#fffde7',rowSpan: 2 },
  { type: 'image', image: 'assets/images/workers_comp_5.jpg' },
   { type: 'image', image: 'assets/images/workers_comp_6.jpg' },
   { type: 'image', image: 'assets/images/workers_comp_7.jpg' }
@@ -83,29 +83,29 @@ export class DashboardComponent implements AfterViewInit, OnDestroy {
     2: [
   { type: 'card', label: 'Medication Intervention', link: '#', color: '#e0f7fa' ,rowSpan: 2,colSpan: 2},
   { type: 'image', image: 'assets/images/workers_comp_2.jpg' },
- { type: 'card', label: 'Case Management Optimization', link: '#', color: '#e0f7fa' ,rowSpan: 2,colSpan: 2},
+ { type: 'card', label: 'Case Management Optimization', link: '#', color: '#f3e5f5' ,rowSpan: 2,colSpan: 2},
  { type: 'image', image: 'assets/images/workers_comp_2.jpg' },
    { type: 'image', image: 'assets/images/workers_comp_5.jpg' },
   { type: 'image', image: 'assets/images/workers_comp_6.jpg' },
  { type: 'image', image: 'assets/images/workers_comp_4.jpg' },
-  { type: 'card', label: 'Revenue Loss Prevention​', link: '#', color: '#e0f7fa' ,rowSpan: 2,colSpan: 2},
+  { type: 'card', label: 'Revenue Loss Prevention​', link: '#', color: '#fffde7' ,rowSpan: 2,colSpan: 2},
   { type: 'image', image: 'assets/images/workers_comp_7.jpg' },
-  { type: 'card', label: 'PBM Accelerators​', link: '#', color: '#e0f7fa' ,rowSpan: 2,colSpan: 2},
+  { type: 'card', label: 'PBM Accelerators​', link: '#', color: '#e0f2f1' ,rowSpan: 2,colSpan: 2},
   { type: 'image', image: 'assets/images/workers_comp_9.jpg' },
  { type: 'image', image: 'assets/images/workers_comp_5.jpg' }
 
 ],
     3:  [
-  { type: 'card', label: 'Claims Transformation​', link: '#', color: '#e0f7fa' ,rowSpan: 2,colSpan: 2},
+      { type: 'image', image: 'assets/images/workers_comp_2.jpg' },
+  { type: 'card', label: 'Claims Transformation​', link: '#', color: '#e0f2f1' ,rowSpan: 2,colSpan: 2},
   { type: 'image', image: 'assets/images/workers_comp_2.jpg' },
- { type: 'card', label: 'Digital Platform Management', link: '#', color: '#e0f7fa' ,rowSpan: 2,colSpan: 2},
- { type: 'image', image: 'assets/images/workers_comp_2.jpg' },
+ { type: 'card', label: 'Digital Platform Management', link: '#', color: '#fffde7' ,rowSpan: 2,colSpan: 2},
    { type: 'image', image: 'assets/images/workers_comp_5.jpg' },
   { type: 'image', image: 'assets/images/workers_comp_6.jpg' },
+    { type: 'card', label: 'Actuarial PracticeTransformation​​', link: '#', color: '#f3e5f5' ,rowSpan: 2,colSpan: 2},
  { type: 'image', image: 'assets/images/workers_comp_4.jpg' },
-  { type: 'card', label: 'Actuarial PracticeTransformation​​', link: '#', color: '#e0f7fa' ,rowSpan: 2,colSpan: 2},
+   { type: 'card', label: 'Insurance Modernization​', link: '#', color: '#e0f7fa' ,rowSpan: 2,colSpan: 2},
   { type: 'image', image: 'assets/images/workers_comp_7.jpg' },
-  { type: 'card', label: 'Insurance Modernization​', link: '#', color: '#e0f7fa' ,rowSpan: 2,colSpan: 2},
   { type: 'image', image: 'assets/images/workers_comp_9.jpg' },
  { type: 'image', image: 'assets/images/workers_comp_5.jpg' }
 
@@ -114,14 +114,14 @@ export class DashboardComponent implements AfterViewInit, OnDestroy {
     4: [
   { type: 'card', label: 'Core Healthcare Platform Management​', link: '#', color: '#e0f7fa' ,rowSpan: 2,colSpan: 2},
   { type: 'image', image: 'assets/images/workers_comp_2.jpg' },
- { type: 'card', label: 'Claims, Revenue & Financial Operations​', link: '#', color: '#e0f7fa' ,rowSpan: 2,colSpan: 2},
+ { type: 'card', label: 'Claims, Revenue & Financial Operations​', link: '#', color: '#e0f2f1' ,rowSpan: 2,colSpan: 2},
  { type: 'image', image: 'assets/images/workers_comp_2.jpg' },
    { type: 'image', image: 'assets/images/workers_comp_5.jpg' },
   { type: 'image', image: 'assets/images/workers_comp_6.jpg' },
  { type: 'image', image: 'assets/images/workers_comp_4.jpg' },
-  { type: 'card', label: 'Clinical,Pharmacy & Care Management​​', link: '#', color: '#e0f7fa' ,rowSpan: 2,colSpan: 2},
+  { type: 'card', label: 'Clinical,Pharmacy & Care Management​​', link: '#', color: '#f3e5f5' ,rowSpan: 2,colSpan: 2},
   { type: 'image', image: 'assets/images/workers_comp_7.jpg' },
-  { type: 'card', label: 'Data, AI,Compliance & Risk​​', link: '#', color: '#e0f7fa' ,rowSpan: 2,colSpan: 2},
+  { type: 'card', label: 'Data, AI,Compliance & Risk​​', link: '#', color: '#e0f2f1' ,rowSpan: 2,colSpan: 2},
   { type: 'image', image: 'assets/images/workers_comp_9.jpg' },
  { type: 'image', image: 'assets/images/workers_comp_5.jpg' }
 

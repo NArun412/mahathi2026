@@ -1,4 +1,50 @@
 /* Custom Divider */
+.hero-section {
+  background: #AECFDD;
+  padding: 40px 0;
+  padding-top: 170px;
+}
+
+/* Hero image – desktop default */
+.hero-img-left-curve {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  object-fit: cover;
+
+  border-top-left-radius: 220px;
+  border-bottom-left-radius: 220px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+
+  margin-left: auto; /* push image to right */
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .hero-img-left-curve {
+    max-width: 600px;
+    border-top-left-radius: 160px;
+    border-bottom-left-radius: 160px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .hero-img-left-curve {
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 24px;
+  }
+}
+
+
+
+
 .custom-divider {
     width: 60px;
     height: 4px;
