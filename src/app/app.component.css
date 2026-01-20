@@ -6,3 +6,46 @@
 * {
   font-family: 'Poppins', sans-serif;
 }
+/* Disable native smooth scrolling */
+html {
+  scroll-behavior: auto;
+}
+
+/* Global animated variables */
+:root {
+  --scroll-scale: 1;
+  --scroll-blur: 0px;
+  --scroll-glow: 0;
+}
+
+/* Depth + softness during scroll */
+body {
+  transform: scale(var(--scroll-scale));
+  filter: blur(var(--scroll-blur));
+  transition:
+    transform 0.25s ease-out,
+    filter 0.25s ease-out;
+  transform-origin: center top;
+  will-change: transform, filter;
+}
+
+/* Cinematic ambient glow */
+body::before {
+  content: '';
+  position: fixed;
+  inset: -30%;
+  background: radial-gradient(
+    circle,
+    rgba(118, 163, 121, var(--scroll-glow)),
+    transparent 70%
+  );
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+/* Visual polish */
+* {
+  -webkit-font-smoothing: antialiased;
+  backface-visibility: hidden;
+}
