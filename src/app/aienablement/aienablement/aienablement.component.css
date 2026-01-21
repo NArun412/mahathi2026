@@ -941,3 +941,76 @@ color: #76a379;
         grid-template-columns: 1fr !important;
     }
 }
+/* ===============================
+   GLOBAL SECTION SPACING
+================================ */
+.bg-sec-hero,
+.bg-sec-um,
+.bg-sec-risk-1,
+.bg-sec-risk-2,
+.bg-sec-automation,
+.bg-sec-dev,
+.bg-sec-custom-ai {
+    padding: 80px 0px;
+}
+
+/* ===============================
+   HERO SECTION
+================================ */
+.bg-sec-hero {
+    background: linear-gradient(135deg, #eef5f0, #ffffff);
+}
+
+/* ===============================
+   UTILIZATION MANAGEMENT
+================================ */
+.bg-sec-um {
+    background-color:#B2C7B3;
+}
+
+/* ===============================
+   AI RISK – SECTION 1
+================================ */
+.bg-sec-risk-1 {
+    background-color: #BFBFBF;
+}
+
+/* ===============================
+   AI RISK – SECTION 2
+================================ */
+.bg-sec-risk-2 {
+    background-color: #B2C7B3;
+}
+
+/* ===============================
+   AUTOMATION SECTION
+================================ */
+.bg-sec-automation {
+    background: linear-gradient(180deg, #f8fbf9, #eef5f0);
+}
+
+/* ===============================
+   AI DEV SECTION
+================================ */
+.bg-sec-dev {
+    background-color: #BFBFBF;
+}
+
+/* ===============================
+   CUSTOM AI APPLICATION
+================================ */
+.bg-sec-custom-ai {
+    background-color: #BFBFBF;
+}
+
+/* ===============================
+   OPTIONAL: CARD CONTRAST BOOST
+================================ */
+.bg-sec-um .ai-info-card,
+.bg-sec-risk-1 .ai-risk-card,
+.bg-sec-risk-2 .ai-risk-card,
+.bg-sec-dev .ai-risk-card,
+.bg-sec-custom-ai .cust-ai-column {
+    background-color: #ffffff;
+    border-radius: 16px;
+}
