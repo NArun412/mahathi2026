@@ -177,6 +177,7 @@
   border-color: #fff; }
 
 #page-block-hi-banner {
+  margin-top: -55px;
   color: #808080 !important;
   overflow: hidden; }
   #page-block-hi-banner .background-layer {

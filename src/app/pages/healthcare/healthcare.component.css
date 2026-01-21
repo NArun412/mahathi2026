@@ -2,6 +2,7 @@
 #page-block-ec-panel {
     overflow: hidden;
     line-height: 1.6;
+    margin-top: -55px;
 }
 
 /* Custom Orange Divider */
